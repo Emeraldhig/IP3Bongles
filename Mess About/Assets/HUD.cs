@@ -20,11 +20,19 @@ public class HUD : MonoBehaviour
         foreach(Transform slot in inventoryPanel)
         {
             Image image = slot.GetChild(0).GetComponent<Image>();
+            Text text = slot.GetChild(1).GetComponent<Text>();
 
-            if(!image.enabled)
+            if (!image.enabled)
             {
                 image.enabled = true;
                 image.sprite = e.Item.Image;
+            }
+            print("hello");
+            if (!text.enabled)
+            {
+                print("hello");
+                text.enabled = true;
+                text.text = e.Item.Name;
 
                 break;
             }
