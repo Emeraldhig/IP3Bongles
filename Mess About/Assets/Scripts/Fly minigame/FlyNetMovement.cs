@@ -40,8 +40,11 @@ public class FlyNetMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(other.gameObject);
-        fliesCaught++;
-        print(fliesCaught);
+        if (Input.GetMouseButtonDown(0))
+        {
+            Destroy(other.gameObject);
+            fliesCaught++;
+            print(fliesCaught);
+        }
     }
 }

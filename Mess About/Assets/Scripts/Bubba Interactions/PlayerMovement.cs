@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public bool moving;
     public Inventory inventory;
     public GameObject walkToPoint;
+    public Transform playerPosition;
 
     private void Start()
     {
@@ -38,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
                 }
         }
 
-        if (Input.GetMouseButtonDown(1))
+        if ((int)playerPosition.position.x == (int)walkToPoint.transform.position.x)
         {
             moving = false;
         }

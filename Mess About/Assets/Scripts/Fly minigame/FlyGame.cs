@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FlyGame : MonoBehaviour
 {
@@ -8,11 +9,13 @@ public class FlyGame : MonoBehaviour
     public GameObject camera2;
     public GameObject FlyNet;
     public bool FlyStart;
+    public bool flyMoving;
 
     // Start is called before the first frame update
     void Start()
     {
         FlyStart = false;
+        flyMoving = false;
     }
 
     private void Update()
@@ -24,6 +27,8 @@ public class FlyGame : MonoBehaviour
                 camera1.SetActive(false);
                 camera2.SetActive(true);
                 FlyNet.SetActive(true);
+                flyMoving = true;
+                SceneManager.LoadScene("flyMinigame");
             }
 
             if (Input.GetKeyDown("f"))
