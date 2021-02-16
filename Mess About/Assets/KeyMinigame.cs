@@ -3,51 +3,40 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class FlyGame : MonoBehaviour
+public class KeyMinigame : MonoBehaviour
 {
     public GameObject camera1;
     public GameObject camera2;
-    public GameObject FlyNet;
-    public bool FlyStart;
-    public bool flyMoving;
+    public GameObject Key;
+    public bool KeyStart;
 
     // Start is called before the first frame update
     void Start()
     {
-        FlyStart = false;
-        flyMoving = false;
+        KeyStart = false;
     }
 
     private void Update()
     {
-        if (FlyStart == true)
+        if (KeyStart == true)
         {
             if (Input.GetKeyDown("e"))
             {
                 camera1.SetActive(false);
                 camera2.SetActive(true);
-                FlyNet.SetActive(true);
-                flyMoving = true;
-                //SceneManager.LoadScene("flyMinigame");
-            }
-
-            if (Input.GetKeyDown("f"))
-            {
-                camera1.SetActive(true);
-                camera2.SetActive(false);
-                FlyNet.SetActive(false);
+                Key.SetActive(true);
             }
         }
-        
+
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        FlyStart = true;
+        KeyStart = true;
     }
 
     private void OnTriggerExit(Collider other)
     {
-        FlyStart = true;
+        KeyStart = true;
     }
 }

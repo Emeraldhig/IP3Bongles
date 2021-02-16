@@ -35,7 +35,6 @@ public class FlyNetMovement : MonoBehaviour
     {
         float distance_to_screen = camera2.WorldToScreenPoint(gameObject.transform.position).z;
         transform.position = camera2.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance_to_screen));
-
     }
 
     private void OnTriggerEnter(Collider other)
