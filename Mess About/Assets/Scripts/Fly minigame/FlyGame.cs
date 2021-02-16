@@ -8,7 +8,6 @@ public class FlyGame : MonoBehaviour
     public GameObject camera2;
     public GameObject FlyNet;
     public bool FlyStart;
-    public bool flyMovement;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +24,6 @@ public class FlyGame : MonoBehaviour
                 camera1.SetActive(false);
                 camera2.SetActive(true);
                 FlyNet.SetActive(true);
-                flyMovement = true;
             }
 
             if (Input.GetKeyDown("f"))
