@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     Animator m_Animator;
     public bool moving;
     public Inventory inventory;
+    public GameObject walkToPoint;
 
     private void Start()
     {
@@ -32,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit, Mathf.Infinity))
                 {
+                walkToPoint.transform.position = hit.point;
                 agent.SetDestination(hit.point);
                 }
         }
