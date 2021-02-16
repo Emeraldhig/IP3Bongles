@@ -9,7 +9,12 @@ public class PlayerMovement : MonoBehaviour
     Animator m_Animator;
     public bool moving;
     public Inventory inventory;
+<<<<<<< Updated upstream
     public GameObject walkToPoint;
+=======
+    public Vector3 destinationPosition;
+    public Transform playerPosition;
+>>>>>>> Stashed changes
 
     private void Start()
     {
@@ -28,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            destinationPosition = Input.mousePosition;
             moving = true;
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -39,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonUp(0) && playerPosition.position == destinationPosition)
         {
             moving = false;
         }
