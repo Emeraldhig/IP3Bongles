@@ -333,6 +333,7 @@ MonoBehaviour:
   Gate: {fileID: 1958303198}
   OpenGate: {fileID: -9104517239027192286, guid: f061812b270b2cd479ddccf4bfe23695, type: 3}
   RotateKeyMaster: {fileID: 45489583}
+  arrowPressed: 0
 --- !u!65 &45489586
 BoxCollider:
   m_ObjectHideFlags: 0
