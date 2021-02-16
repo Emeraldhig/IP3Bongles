@@ -386,13 +386,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 42541988}
-  m_LocalRotation: {x: -0, y: 0.72469175, z: -0, w: 0.68907326}
-  m_LocalPosition: {x: -14, y: 2.1, z: -1.65}
+  m_LocalRotation: {x: -0, y: -0.49957722, z: -0, w: 0.8662694}
+  m_LocalPosition: {x: -7.87, y: 2.1000004, z: -1.46}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1803261056}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 92.886, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -59.944, z: 0}
 --- !u!1 &76119645
 GameObject:
   m_ObjectHideFlags: 0
@@ -4109,31 +4109,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f450d604d9115d54ea45d0d277669cdd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.28
+      value: -27.2435
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f450d604d9115d54ea45d0d277669cdd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.27
+      value: -1.5789143
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f450d604d9115d54ea45d0d277669cdd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.35
+      value: -1.305725
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f450d604d9115d54ea45d0d277669cdd, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.728536
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f450d604d9115d54ea45d0d277669cdd, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.06894246
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f450d604d9115d54ea45d0d277669cdd, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.016129676
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f450d604d9115d54ea45d0d277669cdd, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.6813385
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f450d604d9115d54ea45d0d277669cdd, type: 3}
       propertyPath: m_RootOrder
@@ -4141,15 +4141,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f450d604d9115d54ea45d0d277669cdd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 82.111
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f450d604d9115d54ea45d0d277669cdd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -121.167
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f450d604d9115d54ea45d0d277669cdd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -116.876
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f450d604d9115d54ea45d0d277669cdd, type: 3}
       propertyPath: m_LocalScale.x
@@ -4204,6 +4204,7 @@ MonoBehaviour:
   FliesMaster: {fileID: 1803261053}
   fliesCaught: 0
   moveSpeed: 1
+  netInHand: 0
 --- !u!65 &1728509456
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4215,8 +4216,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0.04, z: 1.09}
+  m_Size: {x: 1.464073, y: 1.0270245, z: 4.170711}
+  m_Center: {x: -0.24794064, y: 0.11660469, z: -0.49535355}
 --- !u!136 &1728509457
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4227,10 +4228,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 1.56
-  m_Height: 3.7053614
+  m_Radius: 1.2269638
+  m_Height: 2.4539278
   m_Direction: 1
-  m_Center: {x: 0.0000027799044, y: -1.3526722, z: -3.7399647}
+  m_Center: {x: 0.09872595, y: -0.2263798, z: -3.659836}
 --- !u!54 &1728509458
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4374,10 +4375,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 12.920553
-  m_Height: 25.841108
+  m_Radius: 9.19012
+  m_Height: 18.380241
   m_Direction: 1
-  m_Center: {x: 6.1000767, y: 0, z: -0.5695157}
+  m_Center: {x: 9.83051, y: -3.7304332, z: -0.56951576}
 --- !u!4 &1803261056
 Transform:
   m_ObjectHideFlags: 0

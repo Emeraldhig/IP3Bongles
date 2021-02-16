@@ -28,7 +28,12 @@ public class FlyGame : MonoBehaviour
                 camera2.SetActive(true);
                 FlyNet.SetActive(true);
                 flyMoving = true;
+
                 //SceneManager.LoadScene("flyMinigame");
+
+                SceneManager.LoadScene("flyMinigame");
+                
+
             }
 
             if (Input.GetKeyDown("f"))

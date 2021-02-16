@@ -81,7 +81,7 @@ public class Wander : SteeringBehaviour
     {
         float angle = Random.value * 2.0f * Mathf.PI;
 
-        return new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), Mathf.Cos(angle));
+        return new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), 0.0f);
     }
 
 }
