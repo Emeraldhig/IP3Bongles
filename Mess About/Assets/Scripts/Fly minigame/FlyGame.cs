@@ -24,9 +24,9 @@ public class FlyGame : MonoBehaviour
         {
             if (Input.GetKeyDown("e"))
             {
-                camera1.SetActive(false);
+               /* camera1.SetActive(false);
                 camera2.SetActive(true);
-                FlyNet.SetActive(true);
+                FlyNet.SetActive(true);*/
                 flyMoving = true;
                 SceneManager.LoadScene("flyMinigame");
             }
