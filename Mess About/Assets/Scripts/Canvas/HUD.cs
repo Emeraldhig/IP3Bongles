@@ -14,7 +14,6 @@ public class HUD : MonoBehaviour
     public GameObject pickUp;
     public GameObject infoTitle;
     public GameObject info;
-    public GameObject speaker;
     Text infoTitleText;
     Text infoText;
     private PlayerMovement movementScript;
@@ -61,7 +60,6 @@ public class HUD : MonoBehaviour
             movementScript.movementBlock = true;
 
             infoTitleText.text = e.Item.Name;
-            speaker.SetActive(true);
             info.SetActive(true);
             infoTitle.SetActive(true);
             pickUp.SetActive(true);

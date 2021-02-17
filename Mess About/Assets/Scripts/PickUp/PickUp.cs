@@ -8,7 +8,6 @@ public class PickUp : MonoBehaviour
     public GameObject pickUp;
     public GameObject infoTitle;
     public GameObject info;
-    public GameObject speaker;
     private PlayerMovement movementScript;
 
 
@@ -21,7 +20,6 @@ public class PickUp : MonoBehaviour
     public void PickUpClicked()
     {
         movementScript.movementBlock = false;
-        speaker.SetActive(false);
         info.SetActive(false);
         infoTitle.SetActive(false);
         pickUp.SetActive(false);
