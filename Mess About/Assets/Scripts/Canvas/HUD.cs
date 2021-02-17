@@ -10,11 +10,23 @@ public class HUD : MonoBehaviour
     public Inventory Inventory;
     public GameObject Craft;
     public GameObject BugNet;
+    public GameObject infoBox;
+    public GameObject pickUp;
+    public GameObject infoTitle;
+    public GameObject info;
+    public GameObject speaker;
+    Text infoTitleText;
+    Text infoText;
+    private PlayerMovement movementScript;
 
     // Start is called before the first frame update
     void Start()
     {
         Inventory.ItemAdded += InventoryScript_ItemAdded;
+        infoText = info.GetComponent<Text>();
+        infoTitleText = infoTitle.GetComponent<Text>();
+        GameObject PlayerObject = GameObject.FindGameObjectWithTag("Bubba");
+        movementScript = PlayerObject.GetComponent<PlayerMovement>();
     }
 
     private void Update()
@@ -45,6 +57,33 @@ public class HUD : MonoBehaviour
         {
             Image image = slot.GetChild(0).GetComponent<Image>();
             Text text = slot.GetChild(1).GetComponent<Text>();
+
+            movementScript.movementBlock = true;
+
+            infoTitleText.text = e.Item.Name;
+            speaker.SetActive(true);
+            info.SetActive(true);
+            infoTitle.SetActive(true);
+            pickUp.SetActive(true);
+            infoBox.SetActive(true);
+
+            if (infoTitleText.text == "Hoop")
+            {
+                infoText.text = "What’s this on the ground?\nA peculiar ring Maybe I\ncould use it to hold some string?";
+            }
+            if (infoTitleText.text == "Stick")
+            {
+                infoText.text = "A stick on the floor, so lonely\nand cold Yes this is perfect!\nThe net can be controlled!";
+            }
+            if (infoTitleText.text == "Net")
+            {
+                infoText.text = "Is this from the ship? It comes\nwith some tape could it be\nused so the flies can’t escape?";
+            }
+            if (infoTitleText.text == "BugNet")
+            {
+                infoText.text = "I found this trash all on the floor\nand combined it together,Score!";
+            }
+
 
             if (!image.enabled)
             {

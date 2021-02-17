@@ -8,21 +8,20 @@ public class PickUp : MonoBehaviour
     public GameObject pickUp;
     public GameObject infoTitle;
     public GameObject info;
+    public GameObject speaker;
+    private PlayerMovement movementScript;
+
 
     // Start is called before the first frame update
     void Start()
     {
-
+        GameObject PlayerObject = GameObject.FindGameObjectWithTag("Bubba");
+        movementScript = PlayerObject.GetComponent<PlayerMovement>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void PickUpClicked()
     {
+        movementScript.movementBlock = false;
+        speaker.SetActive(false);
         info.SetActive(false);
         infoTitle.SetActive(false);
         pickUp.SetActive(false);
