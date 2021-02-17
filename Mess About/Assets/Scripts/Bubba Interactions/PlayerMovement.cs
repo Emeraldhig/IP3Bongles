@@ -11,12 +11,14 @@ public class PlayerMovement : MonoBehaviour
     public Inventory inventory;
     public GameObject walkToPoint;
     public Transform playerPosition;
+    public bool movementBlock;
 
     private void Start()
     {
         m_Animator = gameObject.GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         moving = false;
+        movementBlock = false;
     }
 
     private void Update()
@@ -27,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
         if (moving == true)
             m_Animator.SetBool("moving", true);
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && movementBlock == false)
         {
             moving = true;
             RaycastHit hit;

@@ -3664,10 +3664,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20e1d958f8700e646ab503ebe491a6c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infoBox: {fileID: 113240825}
-  pickUp: {fileID: 431799224}
-  infoTitle: {fileID: 422411563}
-  info: {fileID: 649174882}
   _Image: {fileID: 21300000, guid: 1d31cd2e89790d84d91e094a4d0a7a91, type: 3}
 --- !u!136 &729152908
 CapsuleCollider:
@@ -4624,10 +4620,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1de548f5e6ba8ad4ebc92fb45f1e56fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infoBox: {fileID: 113240825}
-  pickUp: {fileID: 431799224}
-  infoTitle: {fileID: 422411563}
-  info: {fileID: 649174882}
   _Image: {fileID: 21300000, guid: 63886a34846578843a3b1eec73fdc309, type: 3}
 --- !u!136 &1002302429
 CapsuleCollider:
@@ -5819,6 +5811,7 @@ MonoBehaviour:
   inventory: {fileID: 130898419}
   walkToPoint: {fileID: 1232778843}
   playerPosition: {fileID: 1237361739}
+  movementBlock: 0
 --- !u!95 &1237361742
 Animator:
   serializedVersion: 3
@@ -9018,6 +9011,10 @@ MonoBehaviour:
   Inventory: {fileID: 130898419}
   Craft: {fileID: 1459970152}
   BugNet: {fileID: 1637011093}
+  infoBox: {fileID: 113240825}
+  pickUp: {fileID: 431799224}
+  infoTitle: {fileID: 422411563}
+  info: {fileID: 649174882}
 --- !u!114 &1869636113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9671,10 +9668,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00e4f33f7209f2748a7c185af8e69a32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infoBox: {fileID: 113240825}
-  pickUp: {fileID: 431799224}
-  infoTitle: {fileID: 422411563}
-  info: {fileID: 649174882}
   _Image: {fileID: 21300000, guid: 67292dec38469f84d84d12eac8fe9796, type: 3}
 --- !u!136 &2074514725
 CapsuleCollider:
