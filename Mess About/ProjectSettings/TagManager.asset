@@ -12,6 +12,8 @@ TagManager:
   - Flytrap Path
   - Bubba
   - Jungle
+  - Piece5
+  - Piece6
   layers:
   - Default
   - TransparentFX
