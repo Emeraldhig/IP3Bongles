@@ -12,7 +12,7 @@ public class SceneLoader : MonoBehaviour // when using new scene - apply a speci
             SceneManager.LoadScene("Lagoon Bubba");
         }
 
-        if (Bubba.CompareTag("Flytrap path"))
+        if (Bubba.CompareTag("Flytrap Path"))
         {
             SceneManager.LoadScene("Flytrap Path");
         }
