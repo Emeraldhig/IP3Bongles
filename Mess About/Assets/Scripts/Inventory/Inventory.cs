@@ -25,10 +25,36 @@ public class Inventory : MonoBehaviour
 
                 item.OnPickup();
 
-                if (ItemAdded != null)
-                {
-                    ItemAdded(this, new InventoryEventArgs(item));
-                }
+                ItemAdded?.Invoke(this, new InventoryEventArgs(item));
+            }
+        }
+    }
+
+    public List<IInventoryItem> GetItems()
+    {
+        return mItems;
+    }
+
+    public bool Check(string targetItem)
+    {
+        for (int i = 0; i < mItems.Count; i++)
+        {
+            if (mItems[i].Name == targetItem)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public void Remove(string targetItem)
+    {
+        for (int i = 0; i < mItems.Count; i++)
+        {
+            if (mItems[i].Name == targetItem)
+            {
+                mItems.RemoveAt(i);
+                return;
             }
         }
     }

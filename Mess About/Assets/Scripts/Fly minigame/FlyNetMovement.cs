@@ -1,18 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class FlyNetMovement : MonoBehaviour
 {
 
 
-    public GameObject camera1;
-    public Camera camera2;
+    public GameObject MainCam;
+    public GameObject FlyCam;
     public GameObject FliesMaster;
     public int fliesCaught;
     private Vector3 screenPoint;
     private Vector3 offset;
     public float moveSpeed = 0.1f;
+    public bool netInHand;
 
 
     // Start is called before the first frame update
@@ -26,22 +27,32 @@ public class FlyNetMovement : MonoBehaviour
     {
         if (fliesCaught == 3)
         {
-            camera1.SetActive(true);
+            MainCam.SetActive(true);
             FliesMaster.SetActive(false);
+            FlyCam.SetActive(false);
+            MainCam.SetActive(true);
         }
     }
 
     void OnMouseDrag()
     {
-        float distance_to_screen = camera2.WorldToScreenPoint(gameObject.transform.position).z;
-        transform.position = camera2.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance_to_screen));
-
+        netInHand = true;
+        float distance_to_screen = FlyCam.GetComponent<Camera>().WorldToScreenPoint(gameObject.transform.position).z;
+        transform.position = FlyCam.GetComponent<Camera>().ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance_to_screen));
+    }
+    private void OnMouseUp()
+    {
+        netInHand = false;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(other.gameObject);
-        fliesCaught++;
-        print(fliesCaught);
+        if (netInHand)
+        {
+            Destroy(other.gameObject);
+            fliesCaught++;
+            print(fliesCaught);
+        }
+        
     }
 }

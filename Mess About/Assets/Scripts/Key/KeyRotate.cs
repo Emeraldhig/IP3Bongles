@@ -10,6 +10,7 @@ public class KeyRotate : MonoBehaviour
     public GameObject Gate;
     public Mesh OpenGate;
     public GameObject RotateKeyMaster;
+    public bool arrowPressed;
 
     private void Update()
     {
@@ -22,11 +23,14 @@ public class KeyRotate : MonoBehaviour
             RotateKeyMaster.SetActive(false);
             camera2.SetActive(true);
         }
-    }
 
+        if (arrowPressed)
+        {
+            transform.Rotate(Vector3.forward, rotationSpeed);
 
-    private void OnMouseDrag()
-    {
-        transform.Rotate(Vector3.forward, rotationSpeed);
+        }
     }
 }
+
+
+  

@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     Animator m_Animator;
     public bool moving;
     public Inventory inventory;
+    public GameObject walkToPoint;
+    public Transform playerPosition;
 
     private void Start()
     {
@@ -32,11 +34,12 @@ public class PlayerMovement : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit, Mathf.Infinity))
                 {
+                walkToPoint.transform.position = hit.point;
                 agent.SetDestination(hit.point);
                 }
         }
 
-        if (Input.GetMouseButtonDown(1))
+        if ((int)playerPosition.position.x == (int)walkToPoint.transform.position.x)
         {
             moving = false;
         }

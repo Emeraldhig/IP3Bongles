@@ -1,18 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FlyGame : MonoBehaviour
 {
-    public GameObject camera1;
-    public GameObject camera2;
+    public GameObject MainCam;
+    public GameObject FlyCam;
     public GameObject FlyNet;
     public bool FlyStart;
+    public bool flyMoving;
 
     // Start is called before the first frame update
     void Start()
     {
         FlyStart = false;
+        flyMoving = false;
     }
 
     private void Update()
@@ -21,16 +24,10 @@ public class FlyGame : MonoBehaviour
         {
             if (Input.GetKeyDown("e"))
             {
-                camera1.SetActive(false);
-                camera2.SetActive(true);
+                MainCam.SetActive(false);
+                FlyCam.SetActive(true);
                 FlyNet.SetActive(true);
-            }
-
-            if (Input.GetKeyDown("f"))
-            {
-                camera1.SetActive(true);
-                camera2.SetActive(false);
-                FlyNet.SetActive(false);
+                flyMoving = true;
             }
         }
         
