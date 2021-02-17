@@ -282,6 +282,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9663829}
   m_CullTransparentMesh: 0
+--- !u!1 &36147156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 36147161}
+  - component: {fileID: 36147160}
+  - component: {fileID: 36147158}
+  - component: {fileID: 36147157}
+  m_Layer: 0
+  m_Name: Lagoon Scene Trigger
+  m_TagString: Lagoon
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &36147157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36147156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9046eb1c05dbbe44ebb5fd8108c04b2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &36147158
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36147156}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &36147160
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36147156}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &36147161
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36147156}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.24, y: 2.29, z: -2.31}
+  m_LocalScale: {x: 8.28125, y: 6.5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &45489583
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,6 +635,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &170394029
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 961732560}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 170394030}
+  m_Layer: 0
+  m_Name: Jungle Paths Outline (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &170394030
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 961732560}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170394029}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 222864757}
+  m_Father: {fileID: 633011698}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &182980160
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,11 +835,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!4 &222864757 stripped
+--- !u!4 &222864757
 Transform:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 557ac74847f9caa438178083efd06142, type: 3}
   m_PrefabInstance: {fileID: 961732560}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239392341}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1578385082}
+  m_Father: {fileID: 170394030}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &239392341
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 961732560}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 222864757}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1001 &262962677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1125,6 +1248,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e0e430b82d807954baa2e80db1b61395, type: 3}
       propertyPath: m_Name
       value: Big Bubba v0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e0e430b82d807954baa2e80db1b61395, type: 3}
+      propertyPath: m_TagString
+      value: Bubba
       objectReference: {fileID: 0}
     - target: {fileID: 1805495598856638834, guid: e0e430b82d807954baa2e80db1b61395, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2730,7 +2857,7 @@ Transform:
   m_LocalScale: {x: 77.275604, y: 77.275604, z: 77.275604}
   m_Children:
   - {fileID: 889542077}
-  - {fileID: 961732561}
+  - {fileID: 170394030}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3463,10 +3590,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20e1d958f8700e646ab503ebe491a6c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infoBox: {fileID: 113240825}
-  pickUp: {fileID: 431799224}
-  infoTitle: {fileID: 422411563}
-  info: {fileID: 649174882}
   _Image: {fileID: 21300000, guid: 1d31cd2e89790d84d91e094a4d0a7a91, type: 3}
 --- !u!136 &729152908
 CapsuleCollider:
@@ -4210,11 +4333,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 91e4e24004119a24fad1659f0000e538, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 557ac74847f9caa438178083efd06142, type: 3}
---- !u!4 &961732561 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 961732560}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -4428,10 +4546,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1de548f5e6ba8ad4ebc92fb45f1e56fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infoBox: {fileID: 113240825}
-  pickUp: {fileID: 431799224}
-  infoTitle: {fileID: 422411563}
-  info: {fileID: 649174882}
   _Image: {fileID: 21300000, guid: 63886a34846578843a3b1eec73fdc309, type: 3}
 --- !u!136 &1002302429
 CapsuleCollider:
@@ -5003,6 +5117,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1123449376}
   m_CullTransparentMesh: 0
+--- !u!1 &1128584813
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1128584818}
+  - component: {fileID: 1128584817}
+  - component: {fileID: 1128584815}
+  - component: {fileID: 1128584814}
+  m_Layer: 0
+  m_Name: Flytrap Scene Trigger
+  m_TagString: Flytrap Path
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1128584814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128584813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9046eb1c05dbbe44ebb5fd8108c04b2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1128584815
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128584813}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1128584817
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128584813}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1128584818
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128584813}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 24.06, y: 2.29, z: -6.03}
+  m_LocalScale: {x: 8.28125, y: 6.5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1136869666
 GameObject:
   m_ObjectHideFlags: 0
@@ -5653,6 +5833,7 @@ MonoBehaviour:
   inventory: {fileID: 130898419}
   walkToPoint: {fileID: 1232778843}
   playerPosition: {fileID: 1237361739}
+  movementBlock: 0
 --- !u!95 &1237361742
 Animator:
   serializedVersion: 3
@@ -5701,6 +5882,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1237361745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237361738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9046eb1c05dbbe44ebb5fd8108c04b2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1239760507
 GameObject:
   m_ObjectHideFlags: 0
@@ -8840,6 +9033,11 @@ MonoBehaviour:
   Inventory: {fileID: 130898419}
   Craft: {fileID: 1459970152}
   BugNet: {fileID: 1637011093}
+  infoBox: {fileID: 0}
+  pickUp: {fileID: 0}
+  infoTitle: {fileID: 0}
+  info: {fileID: 0}
+  speaker: {fileID: 0}
 --- !u!114 &1869636113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8856,6 +9054,7 @@ MonoBehaviour:
   pickUp: {fileID: 431799224}
   infoTitle: {fileID: 422411563}
   info: {fileID: 649174882}
+  speaker: {fileID: 0}
 --- !u!1 &1952555659
 GameObject:
   m_ObjectHideFlags: 0
@@ -9493,10 +9692,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00e4f33f7209f2748a7c185af8e69a32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infoBox: {fileID: 113240825}
-  pickUp: {fileID: 431799224}
-  infoTitle: {fileID: 422411563}
-  info: {fileID: 649174882}
   _Image: {fileID: 21300000, guid: 67292dec38469f84d84d12eac8fe9796, type: 3}
 --- !u!136 &2074514725
 CapsuleCollider:
