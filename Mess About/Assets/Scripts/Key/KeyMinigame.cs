@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class KeyMinigame : MonoBehaviour
 {
+    public Inventory Inventory;
     public GameObject camera1;
     public GameObject camera2;
     public GameObject Key;
@@ -18,14 +19,12 @@ public class KeyMinigame : MonoBehaviour
 
     private void Update()
     {
-        if (KeyStart == true)
+        if (KeyStart && Inventory.Check("Hoop") && Input.GetKeyDown("e"))
         {
-            if (Input.GetKeyDown("e"))
-            {
-                camera1.SetActive(false);
-                camera2.SetActive(true);
-                Key.SetActive(true);
-            }
+            camera1.SetActive(false);
+            camera2.SetActive(true);
+            Key.SetActive(true);
+            Inventory.Remove("Hoop");
         }
 
     }
