@@ -8,6 +8,12 @@ TagManager:
   - Piece2
   - Piece3
   - Piece4
+  - Lagoon
+  - Flytrap Path
+  - Bubba
+  - Jungle
+  - Piece5
+  - Piece6
   layers:
   - Default
   - TransparentFX
