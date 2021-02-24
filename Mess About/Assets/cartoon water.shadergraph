@@ -4,13 +4,13 @@
             "typeInfo": {
                 "fullName": "UnityEditor.ShaderGraph.Internal.ColorShaderProperty"
             },
-            "JSONnodeData": "{\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"ce4eb8c3-c63b-4b66-bb98-9c1412e16c8d\"\n    },\n    \"m_Name\": \"base colour\",\n    \"m_DefaultReferenceName\": \"Color_D439D994\",\n    \"m_OverrideReferenceName\": \"\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Precision\": 0,\n    \"m_GPUInstanced\": false,\n    \"m_Hidden\": false,\n    \"m_Value\": {\n        \"r\": 0.03301888704299927,\n        \"g\": 1.0,\n        \"b\": 0.6762514710426331,\n        \"a\": 0.0\n    },\n    \"m_ColorMode\": 0\n}"
+            "JSONnodeData": "{\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"ce4eb8c3-c63b-4b66-bb98-9c1412e16c8d\"\n    },\n    \"m_Name\": \"base colour\",\n    \"m_DefaultReferenceName\": \"Color_D439D994\",\n    \"m_OverrideReferenceName\": \"\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Precision\": 0,\n    \"m_GPUInstanced\": false,\n    \"m_Hidden\": false,\n    \"m_Value\": {\n        \"r\": 0.07756318897008896,\n        \"g\": 0.5231141448020935,\n        \"b\": 0.7830188870429993,\n        \"a\": 0.0\n    },\n    \"m_ColorMode\": 0\n}"
         },
         {
             "typeInfo": {
                 "fullName": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty"
             },
-            "JSONnodeData": "{\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"3da93ed6-ea11-4628-86e6-1c784d7d2741\"\n    },\n    \"m_Name\": \"ripple speed\",\n    \"m_DefaultReferenceName\": \"Vector1_D7251B4D\",\n    \"m_OverrideReferenceName\": \"ripple_speed\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Precision\": 0,\n    \"m_GPUInstanced\": false,\n    \"m_Hidden\": false,\n    \"m_Value\": 10.0,\n    \"m_FloatType\": 0,\n    \"m_RangeValues\": {\n        \"x\": 0.0,\n        \"y\": 1.0\n    }\n}"
+            "JSONnodeData": "{\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"3da93ed6-ea11-4628-86e6-1c784d7d2741\"\n    },\n    \"m_Name\": \"ripple speed\",\n    \"m_DefaultReferenceName\": \"Vector1_D7251B4D\",\n    \"m_OverrideReferenceName\": \"ripple_speed\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Precision\": 0,\n    \"m_GPUInstanced\": false,\n    \"m_Hidden\": false,\n    \"m_Value\": 0.5,\n    \"m_FloatType\": 0,\n    \"m_RangeValues\": {\n        \"x\": 0.0,\n        \"y\": 1.0\n    }\n}"
         },
         {
             "typeInfo": {
@@ -28,7 +28,7 @@
             "typeInfo": {
                 "fullName": "UnityEditor.ShaderGraph.Internal.ColorShaderProperty"
             },
-            "JSONnodeData": "{\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"085fcafc-868f-4ff9-8785-2fe6dfb1f6c8\"\n    },\n    \"m_Name\": \"ripple colour\",\n    \"m_DefaultReferenceName\": \"Color_83E1B0C\",\n    \"m_OverrideReferenceName\": \"\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Precision\": 0,\n    \"m_GPUInstanced\": false,\n    \"m_Hidden\": false,\n    \"m_Value\": {\n        \"r\": 0.38656842708587649,\n        \"g\": 1.085802435874939,\n        \"b\": 0.7276582717895508,\n        \"a\": 0.0\n    },\n    \"m_ColorMode\": 1\n}"
+            "JSONnodeData": "{\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"085fcafc-868f-4ff9-8785-2fe6dfb1f6c8\"\n    },\n    \"m_Name\": \"ripple colour\",\n    \"m_DefaultReferenceName\": \"Color_83E1B0C\",\n    \"m_OverrideReferenceName\": \"\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Precision\": 0,\n    \"m_GPUInstanced\": false,\n    \"m_Hidden\": false,\n    \"m_Value\": {\n        \"r\": 0.19328421354293824,\n        \"g\": 0.5429012179374695,\n        \"b\": 0.36667153239250185,\n        \"a\": 0.0\n    },\n    \"m_ColorMode\": 1\n}"
         },
         {
             "typeInfo": {
@@ -286,7 +286,7 @@
     ],
     "m_PreviewData": {
         "serializedMesh": {
-            "m_SerializedMesh": "{\"mesh\":{\"fileID\":10202,\"guid\":\"0000000000000000e000000000000000\",\"type\":0}}",
+            "m_SerializedMesh": "{\"mesh\":{\"fileID\":10209,\"guid\":\"0000000000000000e000000000000000\",\"type\":0}}",
             "m_Guid": ""
         }
     },
