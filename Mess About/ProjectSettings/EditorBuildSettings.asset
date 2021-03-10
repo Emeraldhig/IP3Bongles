@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/World1/Pathways/Master/MasterPathways.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/World1/Pathways/RamagePathways.unity
+    guid: 6d2db22ba01d01f459084d5484a23c8b
   - enabled: 1
     path: Assets/Scenes/World1/Flytrap/Master/MasterFlytrapPath.unity
     guid: 8ffe9fb9603436545b6bd61b9ad4d40d
