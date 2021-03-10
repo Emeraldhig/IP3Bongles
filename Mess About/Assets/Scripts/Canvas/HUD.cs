@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HUD : MonoBehaviour
 {
@@ -21,14 +22,21 @@ public class HUD : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         Inventory.ItemAdded += InventoryScript_ItemAdded;
         infoText = info.GetComponent<Text>();
         infoTitleText = infoTitle.GetComponent<Text>();
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        print("lol");
         GameObject PlayerObject = GameObject.FindGameObjectWithTag("Bubba");
         movementScript = PlayerObject.GetComponent<PlayerMovement>();
     }
 
-    private void Update()
+        private void Update()
     {
         if (Inventory.Check("Hoop") && Inventory.Check("Stick") && Inventory.Check("Net"))
         {

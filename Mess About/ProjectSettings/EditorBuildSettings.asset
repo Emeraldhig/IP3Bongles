@@ -6,15 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/World1/Pathways/HoodPathways.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/World1/Pathways/MasterPathways.unity
+    guid: 9fbc0d12aed80394988b416c78aba2cb
   - enabled: 1
-    path: Assets/Scenes/World1/Lagoon/Master/MasterLagoon.unity
+    path: Assets/Scenes/World1/Lagoon/MasterLagoon.unity
     guid: 4d022c42cf5215646887bfaf8e488fa0
   - enabled: 1
-    path: Assets/Scenes/World1/Campsite/Master/MasterCampsite.unity
+    path: Assets/Scenes/World1/Campsite/MasterCampsite.unity
     guid: e8f742718ae92b044b6aa8925632427f
   - enabled: 1
-    path: Assets/Scenes/World1/Flytrap/Master/MasterFlytrapPath.unity
+    path: Assets/Scenes/World1/Flytrap/MasterFlytrapPath.unity
     guid: 8ffe9fb9603436545b6bd61b9ad4d40d
   m_configObjects: {}

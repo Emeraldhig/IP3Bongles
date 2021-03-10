@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class KeyMinigame : MonoBehaviour
 {
     public Inventory Inventory;
+    public GameObject InventoryObj;
     public GameObject camera1;
     public GameObject camera2;
     public GameObject Key;
@@ -15,6 +16,8 @@ public class KeyMinigame : MonoBehaviour
     void Start()
     {
         KeyStart = false;
+        InventoryObj = GameObject.FindGameObjectWithTag("Inventory");
+        Inventory = InventoryObj.GetComponent<Inventory>();
     }
 
     private void Update()

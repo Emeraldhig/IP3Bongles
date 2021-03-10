@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class FlyGame : MonoBehaviour
 {
+    public Inventory Inventory;
+    public GameObject InventoryObj;
     public GameObject MainCam;
     public GameObject FlyCam;
     public GameObject FlyNet;
@@ -16,6 +18,8 @@ public class FlyGame : MonoBehaviour
     {
         FlyStart = false;
         flyMoving = false;
+        InventoryObj = GameObject.FindGameObjectWithTag("Inventory");
+        Inventory = InventoryObj.GetComponent<Inventory>();
     }
 
     private void Update()
