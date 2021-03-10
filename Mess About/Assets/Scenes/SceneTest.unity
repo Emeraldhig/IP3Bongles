@@ -1030,7 +1030,7 @@ GameObject:
   - component: {fileID: 471142897}
   - component: {fileID: 471142896}
   m_Layer: 5
-  m_Name: MasterFlytrap
+  m_Name: MasterFlytrapPath
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
