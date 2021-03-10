@@ -6,11 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/World1/Pathways/Master/MasterPathways.unity
+    path: Assets/Scenes/World1/Pathways/HoodPathways.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
-    path: Assets/Scenes/World1/Pathways/RamagePathways.unity
-    guid: 6d2db22ba01d01f459084d5484a23c8b
   - enabled: 1
     path: Assets/Scenes/World1/Lagoon/Master/MasterLagoon.unity
     guid: 4d022c42cf5215646887bfaf8e488fa0

@@ -14,12 +14,17 @@ public class SceneLoader : MonoBehaviour // when using new scene - apply a speci
 
         if (Bubba.CompareTag("Flytrap Path"))
         {
-            SceneManager.LoadScene("Master Flytrap Path");
+            SceneManager.LoadScene("MasterFlytrapPath");
         }
 
         if (Bubba.CompareTag("Jungle"))
         {
             SceneManager.LoadScene("MasterPathways");
+        }
+
+        if (Bubba.CompareTag("Campsite"))
+        {
+            SceneManager.LoadScene("MasterCampsite");
         }
     }
 }

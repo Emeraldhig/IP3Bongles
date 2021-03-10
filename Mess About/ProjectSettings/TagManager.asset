@@ -14,6 +14,7 @@ TagManager:
   - Jungle
   - Piece5
   - Piece6
+  - Campsite
   layers:
   - Default
   - TransparentFX
