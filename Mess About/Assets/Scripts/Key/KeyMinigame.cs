@@ -22,7 +22,7 @@ public class KeyMinigame : MonoBehaviour
 
     private void Update()
     {
-        if (KeyStart && Input.GetKeyDown("e"))
+        if (KeyStart && Inventory.Check("Portcullis Key") && Input.GetKeyDown("e"))
         {
             camera1.SetActive(false);
             camera2.SetActive(true);
