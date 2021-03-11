@@ -1,44 +1,43 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class KeyMinigame : MonoBehaviour
+public class FlyTrap : MonoBehaviour
 {
+
     public Inventory Inventory;
     public GameObject InventoryObj;
-    public GameObject camera1;
-    public GameObject camera2;
     public GameObject Key;
-    public bool KeyStart;
+    public GameObject EmptyJar;
+    public bool FlyTrapStart;
 
     // Start is called before the first frame update
     void Start()
     {
-        KeyStart = false;
+        FlyTrapStart = false;
         InventoryObj = GameObject.FindGameObjectWithTag("Inventory");
         Inventory = InventoryObj.GetComponent<Inventory>();
     }
 
-    private void Update()
+    // Update is called once per frame
+    void Update()
     {
-        if (KeyStart && Input.GetKeyDown("e"))
+        if (FlyTrapStart && Input.GetKeyDown("e") && Inventory.Check("Jar Of Flies"))
         {
-            camera1.SetActive(false);
-            camera2.SetActive(true);
-            Key.SetActive(true);
-            Inventory.Remove("Portcullis Key");
+            Inventory.Remove("Jar of Flies");
+            Inventory.AddItem(EmptyJar.GetComponent<IInventoryItem>());
+            Inventory.AddItem(Key.GetComponent<IInventoryItem>());
         }
-
     }
+
 
     private void OnTriggerEnter(Collider other)
     {
-        KeyStart = true;
+        FlyTrapStart = true;
     }
 
     private void OnTriggerExit(Collider other)
     {
-        KeyStart = false;
+        FlyTrapStart = false;
     }
 }

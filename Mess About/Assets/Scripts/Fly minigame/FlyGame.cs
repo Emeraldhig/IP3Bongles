@@ -24,17 +24,13 @@ public class FlyGame : MonoBehaviour
 
     private void Update()
     {
-        if (FlyStart == true)
+        if (FlyStart && Input.GetKeyDown("e") && Inventory.Check("Bug Net") && Inventory.Check("Empty Jar"))
         {
-            if (Input.GetKeyDown("e"))
-            {
-                MainCam.SetActive(false);
-                FlyCam.SetActive(true);
-                FlyNet.SetActive(true);
-                flyMoving = true;
-            }
+            MainCam.SetActive(false);
+            FlyCam.SetActive(true);
+            FlyNet.SetActive(true);
+            flyMoving = true;
         }
-        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -44,6 +40,6 @@ public class FlyGame : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        FlyStart = true;
+        FlyStart = false;
     }
 }

@@ -11,6 +11,7 @@ public class Inventory : MonoBehaviour
     private List<IInventoryItem> mItems = new List<IInventoryItem>();
 
     public event EventHandler<InventoryEventArgs> ItemAdded;
+    public event EventHandler<InventoryEventArgs> ItemRemoved;
 
     public void AddItem(IInventoryItem item)
     {
@@ -39,7 +40,7 @@ public class Inventory : MonoBehaviour
     {
         for (int i = 0; i < mItems.Count; i++)
         {
-            if (mItems[i].Name == targetItem)
+            if (mItems[i].Name.ToLower() == targetItem.ToLower())
             {
                 return true;
             }
@@ -51,11 +52,20 @@ public class Inventory : MonoBehaviour
     {
         for (int i = 0; i < mItems.Count; i++)
         {
-            if (mItems[i].Name == targetItem)
+            if (mItems[i].Name.ToLower() == targetItem.ToLower())
             {
                 mItems.RemoveAt(i);
+                ItemRemoved?.Invoke(this, null);
                 return;
             }
+        }
+    }
+
+    public void ListItems()
+    {
+        for (int i = 0; i < mItems.Count; i++)
+        {
+            print(mItems[i].Name);
         }
     }
 }

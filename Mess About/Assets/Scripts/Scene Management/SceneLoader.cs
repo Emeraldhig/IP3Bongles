@@ -26,6 +26,11 @@ public class SceneLoader : MonoBehaviour // when using new scene - apply a speci
         {
             SceneManager.LoadScene("MasterCampsite");
         }
+
+        if (Bubba.CompareTag("Debug"))
+        {
+            SceneManager.LoadScene("SceneTest");
+        }
     }
 }
 

@@ -35,7 +35,6 @@ public class KeyTurn : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        print("hello");
         camera2.SetActive(true);
         Key2.SetActive(true);
         camera1Obj.SetActive(false);

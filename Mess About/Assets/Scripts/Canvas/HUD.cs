@@ -31,7 +31,6 @@ public class HUD : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        print("lol");
         GameObject PlayerObject = GameObject.FindGameObjectWithTag("Bubba");
         movementScript = PlayerObject.GetComponent<PlayerMovement>();
     }
@@ -45,6 +44,12 @@ public class HUD : MonoBehaviour
         else
         {
             Craft.SetActive(false);
+        }
+
+
+        if (Input.GetKeyDown("g"))
+        {
+            Inventory.ListItems();
         }
     }
 
@@ -85,9 +90,25 @@ public class HUD : MonoBehaviour
             {
                 infoText.text = "Is this from the ship? It comes\nwith some tape could it be\nused so the flies can’t escape?";
             }
-            if (infoTitleText.text == "BugNet")
+            if (infoTitleText.text == "Bug Net")
             {
                 infoText.text = "I found this trash all on the floor\nand combined it together,Score!";
+            }
+            if (infoTitleText.text == "Empty Jar")
+            {
+                infoText.text = "Empty Jar test blah blah";
+            }
+            if (infoTitleText.text == "Jar Of Flies")
+            {
+                infoText.text = "Jar of Flies test blah blah";
+            }
+            if (infoTitleText.text == "Brainy's Book")
+            {
+                infoText.text = "Brainy's Book test blah blah";
+            }
+            if (infoTitleText.text == "Portcullis Key")
+            {
+                infoText.text = "Key test blah blah";
             }
 
 

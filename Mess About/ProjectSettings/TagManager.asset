@@ -16,6 +16,7 @@ TagManager:
   - Piece6
   - Campsite
   - Inventory
+  - Debug
   layers:
   - Default
   - TransparentFX

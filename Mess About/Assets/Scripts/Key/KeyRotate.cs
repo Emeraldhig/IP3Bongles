@@ -5,11 +5,10 @@ using UnityEngine;
 public class KeyRotate : MonoBehaviour
 {
     public float rotationSpeed = 1f;
-    public GameObject camera1;
-    public GameObject camera2;
-    public GameObject Gate;
-    public Mesh OpenGate;
-    public GameObject RotateKeyMaster;
+    public GameObject PortcullisMaster;
+    public GameObject KeyMaster;
+    public GameObject KeyTurnCam;
+    public GameObject MainCam;
     public bool arrowPressed;
 
     private void Update()
@@ -18,16 +17,15 @@ public class KeyRotate : MonoBehaviour
         Debug.Log(transform.eulerAngles.z);
         if (transform.eulerAngles.z >= 300)
         {
-            Gate.GetComponent<MeshFilter>().sharedMesh = OpenGate;
-            camera1.SetActive(false);
-            RotateKeyMaster.SetActive(false);
-            camera2.SetActive(true);
+            PortcullisMaster.SetActive(false);
+            KeyMaster.SetActive(false);
+            MainCam.SetActive(true);
+            KeyTurnCam.SetActive(false);
         }
 
         if (arrowPressed)
         {
             transform.Rotate(Vector3.forward, rotationSpeed);
-
         }
     }
 }

@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BugNet : MonoBehaviour, IInventoryItem
+public class KeyItem : MonoBehaviour, IInventoryItem
 {
 
     public string Name
     {
         get
         {
-            return "Bug Net";
+            return "Portcullis Key";
         }
     }
 
