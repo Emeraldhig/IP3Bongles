@@ -37,8 +37,8 @@ public class QuestionChange : MonoBehaviour
 
         potentialAnswers[0] = "Yes";
         potentialAnswers[1] = "No";
-        potentialAnswers[2] = "Spiky";
-        potentialAnswers[3] = "Smooth";
+        potentialAnswers[2] = "Smooth";
+        potentialAnswers[3] = "Spiky";
         potentialAnswers[4] = "Red";
         potentialAnswers[5] = "Blue";
 
