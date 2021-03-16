@@ -6,6 +6,8 @@ public class SteeringAgent : MonoBehaviour
 	[SerializeField]
 	protected float maxSpeed = 400.0f;
 
+	public Camera flyCam;
+
 	/// <summary>
 	/// Returns the maximum speed the agent can have
 	/// </summary>
@@ -28,6 +30,7 @@ public class SteeringAgent : MonoBehaviour
 		get
 		{
 			return maxSteering;
+			
 		}
 	}
 
@@ -105,7 +108,9 @@ public class SteeringAgent : MonoBehaviour
 
 		// The code below is just to wrap the screen for the agent like in Asteroids for example
 		Vector3 position = transform.position;
-		Vector3 viewportPosition = Camera.main.WorldToViewportPoint(position);
+		Vector3 viewportPosition = flyCam.WorldToViewportPoint(position);
+		
+		
 
 		while(viewportPosition.x < 0.0f)
 		{
@@ -124,7 +129,7 @@ public class SteeringAgent : MonoBehaviour
 			viewportPosition.y -= 1.0f;
 		}
 
-		position = Camera.main.ViewportToWorldPoint(viewportPosition);
+		position = flyCam.ViewportToWorldPoint(viewportPosition);
 		position.z = 0.0f;
 		transform.position = position;
 	}
@@ -185,7 +190,7 @@ public class SteeringAgent : MonoBehaviour
 	/// <returns>The mouse position in 2d space</returns>
 	static public Vector3 GetMousePosition()
 	{
-		Vector3 temp = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+		Vector3 temp = Camera.current.ScreenToWorldPoint(Input.mousePosition);
 		return new Vector3(temp.x, temp.y, 0.0f);
 	}
 	#endregion

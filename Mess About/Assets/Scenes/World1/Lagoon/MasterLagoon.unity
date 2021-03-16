@@ -2146,7 +2146,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 00fbb405fc485734281d75247eba47d2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.01
+      value: -0.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 00fbb405fc485734281d75247eba47d2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2154,23 +2154,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 00fbb405fc485734281d75247eba47d2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.55
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 00fbb405fc485734281d75247eba47d2, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.014763122
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 00fbb405fc485734281d75247eba47d2, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.4621635
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 00fbb405fc485734281d75247eba47d2, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0150707355
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 00fbb405fc485734281d75247eba47d2, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.8865438
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 00fbb405fc485734281d75247eba47d2, type: 3}
       propertyPath: m_RootOrder
@@ -2178,15 +2178,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 00fbb405fc485734281d75247eba47d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0.702
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 00fbb405fc485734281d75247eba47d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 55.081
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 00fbb405fc485734281d75247eba47d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 2.314
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 00fbb405fc485734281d75247eba47d2, type: 3}
       propertyPath: m_LocalScale.x
@@ -2956,40 +2956,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &544280718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544280715}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bcd82c85f34c8f4e918ca2eec3695a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  showDebugLines: 1
-  circleRadius: 75
-  circleDistance: 150
-  randomDisplacement: 15
-  countdown: 10
-  speed: 10
-  start: 0
-  flyStart: {fileID: 1702323989}
---- !u!114 &544280719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544280715}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c00735bf62aafe14d98a4c091357b78a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxSpeed: 400
-  maxSteering: 10
 --- !u!54 &544280720
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3037,19 +3003,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 00fbb405fc485734281d75247eba47d2, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 00fbb405fc485734281d75247eba47d2, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9867703
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 00fbb405fc485734281d75247eba47d2, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 00fbb405fc485734281d75247eba47d2, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.16212517
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 00fbb405fc485734281d75247eba47d2, type: 3}
       propertyPath: m_RootOrder
@@ -3061,7 +3027,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 00fbb405fc485734281d75247eba47d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 161.339
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 00fbb405fc485734281d75247eba47d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -3541,40 +3507,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &680693978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 680693975}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bcd82c85f34c8f4e918ca2eec3695a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  showDebugLines: 1
-  circleRadius: 75
-  circleDistance: 150
-  randomDisplacement: 15
-  countdown: 10
-  speed: 10
-  start: 0
-  flyStart: {fileID: 1702323989}
---- !u!114 &680693979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 680693975}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c00735bf62aafe14d98a4c091357b78a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxSpeed: 400
-  maxSteering: 10
 --- !u!54 &680693980
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3591,6 +3523,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &680693981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680693975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0bae9963ef8d1643ac4d2093b8efd6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flyCam: {fileID: 1674481248}
+  CurrentVelocity: {x: 0, y: 1, z: 1}
+  flyStart: {fileID: 1702323989}
+  fly: {fileID: 680693975}
+  countdown: 10
 --- !u!1 &716977231
 GameObject:
   m_ObjectHideFlags: 0
@@ -10207,40 +10156,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1224725555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1224725552}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bcd82c85f34c8f4e918ca2eec3695a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  showDebugLines: 1
-  circleRadius: 75
-  circleDistance: 150
-  randomDisplacement: 15
-  countdown: 10
-  speed: 10
-  start: 0
-  flyStart: {fileID: 1702323989}
---- !u!114 &1224725556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1224725552}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c00735bf62aafe14d98a4c091357b78a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxSpeed: 400
-  maxSteering: 10
 --- !u!54 &1224725557
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11897,10 +11812,10 @@ Camera:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
-  m_FOVAxisMode: 0
+  m_FOVAxisMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
+  m_FocalLength: 22.711962
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -11909,7 +11824,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 43.440243
   orthographic: 0
   orthographic size: 5
   m_Depth: 1
@@ -12623,7 +12538,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 00fbb405fc485734281d75247eba47d2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.1
+      value: -0.26
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 00fbb405fc485734281d75247eba47d2, type: 3}
       propertyPath: m_LocalPosition.y

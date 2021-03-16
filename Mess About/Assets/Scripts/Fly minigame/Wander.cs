@@ -45,7 +45,10 @@ public class Wander : SteeringBehaviour
     public override Vector3 UpdateBehaviour(SteeringAgent steeringAgent)
     {
 
-        
+        if (flyStart.GetComponent<FlyGame>().flyMoving)
+        {
+
+
             countdown -= Time.deltaTime;
 
             if (countdown <= 0.0f)
@@ -72,6 +75,7 @@ public class Wander : SteeringBehaviour
             steeringVelocity = desiredVelocity - steeringAgent.CurrentVelocity;
             // testVector = randomPoint;
             //test = distance;
+        }
             return steeringVelocity;
       
         

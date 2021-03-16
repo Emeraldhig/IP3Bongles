@@ -21,8 +21,8 @@ public class FlyNetMovement : MonoBehaviour
     void Start()
     {
         fliesCaught = 0;
-        InventoryObj = GameObject.FindGameObjectWithTag("Inventory");
-        Inventory = InventoryObj.GetComponent<Inventory>();
+       //InventoryObj = GameObject.FindGameObjectWithTag("Inventory");
+       // Inventory = InventoryObj.GetComponent<Inventory>();
     }
 
     // Update is called once per frame
@@ -34,8 +34,8 @@ public class FlyNetMovement : MonoBehaviour
             FliesMaster.SetActive(false);
             FlyCam.SetActive(false);
             MainCam.SetActive(true);
-            Inventory.Remove("Empty Jar");
-            Inventory.AddItem(Flies.GetComponent<IInventoryItem>());
+           // Inventory.Remove("EmptyJar");
+           // Inventory.AddItem(Flies.GetComponent<IInventoryItem>());
         }
     }
 
