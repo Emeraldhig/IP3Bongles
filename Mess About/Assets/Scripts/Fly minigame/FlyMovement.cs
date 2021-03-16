@@ -47,7 +47,7 @@ public class FlyMovement : MonoBehaviour
 				viewportPosition.y -= 1.0f;
 			}
 
-			//position = flyCam.ViewportToWorldPoint(viewportPosition);
+			position = flyCam.ViewportToWorldPoint(viewportPosition);
 			position.x = 0;
 			
 			fly.transform.position = position;
