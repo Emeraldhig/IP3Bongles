@@ -5,6 +5,7 @@ using UnityEngine;
 public class JigsawSlot : MonoBehaviour
 {
     public GameObject slot;
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == slot.tag)
@@ -14,4 +15,5 @@ public class JigsawSlot : MonoBehaviour
             other.GetComponent<pieceMovement>().locked = true;
         }
     }
+   
 }

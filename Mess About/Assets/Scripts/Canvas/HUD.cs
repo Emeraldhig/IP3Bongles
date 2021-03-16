@@ -10,11 +10,14 @@ public class HUD : MonoBehaviour
 
     public Inventory Inventory;
     public GameObject Craft;
+    public GameObject bubba;
     public GameObject BugNet;
     public GameObject infoBox;
     public GameObject pickUp;
     public GameObject infoTitle;
     public GameObject info;
+    public GameObject crafting;
+    public Vector3 cameraOldPos;
     Text infoTitleText;
     Text infoText;
     private PlayerMovement movementScript;
@@ -31,8 +34,8 @@ public class HUD : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        GameObject PlayerObject = GameObject.FindGameObjectWithTag("Bubba");
-        movementScript = PlayerObject.GetComponent<PlayerMovement>();
+        bubba = GameObject.FindGameObjectWithTag("Bubba");
+        movementScript = bubba.GetComponent<PlayerMovement>();
     }
 
         private void Update()
@@ -55,11 +58,24 @@ public class HUD : MonoBehaviour
 
     public void CraftNet()
     {
-        Inventory.Remove("Hoop");
-        Inventory.Remove("Stick");
-        Inventory.Remove("Net");
-        Inventory.AddItem(BugNet.GetComponent<IInventoryItem>());
-        InventoryScript_ItemRemoved();
+        
+
+        if(crafting.GetComponent<CraftingFinish>().craftDone)
+        {
+             Inventory.Remove("Hoop");
+             Inventory.Remove("Stick");
+             Inventory.Remove("Net");
+             Inventory.AddItem(BugNet.GetComponent<IInventoryItem>());
+             InventoryScript_ItemRemoved();
+             crafting.SetActive(false);
+            bubba.GetComponent<PlayerMovement>().movementBlock = false;
+        }
+        else
+        {
+             crafting.SetActive(true);
+            bubba.GetComponent<PlayerMovement>().movementBlock = true;
+        }
+
     }
 
     private void InventoryScript_ItemAdded(object sender, InventoryEventArgs e)
