@@ -34,7 +34,7 @@ public class FlyNetMovement : MonoBehaviour
             FliesMaster.SetActive(false);
             FlyCam.SetActive(false);
             MainCam.SetActive(true);
-           // Inventory.Remove("EmptyJar");
+           // Inventory.Remove("Empty Jar");
            // Inventory.AddItem(Flies.GetComponent<IInventoryItem>());
         }
     }

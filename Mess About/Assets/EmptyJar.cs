@@ -9,7 +9,7 @@ public class EmptyJar : MonoBehaviour, IInventoryItem
     {
         get
         {
-            return "EmptyJar";
+            return "Empty Jar";
         }
     }
 
