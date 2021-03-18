@@ -8,7 +8,7 @@ public class JigsawSlot : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == slot.tag && other.gameObject.transform.rotation.z == 0)
+        if(other.gameObject.tag == slot.tag && other.gameObject.transform.eulerAngles.z == 0)
         {
             other.transform.position = slot.transform.position;
             Debug.Log("slot:" + slot.tag + " filled");
