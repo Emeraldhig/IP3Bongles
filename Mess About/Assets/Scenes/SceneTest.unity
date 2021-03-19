@@ -255,8 +255,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 1055373059}
   pieceNumber: {fileID: 0}
-  highlighted: 000000000000
   rotation: 0
+  highlighted: 000000000000
+  jarGame: 1
   locked: 0
 --- !u!65 &18399910
 BoxCollider:
@@ -458,8 +459,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 1055373059}
   pieceNumber: {fileID: 0}
-  highlighted: 000000000000
   rotation: 0
+  highlighted: 000000000000
+  jarGame: 1
   locked: 0
 --- !u!65 &154225215
 BoxCollider:
@@ -2134,8 +2136,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 1055373059}
   pieceNumber: {fileID: 0}
-  highlighted: 000000000000
   rotation: 0
+  highlighted: 000000000000
+  jarGame: 1
   locked: 0
 --- !u!65 &606261638
 BoxCollider:
@@ -2883,7 +2886,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 972411336}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -2896,7 +2899,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a4598044f0d6018458bbf66acccf4882, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3845,7 +3848,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1393086563
 Transform:
   m_ObjectHideFlags: 0
