@@ -5465,6 +5465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07244715c4beee04aa50519d0de4e187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jarPuzzle: {fileID: 0}
   _Image: {fileID: 21300000, guid: e34f2a92e861e3a42b4ae09ac2ef4371, type: 3}
 --- !u!1001 &1875069106
 PrefabInstance:

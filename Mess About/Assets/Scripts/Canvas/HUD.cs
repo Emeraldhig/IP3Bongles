@@ -10,6 +10,7 @@ public class HUD : MonoBehaviour
 
     public Inventory Inventory;
     public GameObject Craft;
+    public GameObject jar;
     public GameObject bubba;
     public GameObject BugNet;
     public GameObject infoBox;
@@ -54,6 +55,10 @@ public class HUD : MonoBehaviour
         {
             Inventory.ListItems();
         }
+        if (jar.GetComponent<jarPuzzleComplete>().jarDone)
+        {
+            jar.SetActive(false);
+        }
     }
 
     public void CraftNet()
@@ -77,6 +82,7 @@ public class HUD : MonoBehaviour
         }
 
     }
+
 
     private void InventoryScript_ItemAdded(object sender, InventoryEventArgs e)
     {

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EmptyJar : MonoBehaviour, IInventoryItem
 {
+    public GameObject jarPuzzle;
 
     public string Name
     {
@@ -27,5 +28,8 @@ public class EmptyJar : MonoBehaviour, IInventoryItem
     {
         gameObject.SetActive(false);
     }
-
+    public void OnTriggerEnter(Collider other)
+    {
+        jarPuzzle.SetActive(true);
+    }
 }
