@@ -2408,6 +2408,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bongle Fly (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4803481317453466843, guid: 00fbb405fc485734281d75247eba47d2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 33c83b29d7f2ae349bc0657608dd1551, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00fbb405fc485734281d75247eba47d2, type: 3}
 --- !u!4 &417452702 stripped
@@ -3253,6 +3257,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bongle Fly (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4803481317453466843, guid: 00fbb405fc485734281d75247eba47d2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 33c83b29d7f2ae349bc0657608dd1551, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00fbb405fc485734281d75247eba47d2, type: 3}
 --- !u!850595691 &566340225
@@ -12815,7 +12823,7 @@ PrefabInstance:
     - target: {fileID: 4803481317453466843, guid: 00fbb405fc485734281d75247eba47d2, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: -3602759542174677274, guid: 00fbb405fc485734281d75247eba47d2, type: 3}
+      objectReference: {fileID: 2100000, guid: 33c83b29d7f2ae349bc0657608dd1551, type: 2}
     - target: {fileID: 4803481317453466843, guid: 00fbb405fc485734281d75247eba47d2, type: 3}
       propertyPath: m_CastShadows
       value: 0
