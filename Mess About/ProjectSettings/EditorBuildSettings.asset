@@ -19,5 +19,5 @@ EditorBuildSettings:
     guid: e8f742718ae92b044b6aa8925632427f
   - enabled: 1
     path: Assets/Scenes/World1/Flytrap/MasterFlytrapPath.unity
-    guid: 8ffe9fb9603436545b6bd61b9ad4d40d
+    guid: e55d3b86311472047a5b43390bca5236
   m_configObjects: {}
