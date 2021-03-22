@@ -9,6 +9,7 @@ public class PickUp : MonoBehaviour
     public GameObject pickUp;
     public GameObject infoTitle;
     public GameObject info;
+    public GameObject tutorialMaster;
     private PlayerMovement movementScript;
 
 
@@ -31,5 +32,12 @@ public class PickUp : MonoBehaviour
         infoTitle.SetActive(false);
         pickUp.SetActive(false);
         infoBox.SetActive(false);
+    }
+
+
+    public void TutorialNext()
+    {
+        movementScript.movementBlock = false;
+        tutorialMaster.SetActive(false);
     }
 }

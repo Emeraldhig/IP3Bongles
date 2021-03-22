@@ -19,15 +19,19 @@ public class HUD : MonoBehaviour
     public GameObject infoTitle;
     public GameObject info;
     public GameObject crafting;
+    public int tutorialstage;
     public Vector3 cameraOldPos;
     Text infoTitleText;
     Text infoText;
+    public GameObject tutorialTextObj;
+    public Text tutorialText;
     private PlayerMovement movementScript;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        tutorialstage = 0;
+        tutorialText = tutorialTextObj.GetComponent<Text>();
         Inventory.ItemAdded += InventoryScript_ItemAdded;
         infoText = info.GetComponent<Text>();
         infoTitleText = infoTitle.GetComponent<Text>();
@@ -44,6 +48,19 @@ public class HUD : MonoBehaviour
         {
             jarOverworld = GameObject.FindGameObjectWithTag("Jar");
         }
+
+        if (tutorialstage == 0)
+        {
+            tutorialTextObj.SetActive(true);
+            tutorialText.text = "Walk into a Scene";
+        }
+
+        if (tutorialstage == 1)
+        {
+            tutorialTextObj.SetActive(true);
+            tutorialText.text = "Walk into an Object to pick it up";
+        }
+
     }
 
         private void Update()
@@ -79,8 +96,6 @@ public class HUD : MonoBehaviour
 
     public void CraftNet()
     {
-        
-
         if(crafting.GetComponent<CraftingFinish>().craftDone)
         {
              Inventory.Remove("Hoop");
@@ -96,7 +111,6 @@ public class HUD : MonoBehaviour
              crafting.SetActive(true);
             bubba.GetComponent<PlayerMovement>().movementBlock = true;
         }
-
     }
 
 
@@ -148,6 +162,7 @@ public class HUD : MonoBehaviour
             {
                 infoText.text = "Key test blah blah";
             }
+
 
 
             if (!image.enabled)
