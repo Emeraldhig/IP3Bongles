@@ -19,13 +19,18 @@ public class HUD : MonoBehaviour
     public GameObject info;
     public GameObject crafting;
     public int tutorialstage;
-    public Vector3 cameraOldPos;
+    public GameObject MainCam;
+    public GameObject CraftCam;
+    public GameObject ThoughtCloud;
     Text infoTitleText;
     Text infoText;
     public GameObject tutorialMaster;
     public Text tutorialText;
     public GameObject PlayerObject;
     private PlayerMovement movementScript;
+    public GameObject InventoryObject;
+    public GameObject ItemButton;
+    public GameObject CraftButton;
 
     // Start is called before the first frame update
     void Start()
@@ -41,7 +46,10 @@ public class HUD : MonoBehaviour
     {
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
+        MainCam = GameObject.FindGameObjectWithTag("MainCamera");
         PlayerObject = GameObject.FindGameObjectWithTag("Bubba");
+        ThoughtCloud = PlayerObject.transform.GetChild(2).gameObject;
+        CraftCam = PlayerObject.transform.GetChild(3).gameObject;
         movementScript = PlayerObject.GetComponent<PlayerMovement>();
 
         if (sceneName == "MasterCampsite")
@@ -117,11 +125,21 @@ public class HUD : MonoBehaviour
             InventoryScript_ItemRemoved();
             crafting.SetActive(false);
             Craft.SetActive(false);
+            InventoryObject.SetActive(true);
+            ItemButton.SetActive(true);
+            MainCam.SetActive(true);
+            CraftCam.SetActive(false);
+            ThoughtCloud.SetActive(false);
             PlayerObject.GetComponent<PlayerMovement>().movementBlock = false;
         }
         else
         {
             crafting.SetActive(true);
+            InventoryObject.SetActive(false);
+            ItemButton.SetActive(false);
+            MainCam.SetActive(false);
+            CraftCam.SetActive(true);
+            ThoughtCloud.SetActive(true);
             PlayerObject.GetComponent<PlayerMovement>().movementBlock = true;
         }
     }

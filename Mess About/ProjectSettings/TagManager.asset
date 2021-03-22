@@ -19,6 +19,7 @@ TagManager:
   - Debug
   - Jar
   - HUD
+  - CraftCamera
   layers:
   - Default
   - TransparentFX
