@@ -9,6 +9,7 @@ public class Insects : MonoBehaviour
 
     public int currentWayPoint = 0;
     Transform targetWayPoint;
+    public GameObject flies;
 
     public float speed = 4f;
 
@@ -19,11 +20,14 @@ public class Insects : MonoBehaviour
         void Update()
     {
         // check if we have somewere to walk
-        if (currentWayPoint < this.wayPointList.Length)
+        if (flies.GetComponent<FlyGame>().flyMoving)
         {
-            if (targetWayPoint == null)
-                targetWayPoint = wayPointList[currentWayPoint];
-            walk();
+            if (currentWayPoint < this.wayPointList.Length)
+            {
+                if (targetWayPoint == null)
+                    targetWayPoint = wayPointList[currentWayPoint];
+                walk();
+            }
         }
     }
 

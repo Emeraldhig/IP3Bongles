@@ -19,6 +19,12 @@ public class pieceMovement : MonoBehaviour, IPointerDownHandler, IBeginDragHandl
     public bool clicked = false;
     public bool locked = false;
 
+
+    public void Start()
+    {
+        
+    }
+
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();

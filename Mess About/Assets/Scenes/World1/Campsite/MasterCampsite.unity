@@ -5330,6 +5330,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jar
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3696e04a4923d644491e31fa5fbf266e, type: 3}
+      propertyPath: m_TagString
+      value: Jar
+      objectReference: {fileID: 0}
     - target: {fileID: 1088619777609266644, guid: 3696e04a4923d644491e31fa5fbf266e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.427

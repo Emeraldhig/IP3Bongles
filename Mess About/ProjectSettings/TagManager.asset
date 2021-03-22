@@ -17,6 +17,8 @@ TagManager:
   - Campsite
   - Inventory
   - Debug
+  - Jar
+  - HUD
   layers:
   - Default
   - TransparentFX

@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class EmptyJar : MonoBehaviour, IInventoryItem
 {
-    public GameObject jarPuzzle;
+    public bool jarMinigame = false;
+
 
     public string Name
     {
@@ -30,6 +33,6 @@ public class EmptyJar : MonoBehaviour, IInventoryItem
     }
     public void OnTriggerEnter(Collider other)
     {
-        jarPuzzle.SetActive(true);
+        jarMinigame = true;
     }
 }

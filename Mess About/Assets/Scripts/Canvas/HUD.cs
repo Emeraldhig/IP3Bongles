@@ -11,6 +11,7 @@ public class HUD : MonoBehaviour
     public Inventory Inventory;
     public GameObject Craft;
     public GameObject jar;
+    public GameObject jarOverworld;
     public GameObject bubba;
     public GameObject BugNet;
     public GameObject infoBox;
@@ -35,12 +36,20 @@ public class HUD : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
         bubba = GameObject.FindGameObjectWithTag("Bubba");
         movementScript = bubba.GetComponent<PlayerMovement>();
+        if(sceneName == "MasterCampsite")
+        {
+            jarOverworld = GameObject.FindGameObjectWithTag("Jar");
+        }
     }
 
         private void Update()
     {
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
         if (Inventory.Check("Hoop") && Inventory.Check("Stick") && Inventory.Check("Net"))
         {
             Craft.SetActive(true);
@@ -55,9 +64,16 @@ public class HUD : MonoBehaviour
         {
             Inventory.ListItems();
         }
-        if (jar.GetComponent<jarPuzzleComplete>().jarDone)
+        if (sceneName == "MasterCampsite")
         {
-            jar.SetActive(false);
+            if (jarOverworld.GetComponent<EmptyJar>().jarMinigame)
+            {
+                jar.SetActive(true);
+            }
+            if (jar.GetComponent<jarPuzzleComplete>().jarDone)
+            {
+                jar.SetActive(false);
+            }
         }
     }
 
