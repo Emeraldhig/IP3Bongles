@@ -4205,10 +4205,15 @@ MonoBehaviour:
   info: {fileID: 976484335}
   crafting: {fileID: 1393086562}
   tutorialstage: 0
-  cameraOldPos: {x: 0, y: 0, z: 0}
+  MainCam: {fileID: 0}
+  CraftCam: {fileID: 0}
+  ThoughtCloud: {fileID: 0}
   tutorialMaster: {fileID: 61241825}
   tutorialText: {fileID: 442517284}
   PlayerObject: {fileID: 0}
+  InventoryObject: {fileID: 162566694}
+  ItemButton: {fileID: 2111343978}
+  CraftButton: {fileID: 1141174433}
 --- !u!114 &1055373056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5361,7 +5366,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1393086562}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 56.649, y: 44.853, z: -397.7}
+  m_LocalPosition: {x: 451, y: 327, z: -397.7}
   m_LocalScale: {x: 58.22832, y: 58.22832, z: 58.22832}
   m_Children:
   - {fileID: 606261639}
