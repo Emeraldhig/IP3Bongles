@@ -4161,7 +4161,6 @@ GameObject:
   - component: {fileID: 1055373057}
   - component: {fileID: 1055373056}
   - component: {fileID: 1055373055}
-  - component: {fileID: 1055373054}
   - component: {fileID: 1055373053}
   m_Layer: 5
   m_Name: HUD
@@ -4183,23 +4182,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 1055373052}
---- !u!114 &1055373054
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1055373052}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cb96cb62d405ef43871c08ada07bf91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  infoBox: {fileID: 844342218}
-  pickUp: {fileID: 1609372217}
-  infoTitle: {fileID: 1153990265}
-  info: {fileID: 976484335}
-  tutorialMaster: {fileID: 61241825}
 --- !u!114 &1055373055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4216,7 +4198,6 @@ MonoBehaviour:
   Craft: {fileID: 1141174433}
   jar: {fileID: 345528331}
   jarOverworld: {fileID: 0}
-  bubba: {fileID: 8622080029346186998, guid: f003ab661a79bfe43a02f3def6a55e0f, type: 3}
   BugNet: {fileID: 969251543}
   infoBox: {fileID: 844342218}
   pickUp: {fileID: 1609372217}
@@ -4225,8 +4206,9 @@ MonoBehaviour:
   crafting: {fileID: 1393086562}
   tutorialstage: 0
   cameraOldPos: {x: 0, y: 0, z: 0}
-  tutorialTextObj: {fileID: 61241825}
-  tutorialText: {fileID: 0}
+  tutorialMaster: {fileID: 61241825}
+  tutorialText: {fileID: 442517284}
+  PlayerObject: {fileID: 0}
 --- !u!114 &1055373056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5833,8 +5815,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1055373054}
-        m_TargetAssemblyTypeName: PickUp, Assembly-CSharp
+      - m_Target: {fileID: 1055373055}
+        m_TargetAssemblyTypeName: HUD, Assembly-CSharp
         m_MethodName: PickUpClicked
         m_Mode: 1
         m_Arguments:
@@ -6411,8 +6393,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1055373054}
-        m_TargetAssemblyTypeName: PickUp, Assembly-CSharp
+      - m_Target: {fileID: 1055373055}
+        m_TargetAssemblyTypeName: HUD, Assembly-CSharp
         m_MethodName: TutorialNext
         m_Mode: 1
         m_Arguments:

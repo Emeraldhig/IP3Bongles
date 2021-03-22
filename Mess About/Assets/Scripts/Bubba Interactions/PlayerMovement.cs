@@ -21,7 +21,6 @@ public class PlayerMovement : MonoBehaviour
         InventoryObj = GameObject.FindGameObjectWithTag("Inventory");
         Inventory = InventoryObj.GetComponent<Inventory>();
         moving = false;
-        movementBlock = false;
     }
 
     private void Update()

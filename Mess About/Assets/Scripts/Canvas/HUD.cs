@@ -12,7 +12,6 @@ public class HUD : MonoBehaviour
     public GameObject Craft;
     public GameObject jar;
     public GameObject jarOverworld;
-    public GameObject bubba;
     public GameObject BugNet;
     public GameObject infoBox;
     public GameObject pickUp;
@@ -23,15 +22,15 @@ public class HUD : MonoBehaviour
     public Vector3 cameraOldPos;
     Text infoTitleText;
     Text infoText;
-    public GameObject tutorialTextObj;
+    public GameObject tutorialMaster;
     public Text tutorialText;
+    public GameObject PlayerObject;
     private PlayerMovement movementScript;
 
     // Start is called before the first frame update
     void Start()
     {
         tutorialstage = 0;
-        tutorialText = tutorialTextObj.GetComponent<Text>();
         Inventory.ItemAdded += InventoryScript_ItemAdded;
         infoText = info.GetComponent<Text>();
         infoTitleText = infoTitle.GetComponent<Text>();
@@ -42,45 +41,57 @@ public class HUD : MonoBehaviour
     {
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
-        bubba = GameObject.FindGameObjectWithTag("Bubba");
-        movementScript = bubba.GetComponent<PlayerMovement>();
-        if(sceneName == "MasterCampsite")
+        PlayerObject = GameObject.FindGameObjectWithTag("Bubba");
+        movementScript = PlayerObject.GetComponent<PlayerMovement>();
+
+        if (sceneName == "MasterCampsite")
         {
             jarOverworld = GameObject.FindGameObjectWithTag("Jar");
         }
 
-        if (tutorialstage == 0)
+
+
+        if (sceneName == "MasterLagoon")
         {
-            tutorialTextObj.SetActive(true);
-            tutorialText.text = "Walk into a Scene";
+            if (Inventory.Check("Bug Net"))
+            {
+                movementScript.movementBlock = true;
+                tutorialMaster.SetActive(true);
+                tutorialText.text = "Press E when near objects to use items on them";
+            }
         }
 
-        if (tutorialstage == 1)
+        if (tutorialstage == 0)
         {
-            tutorialTextObj.SetActive(true);
-            tutorialText.text = "Walk into an Object to pick it up";
+            movementScript.movementBlock = true;
+            tutorialMaster.SetActive(true);
+            tutorialText.text = "Tap on the Screen to move\nYou can move into a new area by walking into an Archway";
+        }
+        else if (tutorialstage == 1)
+        {
+            movementScript.movementBlock = true;
+            tutorialMaster.SetActive(true);
+            tutorialText.text = "Tap on items to Pick them up\nYou can talk to other characters too";
+        }
+        else
+        {
+            movementScript.movementBlock = false;
         }
 
     }
 
-        private void Update()
+    private void Update()
     {
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
-        if (Inventory.Check("Hoop") && Inventory.Check("Stick") && Inventory.Check("Net"))
-        {
-            Craft.SetActive(true);
-        }
-        else
-        {
-            Craft.SetActive(false);
-        }
+
 
 
         if (Input.GetKeyDown("g"))
         {
             Inventory.ListItems();
         }
+
         if (sceneName == "MasterCampsite")
         {
             if (jarOverworld.GetComponent<EmptyJar>().jarMinigame)
@@ -92,24 +103,26 @@ public class HUD : MonoBehaviour
                 jar.SetActive(false);
             }
         }
+
     }
 
     public void CraftNet()
     {
-        if(crafting.GetComponent<CraftingFinish>().craftDone)
+        if (crafting.GetComponent<CraftingFinish>().craftDone)
         {
-             Inventory.Remove("Hoop");
-             Inventory.Remove("Stick");
-             Inventory.Remove("Net");
-             Inventory.AddItem(BugNet.GetComponent<IInventoryItem>());
-             InventoryScript_ItemRemoved();
-             crafting.SetActive(false);
-            bubba.GetComponent<PlayerMovement>().movementBlock = false;
+            Inventory.Remove("Hoop");
+            Inventory.Remove("Stick");
+            Inventory.Remove("Net");
+            Inventory.AddItem(BugNet.GetComponent<IInventoryItem>());
+            InventoryScript_ItemRemoved();
+            crafting.SetActive(false);
+            Craft.SetActive(false);
+            PlayerObject.GetComponent<PlayerMovement>().movementBlock = false;
         }
         else
         {
-             crafting.SetActive(true);
-            bubba.GetComponent<PlayerMovement>().movementBlock = true;
+            crafting.SetActive(true);
+            PlayerObject.GetComponent<PlayerMovement>().movementBlock = true;
         }
     }
 
@@ -117,7 +130,7 @@ public class HUD : MonoBehaviour
     private void InventoryScript_ItemAdded(object sender, InventoryEventArgs e)
     {
         Transform inventoryPanel = transform.Find("InventoryPanel");
-        foreach(Transform slot in inventoryPanel)
+        foreach (Transform slot in inventoryPanel)
         {
             Image image = slot.GetChild(0).GetComponent<Image>();
             Text text = slot.GetChild(1).GetComponent<Text>();
@@ -203,6 +216,39 @@ public class HUD : MonoBehaviour
                 text.enabled = false;
             }
         }
+    }
+
+    public void PickUpClicked()
+    {
+        movementScript.movementBlock = false;
+        info.SetActive(false);
+        infoTitle.SetActive(false);
+        pickUp.SetActive(false);
+        infoBox.SetActive(false);
+
+        if (tutorialstage == 2)
+        {
+            if (Inventory.Check("Hoop") && Inventory.Check("Stick") && Inventory.Check("Net"))
+            {
+                movementScript.movementBlock = true;
+                tutorialMaster.SetActive(true);
+                tutorialText.text = "Use the Craft button to make new items";
+                Craft.SetActive(true);
+            }
+            else
+            {
+                Craft.SetActive(false);
+            }
+
+        }
+    }
+
+
+    public void TutorialNext()
+    {
+        movementScript.movementBlock = false;
+        tutorialMaster.SetActive(false);
+        tutorialstage++;
     }
 
 }
