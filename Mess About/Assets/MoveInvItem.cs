@@ -6,6 +6,9 @@ using UnityEngine.EventSystems;
 public class MoveInvItem : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     [SerializeField] private Canvas canvas;
+    public Inventory inventory;
+    public bool flyMinigame = false;
+    public Vector2 originalPosition;
 
 
     private RectTransform rectTransform;
@@ -30,11 +33,21 @@ public class MoveInvItem : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     public void OnEndDrag(PointerEventData eventData)
     {
         Debug.Log("OnEndDrag");
+        rectTransform.anchoredPosition = originalPosition;
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
         Debug.Log("OnPointerDown");
+        originalPosition = rectTransform.anchoredPosition;
+
+    }
+    public void OnTriggerEnter(Collider other)
+    {
+        if(inventory.Check("Bug Net"))
+        {
+            flyMinigame = true;
+        }
     }
 
 }

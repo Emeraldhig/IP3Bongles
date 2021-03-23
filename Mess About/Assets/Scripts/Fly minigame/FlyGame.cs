@@ -24,7 +24,7 @@ public class FlyGame : MonoBehaviour
 
     private void Update()
     {
-        if (FlyStart && Input.GetKeyDown("e") /*&& Inventory.Check("Bug Net") && Inventory.Check("Empty Jar")*/)
+        if (FlyStart && GetComponent<MoveInvItem>().flyMinigame && Inventory.Check("Bug Net") && Inventory.Check("Empty Jar"))
         {
             MainCam.SetActive(false);
             FlyCam.SetActive(true);
