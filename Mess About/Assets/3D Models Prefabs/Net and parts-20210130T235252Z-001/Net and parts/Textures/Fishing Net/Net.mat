@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: New Material
+  m_Name: Net
   m_Shader: {fileID: -6465566751694194690, guid: 51c0128fd33a2a0459c1af9a23885cd0, type: 3}
   m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _METALLICGLOSSMAP _NORMALMAP _PARALLAXMAP
   m_LightmapFlags: 4
@@ -61,7 +61,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Vector1_16C8E5E1: 0
-    - Vector1_79C42507: 0
+    - Vector1_79C42507: 1
     - Vector1_B6BCF466: 0
     - Vector1_C8BA4271: 0
     - _BumpScale: 1
@@ -82,7 +82,7 @@ Material:
     - _ZWrite: 0
     m_Colors:
     - Color_69A33749: {r: 0, g: 0, b: 0, a: 0}
-    - Color_FE6A7B4B: {r: 0, g: 0, b: 0, a: 0}
+    - Color_FE6A7B4B: {r: 1, g: 1, b: 1, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
