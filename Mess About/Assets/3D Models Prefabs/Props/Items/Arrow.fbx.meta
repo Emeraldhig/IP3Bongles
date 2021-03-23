@@ -7,6 +7,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Arrow_Colour
+    second: {fileID: 2100000, guid: 8be912a4cc20c0a439f4223973cb3887, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Outline
+    second: {fileID: 2100000, guid: 91e4e24004119a24fad1659f0000e538, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: lambert1
     second: {fileID: 2100000, guid: 8be912a4cc20c0a439f4223973cb3887, type: 2}
   materials:
