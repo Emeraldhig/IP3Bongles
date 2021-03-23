@@ -2666,8 +2666,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 8.091135, y: 18.082045, z: 18.50721}
-  m_Center: {x: -3.7641382, y: -1.7041004, z: 1.484069}
+  m_Size: {x: 76.9163, y: 44.304108, z: 18.50721}
+  m_Center: {x: -38.17672, y: -14.815127, z: 1.4840693}
 --- !u!1 &517052746
 GameObject:
   m_ObjectHideFlags: 0
@@ -4699,8 +4699,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.894343, y: 11.886555, z: 4.2629404}
-  m_Center: {x: 2.0404012, y: -5.754447, z: -1.6314706}
+  m_Size: {x: 60.04499, y: 37.92273, z: 4.2629404}
+  m_Center: {x: 26.615726, y: -18.772533, z: -1.6314706}
 --- !u!1 &1033587715
 GameObject:
   m_ObjectHideFlags: 0
@@ -5776,6 +5776,7 @@ GameObject:
   - component: {fileID: 1342841419}
   - component: {fileID: 1342841421}
   - component: {fileID: 1342841422}
+  - component: {fileID: 1342841423}
   m_Layer: 5
   m_Name: Fly check
   m_TagString: flyCheck
@@ -5866,6 +5867,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1342841423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342841417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 928016ff656d53d4baf5bd4bde5f90f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flyMinigame: 0
+  inventory: {fileID: 3613639}
 --- !u!1 &1345038344
 GameObject:
   m_ObjectHideFlags: 0
@@ -6110,8 +6125,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 9.497173, y: 14.760492, z: 13.492138}
-  m_Center: {x: -0.95835954, y: 1.4627585, z: 0.6506952}
+  m_Size: {x: 36.636612, y: 33.281696, z: 13.492138}
+  m_Center: {x: -14.528077, y: -7.7978454, z: 0.650695}
 --- !u!1 &1381793890
 GameObject:
   m_ObjectHideFlags: 0
@@ -7263,8 +7278,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 13.917957, y: 11.10614, z: 5.800671}
-  m_Center: {x: -0.18320635, y: -0.8933359, z: -2.4003353}
+  m_Size: {x: 87.84291, y: 52.481873, z: 5.800671}
+  m_Center: {x: 19.320387, y: -21.581196, z: -2.4003353}
 --- !u!1 &1662546157
 GameObject:
   m_ObjectHideFlags: 0
@@ -8203,8 +8218,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 8.230754, y: 12.075684, z: 12.571964}
-  m_Center: {x: 3.791196, y: -5.849012, z: -0.09281841}
+  m_Size: {x: 98.91559, y: 69.94542, z: 12.571965}
+  m_Center: {x: 49.13361, y: -34.78388, z: -0.092818394}
 --- !u!1 &1941080126
 GameObject:
   m_ObjectHideFlags: 0
@@ -8812,8 +8827,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 20.369505, y: 16.452555, z: 15.478781}
-  m_Center: {x: 0.5407007, y: -2.853999, z: 1.2448351}
+  m_Size: {x: 65.52231, y: 69.64143, z: 15.478781}
+  m_Center: {x: -22.0357, y: -29.448439, z: 1.2448349}
 --- !u!1 &2072536003
 GameObject:
   m_ObjectHideFlags: 0
