@@ -113,11 +113,11 @@ public class HUD : MonoBehaviour
             {
                 jar.SetActive(false);
             }
-            if(bookOverworld.GetComponent<Book>().trigger)
+            if (bookOverworld.GetComponent<Book>().trigger)
             {
                 book.SetActive(true);
             }
-            if(book.GetComponent<QuestionChange>().complete)
+            if (book.GetComponent<QuestionChange>().complete)
             {
                 book.SetActive(false);
             }
@@ -174,36 +174,41 @@ public class HUD : MonoBehaviour
 
             if (infoTitleText.text == "Hoop")
             {
-                infoText.text = "What’s this on the ground?\nA peculiar ring Maybe I\ncould use it to hold some string?";
+                infoText.text = "What a useful thing,\nA hoop can be,\nPerhaps we can use it,\nTo set Brainy free.";
             }
             if (infoTitleText.text == "Stick")
             {
-                infoText.text = "A stick on the floor, so lonely\nand cold Yes this is perfect!\nThe net can be controlled!";
+                infoText.text = "It's nothing special,\nJust a stick,\nBut with something else,\nIt might do the trick.";
             }
             if (infoTitleText.text == "Net")
             {
-                infoText.text = "Is this from the ship? It comes\nwith some tape could it be\nused so the flies can’t escape?";
+                infoText.text = "This net’s a mess, \nIt's tangled a bit,\nBut with some crafty work,\nIt just might fit.";
             }
             if (infoTitleText.text == "Bug Net")
             {
-                infoText.text = "I found this trash all on the floor\nand combined it together,Score!";
+                infoText.text = "Look at what you made,\nIt's a wonderful net,\nYou'll catch loads of flies,\nWith that I'll bet.";
             }
             if (infoTitleText.text == "Empty Jar")
             {
-                infoText.text = "Empty Jar test blah blah";
+                infoText.text = "What a wonderful job,\nLooks good as new,\nHow much can it hold ?\nI’m sure it's a few.";
             }
             if (infoTitleText.text == "Jar Of Flies")
             {
-                infoText.text = "Jar of Flies test blah blah";
+                infoText.text = "The jar is full,\nThat's all we need,\nLet's go back to Brainy,\nWe've got plants to feed.";
             }
             if (infoTitleText.text == "Brainy's Book")
             {
-                infoText.text = "Brainy's Book test blah blah";
+                infoText.text = "Well done Bubba,\nYou found Brainy's book,\nTo help him out,\nWe should give it a look.";
             }
             if (infoTitleText.text == "Portcullis Key")
             {
-                infoText.text = "Key test blah blah";
+                infoText.text = "We solved the problem,\nBrainy’s safe as can be,\nNow where can we go,\nUsing this key?";
             }
+            if (infoTitleText.text == "Broken Jar")
+            {
+                infoText.text = "Careful! it's sharp,\nYou must take care,\nBut there might be something here,\nYou can repair.";
+            }
+
 
 
 
