@@ -42,12 +42,6 @@ public class MoveInvItem : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
         originalPosition = rectTransform.anchoredPosition;
 
     }
-    public void OnTriggerEnter(Collider other)
-    {
-        if(inventory.Check("Bug Net"))
-        {
-            flyMinigame = true;
-        }
-    }
+    
 
 }

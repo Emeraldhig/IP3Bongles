@@ -9,6 +9,7 @@ public class FlyNetMovement : MonoBehaviour
     public GameObject MainCam;
     public GameObject FlyCam;
     public GameObject FliesMaster;
+    public GameObject bubba;
     public int fliesCaught;
     private Vector3 screenPoint;
     private Vector3 offset;
@@ -22,6 +23,7 @@ public class FlyNetMovement : MonoBehaviour
     {
         fliesCaught = 0;
        InventoryObj = GameObject.FindGameObjectWithTag("Inventory");
+        bubba = GameObject.FindGameObjectWithTag("Bubba");
         Inventory = InventoryObj.GetComponent<Inventory>();
     }
 
@@ -34,6 +36,7 @@ public class FlyNetMovement : MonoBehaviour
             FliesMaster.SetActive(false);
             FlyCam.SetActive(false);
             MainCam.SetActive(true);
+            bubba.GetComponent<PlayerMovement>().movementBlock = false;
            Inventory.Remove("Empty Jar");
            Inventory.AddItem(Flies.GetComponent<IInventoryItem>());
         }
