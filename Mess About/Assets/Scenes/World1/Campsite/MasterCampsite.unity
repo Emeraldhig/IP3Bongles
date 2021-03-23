@@ -206,6 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e9767559bb40c74ca46e4e226a5d358, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trigger: 0
   _Image: {fileID: 21300000, guid: 4f32413d723aefa469ac063eda9e98b8, type: 3}
 --- !u!136 &92149126
 CapsuleCollider:
@@ -4184,6 +4185,10 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: e4c6ad2837ab48745a24b3ad4fc664c4, type: 2}
     - target: {fileID: 919132149155446097, guid: 5230bb0288a6402468f170996cb27999, type: 3}
       propertyPath: m_Name
+      value: Book
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5230bb0288a6402468f170996cb27999, type: 3}
+      propertyPath: m_TagString
       value: Book
       objectReference: {fileID: 0}
     m_RemovedComponents: []

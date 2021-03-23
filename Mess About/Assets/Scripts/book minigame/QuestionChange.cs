@@ -16,7 +16,7 @@ public class QuestionChange : MonoBehaviour
     public GameObject button1;
     public GameObject button2;
     public int counter = 0;
-    public bool test;
+    public bool complete;
 
     private void Awake()
     {
@@ -42,7 +42,7 @@ public class QuestionChange : MonoBehaviour
         potentialAnswers[4] = "Red";
         potentialAnswers[5] = "Blue";
 
-        test = true;
+
 
 
     }
@@ -72,7 +72,10 @@ public class QuestionChange : MonoBehaviour
               
         }
 
-            
+        if(counter == 3)
+        {
+            complete = true;
+        }
         
     }
     public void FirstbuttonPress()
@@ -82,19 +85,19 @@ public class QuestionChange : MonoBehaviour
             case 0:
                 if(button1.GetComponent<Text>().text == answers[counter])
                 {
-                    counter = 1;
+                    counter += 1;
                 }
                 break;
             case 1:
                 if (button1.GetComponent<Text>().text == answers[counter])
                 {
-                    counter = 2;
+                    counter += 1;
                 }
                 break;
             case 2:
                 if (button1.GetComponent<Text>().text == answers[counter])
                 {
-                    counter = 0;
+                    counter += 1;
                 }
                 break;
 
@@ -108,19 +111,19 @@ public class QuestionChange : MonoBehaviour
             case 0:
                 if (button2.GetComponent<Text>().text == answers[counter])
                 {
-                    counter = 1;
+                    counter += 1;
                 }
                 break;
             case 1:
                 if (button2.GetComponent<Text>().text == answers[counter])
                 {
-                    counter = 2;
+                    counter += 1;
                 }
                 break;
             case 2:
                 if (button2.GetComponent<Text>().text == answers[counter])
                 {
-                    counter = 0;
+                    counter += 1;
                 }
                 break;
 

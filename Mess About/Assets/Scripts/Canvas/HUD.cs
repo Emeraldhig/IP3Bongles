@@ -11,6 +11,8 @@ public class HUD : MonoBehaviour
     public Inventory Inventory;
     public GameObject Craft;
     public GameObject jar;
+    public GameObject book;
+    public GameObject bookOverworld;
     public GameObject jarOverworld;
     public GameObject BugNet;
     public GameObject infoBox;
@@ -55,6 +57,7 @@ public class HUD : MonoBehaviour
         if (sceneName == "MasterCampsite")
         {
             jarOverworld = GameObject.FindGameObjectWithTag("Jar");
+            bookOverworld = GameObject.FindGameObjectWithTag("Book");
         }
 
 
@@ -109,6 +112,14 @@ public class HUD : MonoBehaviour
             if (jar.GetComponent<jarPuzzleComplete>().jarDone)
             {
                 jar.SetActive(false);
+            }
+            if(bookOverworld.GetComponent<Book>().trigger)
+            {
+                book.SetActive(true);
+            }
+            if(book.GetComponent<QuestionChange>().complete)
+            {
+                book.SetActive(false);
             }
         }
 

@@ -5,6 +5,14 @@ using UnityEngine;
 public class Book : MonoBehaviour, IInventoryItem
 {
 
+    public bool trigger = false;
+    public void Awake()
+    {
+
+
+    }
+    
+
     public string Name
     {
         get
@@ -27,5 +35,11 @@ public class Book : MonoBehaviour, IInventoryItem
     {
         gameObject.SetActive(false);
     }
-
+    public void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Bubba")
+        {
+            trigger = true;
+        }
+    }
 }

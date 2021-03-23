@@ -21,6 +21,8 @@ TagManager:
   - HUD
   - CraftCamera
   - flyCheck
+  - bookMinigame
+  - Book
   layers:
   - Default
   - TransparentFX
