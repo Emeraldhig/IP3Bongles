@@ -34,7 +34,6 @@ public class JigsawWin : MonoBehaviour
         Jar4pos = Jar4.transform.position;
         Jar5pos = Jar5.transform.position;
         Jar6pos = Jar6.transform.position;
-        ResetItems();
         MainCam = GameObject.FindGameObjectWithTag("MainCamera");
         PlayerObject = GameObject.FindGameObjectWithTag("Bubba");
         ThoughtCloud = PlayerObject.transform.GetChild(2).gameObject;
