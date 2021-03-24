@@ -15,12 +15,24 @@ public class JigsawWin : MonoBehaviour
     public GameObject Jar5;
     public GameObject Jar6;
     public GameObject NewJar;
+    public GameObject MainCam;
+    public GameObject CraftCam;
+    public GameObject ThoughtCloud;
+    public GameObject PlayerObject;
 
     void Awake()
     {
+        MainCam = GameObject.FindGameObjectWithTag("MainCamera");
+        PlayerObject = GameObject.FindGameObjectWithTag("Bubba");
+        ThoughtCloud = PlayerObject.transform.GetChild(2).gameObject;
+        CraftCam = PlayerObject.transform.GetChild(3).gameObject;
         NewJar = GameObject.Find("NewJarMaster");
         Jar3D = NewJar.transform.GetChild(0).gameObject;
         CloudAnim = NewJar.transform.GetChild(1).gameObject;
+        MainCam.SetActive(false);
+        PlayerObject.transform.rotation = Quaternion.Euler(0, 180, 0);
+        CraftCam.SetActive(true);
+        ThoughtCloud.SetActive(true);
     }
             
         // Update is called once per frame
@@ -31,6 +43,9 @@ public class JigsawWin : MonoBehaviour
             CloudAnim.SetActive(true);
             Jar3D.SetActive(true);
             JarMaster.SetActive(false);
+            MainCam.SetActive(true);
+            CraftCam.SetActive(false);
+            ThoughtCloud.SetActive(false);
         }
     }
 }

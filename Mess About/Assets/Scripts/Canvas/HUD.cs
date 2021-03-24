@@ -161,6 +161,7 @@ public class HUD : MonoBehaviour
             InventoryObject.SetActive(false);
             ItemButton.SetActive(false);
             MainCam.SetActive(false);
+            PlayerObject.transform.rotation = Quaternion.Euler(0, 180, 0);
             CraftCam.SetActive(true);
             ThoughtCloud.SetActive(true);
             PlayerObject.GetComponent<PlayerMovement>().movementBlock = true;
