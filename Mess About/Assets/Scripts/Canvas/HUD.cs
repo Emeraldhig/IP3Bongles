@@ -97,7 +97,7 @@ public class HUD : MonoBehaviour
     {
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
-
+        InventoryScript_ItemRemoved();
 
 
         if (Input.GetKeyDown("g"))
