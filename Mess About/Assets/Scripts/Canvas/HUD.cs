@@ -394,7 +394,7 @@ public class HUD : MonoBehaviour
         infoTitle.SetActive(true);
         pickUp.SetActive(true);
         infoBox.SetActive(true);
-
+        movementScript.movementBlock = true;
         infoTitleText.text = "Brainy:";
         infoText.text = "Help I'm stuck up a tree Bubba! \n Go find my book to find out what \n type of plants these are!";
 
