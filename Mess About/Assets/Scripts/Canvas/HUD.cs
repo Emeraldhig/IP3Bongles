@@ -92,7 +92,7 @@ public class HUD : MonoBehaviour
                 movementScript.movementBlock = true;
                 tutorialMaster.GetComponent<AudioSource>().clip = tutorial4;
                 tutorialMaster.SetActive(true);
-                tutorialText.text = "Press E when near objects to use items on them";
+                tutorialText.text = "Press Use Items near objects\nto interact with them";
             }
         }
 
@@ -101,7 +101,7 @@ public class HUD : MonoBehaviour
             movementScript.movementBlock = true;
             tutorialMaster.GetComponent<AudioSource>().clip = tutorial1;
             tutorialMaster.SetActive(true);
-            tutorialText.text = "Tap on the Screen to move\nYou can move into a new area by \n walking into an Archway";
+            tutorialText.text = "Tap on the Screen to move\nYou can move into a new area by \n walking through an Archway";
         }
         else if (tutorialstage == 1)
         {
@@ -135,7 +135,7 @@ public class HUD : MonoBehaviour
             {
                 jarOverworld.GetComponent<BrokenJar>().jarMinigame = false;
                 jar.SetActive(false);
-                InventoryObject.SetActive(true);
+                //InventoryObject.SetActive(true);
                 ItemButton.SetActive(true);
                 movementScript.movementBlock = false;
                 Inventory.AddItem(EmptyJarItem.GetComponent<IInventoryItem>());
@@ -147,7 +147,7 @@ public class HUD : MonoBehaviour
             if (book.GetComponent<QuestionChange>().complete)
             {
                 book.SetActive(false);
-                InventoryObject.SetActive(true);
+                //InventoryObject.SetActive(true);
                 ItemButton.SetActive(true);
                 movementScript.movementBlock = false;
                 Inventory.AddItem(BrainyBook.GetComponent<IInventoryItem>());
@@ -235,6 +235,10 @@ public class HUD : MonoBehaviour
             if (infoTitleText.text == "Brainy's Book")
             {
                 infoText.text = "Well done Bubba,\nYou found Brainy's book,\nTo help him out,\nWe should give it a look.";
+            }
+            if (infoTitleText.text == "Plant Identified")
+            {
+                infoText.text = "It looks like you found the right\nplant.\nIt says here that the best way to\ndistract them is with\nsome tasty flies.\nIt’s their favourite food";
             }
             if (infoTitleText.text == "Portcullis Key")
             {
@@ -349,14 +353,14 @@ public class HUD : MonoBehaviour
             InventoryScript_ItemRemoved();
         }
 
-        if (Inventory.Check("Brainy Book"))
+        if (Inventory.Check("Plant Identified"))
         {
             info.SetActive(false);
             infoTitle.SetActive(false);
             pickUp.SetActive(false);
             infoBox.SetActive(false);
             movementScript.movementBlock = false;
-            Inventory.Remove("Brainy Book");
+            Inventory.Remove("Plant Identified");
             InventoryScript_ItemRemoved();
         }
 

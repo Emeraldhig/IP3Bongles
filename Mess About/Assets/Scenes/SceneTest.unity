@@ -2405,7 +2405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jarMinigame: 0
   _Image: {fileID: 21300000, guid: e34f2a92e861e3a42b4ae09ac2ef4371, type: 3}
-  _Voicover: {fileID: 0}
+  _Voicover: {fileID: 8300000, guid: 871844bd22948574aaf7726df9b587ec, type: 3}
 --- !u!65 &416856950
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8294,7 +8294,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.000061035156, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1729321432
