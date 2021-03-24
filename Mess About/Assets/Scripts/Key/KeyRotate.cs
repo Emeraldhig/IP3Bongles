@@ -7,17 +7,21 @@ public class KeyRotate : MonoBehaviour
     public float rotationSpeed = 1f;
     public GameObject PortcullisMaster;
     public GameObject KeyMaster;
+    public GameObject bubba;
+    public GameObject walktoPoint;
     public GameObject KeyTurnCam;
     public GameObject MainCam;
     public bool arrowPressed;
 
-    private void Update()
+    public void Update()
     {
 
-        Debug.Log(transform.eulerAngles.z);
+        //Debug.Log(transform.eulerAngles.z);
         if (transform.eulerAngles.z >= 300)
         {
             PortcullisMaster.SetActive(false);
+            bubba.SetActive(true);
+            walktoPoint.SetActive(true);
             KeyMaster.SetActive(false);
             MainCam.SetActive(true);
             KeyTurnCam.SetActive(false);
@@ -25,9 +29,10 @@ public class KeyRotate : MonoBehaviour
 
         if (arrowPressed)
         {
-            transform.Rotate(Vector3.forward, rotationSpeed);
+            KeyMaster.transform.Rotate(Vector3.forward, rotationSpeed);
         }
     }
+    
 }
 
 

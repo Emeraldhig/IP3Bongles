@@ -7,6 +7,8 @@ public class KeyMinigame : MonoBehaviour
 {
     public Inventory Inventory;
     public GameObject InventoryObj;
+    public GameObject bubba;
+    public GameObject walkToPoint;
     public GameObject camera1;
     public GameObject camera2;
     public GameObject Key;
@@ -16,18 +18,20 @@ public class KeyMinigame : MonoBehaviour
     void Start()
     {
         KeyStart = false;
-        InventoryObj = GameObject.FindGameObjectWithTag("Inventory");
-        Inventory = InventoryObj.GetComponent<Inventory>();
+        //InventoryObj = GameObject.FindGameObjectWithTag("Inventory");
+        //Inventory = InventoryObj.GetComponent<Inventory>();
     }
 
     private void Update()
     {
-        if (KeyStart && Inventory.Check("Portcullis Key") && Input.GetKeyDown("e"))
+        if (KeyStart /*&& Inventory.Check("Portcullis Key")*/ && Input.GetKeyDown("e"))
         {
             camera1.SetActive(false);
             camera2.SetActive(true);
             Key.SetActive(true);
-            Inventory.Remove("Portcullis Key");
+            bubba.SetActive(false);
+            walkToPoint.SetActive(false);
+            //Inventory.Remove("Portcullis Key");
         }
 
     }
