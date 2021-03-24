@@ -4610,7 +4610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Image: {fileID: 21300000, guid: ed7cd706a1171fb48aa69af2197c4482, type: 3}
-  _Voicover: {fileID: 0}
+  _Voicover: {fileID: 8300000, guid: 90aca4b573f0ebb49b8119dcb0555a24, type: 3}
 --- !u!65 &969251545
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5050,6 +5050,7 @@ GameObject:
   - component: {fileID: 1055373056}
   - component: {fileID: 1055373055}
   - component: {fileID: 1055373053}
+  - component: {fileID: 1055373054}
   m_Layer: 5
   m_Name: HUD
   m_TagString: HUD
@@ -5070,6 +5071,102 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 1055373052}
+--- !u!82 &1055373054
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055373052}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 20840d8dd62182d4d9136e22f9a773c9, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.32
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &1055373055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5106,8 +5203,14 @@ MonoBehaviour:
   ItemButton: {fileID: 2111343978}
   CraftButton: {fileID: 1141174433}
   voiceover: {fileID: 844342220}
+  tutorial1: {fileID: 8300000, guid: c3bc21d74adb759468d68e45ff3c5637, type: 3}
+  tutorial2: {fileID: 8300000, guid: 752458151020c6f438bbe6fad48bfd1f, type: 3}
+  tutorial3: {fileID: 8300000, guid: 0b35327d9bbb5c541921d4473bb2a9da, type: 3}
+  tutorial4: {fileID: 8300000, guid: a63f7f636306159499776fc8d890f091, type: 3}
   EmptyJarItem: {fileID: 416856947}
   ItemCam: {fileID: 0}
+  tutArrow: {fileID: 0}
+  showtutArrow: 1
 --- !u!114 &1055373056
 MonoBehaviour:
   m_ObjectHideFlags: 0

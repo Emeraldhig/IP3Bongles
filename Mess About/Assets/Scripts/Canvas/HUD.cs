@@ -34,6 +34,10 @@ public class HUD : MonoBehaviour
     public GameObject ItemButton;
     public GameObject CraftButton;
     public AudioSource voiceover;
+    public AudioClip tutorial1;
+    public AudioClip tutorial2;
+    public AudioClip tutorial3;
+    public AudioClip tutorial4;
     public GameObject EmptyJarItem;
     public GameObject ItemCam;
     public GameObject tutArrow;
@@ -86,6 +90,7 @@ public class HUD : MonoBehaviour
             {
                 movementScript.movementBlock = true;
                 tutorialMaster.SetActive(true);
+                tutorialMaster.GetComponent<AudioSource>().clip = tutorial4;
                 tutorialText.text = "Press E when near objects to use items on them";
             }
         }
@@ -94,12 +99,14 @@ public class HUD : MonoBehaviour
         {
             movementScript.movementBlock = true;
             tutorialMaster.SetActive(true);
+            tutorialMaster.GetComponent<AudioSource>().clip = tutorial1;
             tutorialText.text = "Tap on the Screen to move\nYou can move into a new area by \n walking into an Archway";
         }
         else if (tutorialstage == 1)
         {
             movementScript.movementBlock = true;
             tutorialMaster.SetActive(true);
+            tutorialMaster.GetComponent<AudioSource>().clip = tutorial2;
             tutorialText.text = "Tap on items to Pick them up\nYou can talk to other characters \n too";
         }
         else
@@ -299,6 +306,7 @@ public class HUD : MonoBehaviour
             {
                 movementScript.movementBlock = true;
                 tutorialMaster.SetActive(true);
+                tutorialMaster.GetComponent<AudioSource>().clip = tutorial3;
                 tutorialText.text = "Use the Craft button \n to make new items";
                 Craft.SetActive(true);
             }
