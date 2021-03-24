@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject MainCamera;
     public GameObject ItemCam;
     public GameObject ActiveItem;
+    public bool usingitem = false;
 
     private void Start()
     {

@@ -9,7 +9,7 @@ public class BrainyBook : MonoBehaviour, IInventoryItem
     {
         get
         {
-            return "Brainy Book";
+            return "Plant Identified";
         }
     }
 

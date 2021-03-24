@@ -362,6 +362,15 @@ public class HUD : MonoBehaviour
 
     }
 
+    public void UseItem()
+    {
+        movementScript.usingitem = true;
+    }
+
+    public void StopUseItem()
+    {
+        movementScript.usingitem = false;
+    }
 
     public void TutorialNext()
     {
