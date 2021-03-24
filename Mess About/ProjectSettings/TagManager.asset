@@ -26,6 +26,9 @@ TagManager:
   - Jar3D
   - CloudAnim
   - tutArrow
+  - Net
+  - Stick
+  - Hoop
   layers:
   - Default
   - TransparentFX
