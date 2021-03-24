@@ -285,4 +285,9 @@ public class HUD : MonoBehaviour
         tutorialstage++;
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
 }
