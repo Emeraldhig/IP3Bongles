@@ -5212,6 +5212,7 @@ MonoBehaviour:
   ItemCam: {fileID: 0}
   tutArrow: {fileID: 0}
   showtutArrow: 1
+  brainyInteraction: 1
 --- !u!114 &1055373056
 MonoBehaviour:
   m_ObjectHideFlags: 0

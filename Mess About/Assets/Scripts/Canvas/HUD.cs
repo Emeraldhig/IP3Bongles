@@ -43,6 +43,7 @@ public class HUD : MonoBehaviour
     public GameObject ItemCam;
     public GameObject tutArrow;
     public bool showtutArrow = true;
+    public bool brainyInteraction = true;
 
     // Start is called before the first frame update
     void Start()
@@ -386,6 +387,19 @@ public class HUD : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+    public void BrainyDialogue()
+    {
+        info.SetActive(true);
+        infoTitle.SetActive(true);
+        pickUp.SetActive(true);
+        infoBox.SetActive(true);
+
+        infoTitleText.text = "Brainy:";
+        infoText.text = "Help I'm stuck up a tree Bubba! \n Go find my book to find out what \n type of plants these are!";
+
+        brainyInteraction = false;
+
     }
 
 }

@@ -3109,6 +3109,7 @@ MonoBehaviour:
   camera2: {fileID: 897244976}
   Key: {fileID: 398572113}
   KeyStart: 0
+  PlayerObject: {fileID: 0}
 --- !u!65 &846975534
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3354,6 +3355,7 @@ GameObject:
   - component: {fileID: 884889872}
   - component: {fileID: 884889873}
   - component: {fileID: 884889874}
+  - component: {fileID: 884889875}
   m_Layer: 0
   m_Name: FlyTraps
   m_TagString: Untagged
@@ -3398,6 +3400,7 @@ MonoBehaviour:
   EmptyJar: {fileID: 2042867543}
   FlyTrapStart: 0
   spit: 0
+  PlayerObject: {fileID: 0}
 --- !u!136 &884889874
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3412,6 +3415,18 @@ CapsuleCollider:
   m_Height: 18.404549
   m_Direction: 1
   m_Center: {x: 0.38960266, y: 1.3899994, z: 7.1582165}
+--- !u!114 &884889875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884889871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f407415ee792534b84f57c0ac8f93d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &897244976
 GameObject:
   m_ObjectHideFlags: 0
@@ -4541,6 +4556,7 @@ MonoBehaviour:
   MainCamera: {fileID: 0}
   ItemCam: {fileID: 331365947}
   ActiveItem: {fileID: 0}
+  usingitem: 0
 --- !u!195 &1291253218
 NavMeshAgent:
   m_ObjectHideFlags: 0
