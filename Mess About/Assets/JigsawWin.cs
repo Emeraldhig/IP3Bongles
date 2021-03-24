@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class JigsawWin : MonoBehaviour
 {
@@ -13,9 +14,17 @@ public class JigsawWin : MonoBehaviour
     public GameObject Jar4;
     public GameObject Jar5;
     public GameObject Jar6;
+    public GameObject NewJar;
 
-    // Update is called once per frame
-    void Update()
+    void Awake()
+    {
+        NewJar = GameObject.Find("NewJarMaster");
+        Jar3D = NewJar.transform.GetChild(0).gameObject;
+        CloudAnim = NewJar.transform.GetChild(1).gameObject;
+    }
+            
+        // Update is called once per frame
+        void Update()
     {
         if (Jar1.GetComponent<pieceMovement>().locked == true && Jar2.GetComponent<pieceMovement>().locked == true && Jar3.GetComponent<pieceMovement>().locked == true && Jar4.GetComponent<pieceMovement>().locked == true && Jar5.GetComponent<pieceMovement>().locked == true && Jar6.GetComponent<pieceMovement>().locked == true)
         {

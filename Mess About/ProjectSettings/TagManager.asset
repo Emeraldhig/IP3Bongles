@@ -23,6 +23,8 @@ TagManager:
   - flyCheck
   - bookMinigame
   - Book
+  - Jar3D
+  - CloudAnim
   layers:
   - Default
   - TransparentFX
