@@ -33,6 +33,7 @@ public class HUD : MonoBehaviour
     public GameObject InventoryObject;
     public GameObject ItemButton;
     public GameObject CraftButton;
+    public AudioSource voiceover;
 
     // Start is called before the first frame update
     void Start()
@@ -159,10 +160,12 @@ public class HUD : MonoBehaviour
     private void InventoryScript_ItemAdded(object sender, InventoryEventArgs e)
     {
         Transform inventoryPanel = transform.Find("InventoryPanel");
+        voiceover.clip = e.Item.Voiceover;
         foreach (Transform slot in inventoryPanel)
         {
             Image image = slot.GetChild(0).GetComponent<Image>();
             Text text = slot.GetChild(1).GetComponent<Text>();
+
 
             movementScript.movementBlock = true;
 
@@ -208,9 +211,6 @@ public class HUD : MonoBehaviour
             {
                 infoText.text = "Careful! it's sharp,\nYou must take care,\nBut there might be something here,\nYou can repair.";
             }
-
-
-
 
             if (!image.enabled)
             {

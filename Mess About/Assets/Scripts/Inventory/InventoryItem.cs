@@ -9,6 +9,8 @@ public interface IInventoryItem
 
     Sprite Image { get; }
 
+    AudioClip Voiceover { get; }
+
     void OnPickup();
 }
 

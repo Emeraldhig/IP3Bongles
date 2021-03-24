@@ -208,6 +208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trigger: 0
   _Image: {fileID: 21300000, guid: 4f32413d723aefa469ac063eda9e98b8, type: 3}
+  _Voicover: {fileID: 8300000, guid: baa68ce3afc4bd9468f6e5c66c291123, type: 3}
 --- !u!136 &92149126
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1468,6 +1469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Image: {fileID: 21300000, guid: 1d31cd2e89790d84d91e094a4d0a7a91, type: 3}
+  _Voicover: {fileID: 8300000, guid: 9da4f377b8f1bf745a0e4d60d56ccbe5, type: 3}
 --- !u!136 &652138109
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5591,6 +5593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jarMinigame: 0
   _Image: {fileID: 21300000, guid: e34f2a92e861e3a42b4ae09ac2ef4371, type: 3}
+  _Voicover: {fileID: 0}
 --- !u!1001 &1875069106
 PrefabInstance:
   m_ObjectHideFlags: 0

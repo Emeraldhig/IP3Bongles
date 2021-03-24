@@ -1131,6 +1131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Image: {fileID: 21300000, guid: 43fe20ce811ab7c4082bc90366375840, type: 3}
+  _Voicover: {fileID: 0}
 --- !u!4 &351874377
 Transform:
   m_ObjectHideFlags: 0
@@ -3286,6 +3287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Image: {fileID: 21300000, guid: 67292dec38469f84d84d12eac8fe9796, type: 3}
+  _Voicover: {fileID: 8300000, guid: 8afcc055eef30434ab7361c8691495bd, type: 3}
 --- !u!136 &951493759
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6261,6 +6263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jarMinigame: 0
   _Image: {fileID: 21300000, guid: e34f2a92e861e3a42b4ae09ac2ef4371, type: 3}
+  _Voicover: {fileID: 0}
 --- !u!4 &2042867546
 Transform:
   m_ObjectHideFlags: 0

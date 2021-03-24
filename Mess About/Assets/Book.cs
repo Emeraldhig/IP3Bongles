@@ -31,6 +31,16 @@ public class Book : MonoBehaviour, IInventoryItem
         }
     }
 
+    public AudioClip _Voicover = null;
+
+    public AudioClip Voiceover
+    {
+        get
+        {
+            return _Voicover;
+        }
+    }
+
     public void OnPickup()
     {
         gameObject.SetActive(false);
