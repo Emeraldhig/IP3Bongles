@@ -9,6 +9,7 @@ public class HUD : MonoBehaviour
 {
 
     public Inventory Inventory;
+    public GameObject inventoryPanel;
     public GameObject Craft;
     public GameObject jar;
     public GameObject book;
@@ -109,10 +110,12 @@ public class HUD : MonoBehaviour
             if (jarOverworld.GetComponent<EmptyJar>().jarMinigame)
             {
                 jar.SetActive(true);
+                inventoryPanel.SetActive(false);
             }
             if (jar.GetComponent<jarPuzzleComplete>().jarDone)
             {
                 jar.SetActive(false);
+                inventoryPanel.SetActive(true);
             }
             if (bookOverworld.GetComponent<Book>().trigger)
             {

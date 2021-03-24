@@ -38,15 +38,15 @@ public class highlighted : MonoBehaviour
                     highlight[0] = true;
 
                     highlight[1] = false;
-                    image[1].color = new Color(image[1].color.r, image[1].color.g, image[1].color.b, 0.5f);
+                    image[1].color = new Color(image[1].color.r, image[1].color.g, image[1].color.b, 0.75f);
                     highlight[2] = false;
-                    image[2].color = new Color(image[2].color.r, image[2].color.g, image[2].color.b, 0.5f);
+                    image[2].color = new Color(image[2].color.r, image[2].color.g, image[2].color.b, 0.75f);
                     highlight[3] = false;
-                    image[3].color = new Color(image[3].color.r, image[3].color.g, image[3].color.b, 0.5f);
+                    image[3].color = new Color(image[3].color.r, image[3].color.g, image[3].color.b, 0.75f);
                     highlight[4] = false;
-                    image[4].color = new Color(image[4].color.r, image[4].color.g, image[4].color.b, 0.5f);
+                    image[4].color = new Color(image[4].color.r, image[4].color.g, image[4].color.b, 0.75f);
                     highlight[5] = false;
-                    image[5].color = new Color(image[5].color.r, image[5].color.g, image[5].color.b, 0.5f);
+                    image[5].color = new Color(image[5].color.r, image[5].color.g, image[5].color.b, 0.75f);
 
                 }
                 else if (pieceNumber[i].tag == "Piece2")
@@ -55,15 +55,15 @@ public class highlighted : MonoBehaviour
                     highlight[1] = true;
 
                     highlight[0] = false;
-                    image[0].color = new Color(image[0].color.r, image[0].color.g, image[0].color.b, 0.5f);
+                    image[0].color = new Color(image[0].color.r, image[0].color.g, image[0].color.b, 0.75f);
                     highlight[2] = false;
-                    image[2].color = new Color(image[2].color.r, image[2].color.g, image[2].color.b, 0.5f);
+                    image[2].color = new Color(image[2].color.r, image[2].color.g, image[2].color.b, 0.75f);
                     highlight[3] = false;
-                    image[3].color = new Color(image[3].color.r, image[3].color.g, image[3].color.b, 0.5f);
+                    image[3].color = new Color(image[3].color.r, image[3].color.g, image[3].color.b, 0.75f);
                     highlight[4] = false;
-                    image[4].color = new Color(image[4].color.r, image[4].color.g, image[4].color.b, 0.5f);
+                    image[4].color = new Color(image[4].color.r, image[4].color.g, image[4].color.b, 0.75f);
                     highlight[5] = false;
-                    image[5].color = new Color(image[5].color.r, image[5].color.g, image[5].color.b, 0.5f);
+                    image[5].color = new Color(image[5].color.r, image[5].color.g, image[5].color.b, 0.75f);
                 }
                 else if (pieceNumber[i].tag == "Piece3")
                 {
@@ -71,15 +71,15 @@ public class highlighted : MonoBehaviour
                     highlight[2] = true;
 
                     highlight[0] = false;
-                    image[0].color = new Color(image[0].color.r, image[0].color.g, image[0].color.b, 0.5f);
+                    image[0].color = new Color(image[0].color.r, image[0].color.g, image[0].color.b, 0.75f);
                     highlight[1] = false;
-                    image[1].color = new Color(image[1].color.r, image[1].color.g, image[1].color.b, 0.5f);
+                    image[1].color = new Color(image[1].color.r, image[1].color.g, image[1].color.b, 0.75f);
                     highlight[3] = false;
-                    image[3].color = new Color(image[3].color.r, image[3].color.g, image[3].color.b, 0.5f);
+                    image[3].color = new Color(image[3].color.r, image[3].color.g, image[3].color.b, 0.75f);
                     highlight[4] = false;
-                    image[4].color = new Color(image[4].color.r, image[4].color.g, image[4].color.b, 0.5f);
+                    image[4].color = new Color(image[4].color.r, image[4].color.g, image[4].color.b, 0.75f);
                     highlight[5] = false;
-                    image[5].color = new Color(image[5].color.r, image[5].color.g, image[5].color.b, 0.5f);
+                    image[5].color = new Color(image[5].color.r, image[5].color.g, image[5].color.b, 0.75f);
                 }
                 else if (pieceNumber[i].tag == "Piece4")
                 {
@@ -87,15 +87,15 @@ public class highlighted : MonoBehaviour
                     highlight[3] = true;
 
                     highlight[0] = false;
-                    image[0].color = new Color(image[0].color.r, image[0].color.g, image[0].color.b, 0.5f);
+                    image[0].color = new Color(image[0].color.r, image[0].color.g, image[0].color.b, 0.75f);
                     highlight[2] = false;
-                    image[2].color = new Color(image[2].color.r, image[2].color.g, image[2].color.b, 0.5f);
+                    image[2].color = new Color(image[2].color.r, image[2].color.g, image[2].color.b, 0.75f);
                     highlight[1] = false;
-                    image[1].color = new Color(image[1].color.r, image[1].color.g, image[1].color.b, 0.5f);
+                    image[1].color = new Color(image[1].color.r, image[1].color.g, image[1].color.b, 0.75f);
                     highlight[4] = false;
-                    image[4].color = new Color(image[4].color.r, image[4].color.g, image[4].color.b, 0.5f);
+                    image[4].color = new Color(image[4].color.r, image[4].color.g, image[4].color.b, 0.75f);
                     highlight[5] = false;
-                    image[5].color = new Color(image[5].color.r, image[5].color.g, image[5].color.b, 0.5f);
+                    image[5].color = new Color(image[5].color.r, image[5].color.g, image[5].color.b, 0.75f);
                 }
                 else if (pieceNumber[i].tag == "Piece5")
                 {
@@ -103,31 +103,31 @@ public class highlighted : MonoBehaviour
                     highlight[4] = true;
 
                     highlight[0] = false;
-                    image[0].color = new Color(image[0].color.r, image[0].color.g, image[0].color.b, 0.5f);
+                    image[0].color = new Color(image[0].color.r, image[0].color.g, image[0].color.b, 0.75f);
                     highlight[2] = false;
-                    image[2].color = new Color(image[2].color.r, image[2].color.g, image[2].color.b, 0.5f);
+                    image[2].color = new Color(image[2].color.r, image[2].color.g, image[2].color.b, 0.75f);
                     highlight[3] = false;
-                    image[3].color = new Color(image[3].color.r, image[3].color.g, image[3].color.b, 0.5f);
+                    image[3].color = new Color(image[3].color.r, image[3].color.g, image[3].color.b, 0.75f);
                     highlight[1] = false;
-                    image[1].color = new Color(image[1].color.r, image[1].color.g, image[1].color.b, 0.5f);
+                    image[1].color = new Color(image[1].color.r, image[1].color.g, image[1].color.b, 0.75f);
                     highlight[5] = false;
-                    image[5].color = new Color(image[5].color.r, image[5].color.g, image[5].color.b, 0.5f);
+                    image[5].color = new Color(image[5].color.r, image[5].color.g, image[5].color.b, 0.75f);
                 }
                 else if (pieceNumber[i].tag == "Piece6")
                 {
                     image[5].color = new Color(image[5].color.r, image[5].color.g, image[5].color.b, 1f);
-                    highlight[1] = true;
+                    highlight[5] = true;
 
                     highlight[0] = false;
-                    image[0].color = new Color(image[0].color.r, image[0].color.g, image[0].color.b, 0.5f);
+                    image[0].color = new Color(image[0].color.r, image[0].color.g, image[0].color.b, 0.75f);
                     highlight[2] = false;
-                    image[2].color = new Color(image[2].color.r, image[2].color.g, image[2].color.b, 0.5f);
+                    image[2].color = new Color(image[2].color.r, image[2].color.g, image[2].color.b, 0.75f);
                     highlight[3] = false;
-                    image[3].color = new Color(image[3].color.r, image[3].color.g, image[3].color.b, 0.5f);
+                    image[3].color = new Color(image[3].color.r, image[3].color.g, image[3].color.b, 0.75f);
                     highlight[4] = false;
-                    image[4].color = new Color(image[4].color.r, image[4].color.g, image[4].color.b, 0.5f);
+                    image[4].color = new Color(image[4].color.r, image[4].color.g, image[4].color.b, 0.75f);
                     highlight[1] = false;
-                    image[1].color = new Color(image[1].color.r, image[1].color.g, image[1].color.b, 0.5f);
+                    image[1].color = new Color(image[1].color.r, image[1].color.g, image[1].color.b, 0.75f);
                 }
             }
         }

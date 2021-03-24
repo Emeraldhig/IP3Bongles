@@ -1469,7 +1469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.7529412}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2099,7 +2099,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &345528332
 Transform:
   m_ObjectHideFlags: 0
@@ -2678,8 +2678,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 76.9163, y: 44.304108, z: 18.50721}
-  m_Center: {x: -38.17672, y: -14.815127, z: 1.4840693}
+  m_Size: {x: 9.7401905, y: 26.810436, z: 18.50721}
+  m_Center: {x: -4.5886645, y: -6.0682993, z: 1.4840688}
 --- !u!1 &517052746
 GameObject:
   m_ObjectHideFlags: 0
@@ -4616,8 +4616,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 60.04499, y: 37.92273, z: 4.2629404}
-  m_Center: {x: 26.615726, y: -18.772533, z: -1.6314706}
+  m_Size: {x: 8.841355, y: 21.966942, z: 4.2629356}
+  m_Center: {x: 1.0139081, y: -10.794644, z: -1.6314707}
 --- !u!1 &1033587715
 GameObject:
   m_ObjectHideFlags: 0
@@ -4772,6 +4772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Inventory: {fileID: 3613639}
+  inventoryPanel: {fileID: 162566694}
   Craft: {fileID: 1141174433}
   jar: {fileID: 345528331}
   book: {fileID: 559201209}
@@ -5590,7 +5591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.7529412}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5834,7 +5835,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.7529412}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6044,8 +6045,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 36.636612, y: 33.281696, z: 13.492138}
-  m_Center: {x: -14.528077, y: -7.7978454, z: 0.650695}
+  m_Size: {x: 10.620028, y: 19.98999, z: 13.492136}
+  m_Center: {x: -1.5197897, y: -1.1520051, z: 0.6506949}
 --- !u!1 &1381793890
 GameObject:
   m_ObjectHideFlags: 0
@@ -7197,8 +7198,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 87.84291, y: 52.481873, z: 5.800671}
-  m_Center: {x: 19.320387, y: -21.581196, z: -2.4003353}
+  m_Size: {x: 14.327647, y: 16.795385, z: 5.800671}
+  m_Center: {x: -0.41343322, y: -3.7379582, z: -2.4003356}
 --- !u!1 &1662546157
 GameObject:
   m_ObjectHideFlags: 0
@@ -8008,7 +8009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.7529412}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8218,8 +8219,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 98.91559, y: 69.94542, z: 12.571965}
-  m_Center: {x: 49.13361, y: -34.78388, z: -0.092818394}
+  m_Size: {x: 8.935424, y: 19.855297, z: 12.571957}
+  m_Center: {x: 4.1435375, y: -9.738822, z: -0.0928184}
 --- !u!1 &1941080126
 GameObject:
   m_ObjectHideFlags: 0
@@ -8412,7 +8413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.7529412}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8538,7 +8539,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.7529412}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8827,8 +8828,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 65.52231, y: 69.64143, z: 15.478781}
-  m_Center: {x: -22.0357, y: -29.448439, z: 1.2448349}
+  m_Size: {x: 13.77352, y: 29.994213, z: 15.47878}
+  m_Center: {x: 3.838679, y: -9.624836, z: 1.2448344}
 --- !u!1 &2059595126
 GameObject:
   m_ObjectHideFlags: 0
