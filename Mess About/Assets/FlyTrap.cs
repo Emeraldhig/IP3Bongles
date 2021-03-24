@@ -10,6 +10,7 @@ public class FlyTrap : MonoBehaviour
     public GameObject Key;
     public GameObject EmptyJar;
     public bool FlyTrapStart;
+    public bool spit;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class FlyTrap : MonoBehaviour
     {
         if (FlyTrapStart && Input.GetKeyDown("e") && Inventory.Check("Jar Of Flies"))
         {
+            spit = true;
             Inventory.Remove("Jar of Flies");
             Inventory.AddItem(EmptyJar.GetComponent<IInventoryItem>());
             Inventory.AddItem(Key.GetComponent<IInventoryItem>());
