@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     public bool movementBlock;
     public GameObject MainCamera;
     public GameObject ItemCam;
+    public GameObject ActiveItem;
 
     private void Start()
     {
@@ -72,6 +73,8 @@ public class PlayerMovement : MonoBehaviour
         IInventoryItem item = other.GetComponent<IInventoryItem>();
         if (item != null)
         {
+            ActiveItem = transform.Find(item.Name).gameObject;
+            ActiveItem.SetActive(true);
             itemreveal = true;
             Inventory.AddItem(item);
             MainCamera.SetActive(false);
