@@ -89,8 +89,8 @@ public class HUD : MonoBehaviour
             if (Inventory.Check("Bug Net"))
             {
                 movementScript.movementBlock = true;
-                tutorialMaster.SetActive(true);
                 tutorialMaster.GetComponent<AudioSource>().clip = tutorial4;
+                tutorialMaster.SetActive(true);
                 tutorialText.text = "Press E when near objects to use items on them";
             }
         }
@@ -98,15 +98,15 @@ public class HUD : MonoBehaviour
         if (tutorialstage == 0)
         {
             movementScript.movementBlock = true;
-            tutorialMaster.SetActive(true);
             tutorialMaster.GetComponent<AudioSource>().clip = tutorial1;
+            tutorialMaster.SetActive(true);
             tutorialText.text = "Tap on the Screen to move\nYou can move into a new area by \n walking into an Archway";
         }
         else if (tutorialstage == 1)
         {
             movementScript.movementBlock = true;
-            tutorialMaster.SetActive(true);
             tutorialMaster.GetComponent<AudioSource>().clip = tutorial2;
+            tutorialMaster.SetActive(true);
             tutorialText.text = "Tap on items to Pick them up\nYou can talk to other characters \n too";
         }
         else
@@ -305,8 +305,8 @@ public class HUD : MonoBehaviour
             if (Inventory.Check("Hoop") && Inventory.Check("Stick") && Inventory.Check("Net"))
             {
                 movementScript.movementBlock = true;
-                tutorialMaster.SetActive(true);
                 tutorialMaster.GetComponent<AudioSource>().clip = tutorial3;
+                tutorialMaster.SetActive(true);
                 tutorialText.text = "Use the Craft button \n to make new items";
                 Craft.SetActive(true);
             }
