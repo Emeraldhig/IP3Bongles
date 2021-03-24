@@ -39,6 +39,7 @@ public class HUD : MonoBehaviour
     public AudioClip tutorial3;
     public AudioClip tutorial4;
     public GameObject EmptyJarItem;
+    public GameObject BrainyBook;
     public GameObject ItemCam;
     public GameObject tutArrow;
     public bool showtutArrow = true;
@@ -139,13 +140,17 @@ public class HUD : MonoBehaviour
                 movementScript.movementBlock = false;
                 Inventory.AddItem(EmptyJarItem.GetComponent<IInventoryItem>());
             }
-            if (bookOverworld.GetComponent<Book>().trigger)
+            //if (bookOverworld.GetComponent<Book>().trigger)
             {
-                book.SetActive(true);
+                //book.SetActive(true);
             }
             if (book.GetComponent<QuestionChange>().complete)
             {
                 book.SetActive(false);
+                InventoryObject.SetActive(true);
+                ItemButton.SetActive(true);
+                movementScript.movementBlock = false;
+                Inventory.AddItem(BrainyBook.GetComponent<IInventoryItem>());
             }
         }
 
@@ -327,6 +332,31 @@ public class HUD : MonoBehaviour
             pickUp.SetActive(false);
             infoBox.SetActive(false);
             Inventory.Remove("Broken Jar");
+            InventoryScript_ItemRemoved();
+        }
+
+        if (Inventory.Check("Brainy's Book"))
+        {
+            book.SetActive(true);
+            InventoryObject.SetActive(false);
+            ItemButton.SetActive(false);
+            info.SetActive(false);
+            infoTitle.SetActive(false);
+            pickUp.SetActive(false);
+            infoBox.SetActive(false);
+            movementScript.movementBlock = true;
+            Inventory.Remove("Brainy's Book");
+            InventoryScript_ItemRemoved();
+        }
+
+        if (Inventory.Check("Brainy Book"))
+        {
+            info.SetActive(false);
+            infoTitle.SetActive(false);
+            pickUp.SetActive(false);
+            infoBox.SetActive(false);
+            movementScript.movementBlock = false;
+            Inventory.Remove("Brainy Book");
             InventoryScript_ItemRemoved();
         }
 

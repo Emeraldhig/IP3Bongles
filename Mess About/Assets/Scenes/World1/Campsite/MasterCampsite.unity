@@ -206,7 +206,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e9767559bb40c74ca46e4e226a5d358, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bookMinigame: 0
   trigger: 0
+  _Image: {fileID: 21300000, guid: a4718be22dfbd504abf82abc28ee6303, type: 3}
+  _Voicover: {fileID: 8300000, guid: baa68ce3afc4bd9468f6e5c66c291123, type: 3}
 --- !u!136 &92149126
 CapsuleCollider:
   m_ObjectHideFlags: 0
