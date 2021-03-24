@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class KeyRotate : MonoBehaviour
 {
-    public float rotationSpeed = 1f;
+    public float rotationSpeed = 0.3f;
     public GameObject PortcullisMaster;
     public GameObject KeyMaster;
     public GameObject bubba;
