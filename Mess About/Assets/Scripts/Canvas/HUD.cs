@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class HUD : MonoBehaviour
 {
-
+    public GameObject HUDobj;
     public Inventory Inventory;
     public GameObject Craft;
     public GameObject jar;
@@ -61,8 +61,12 @@ public class HUD : MonoBehaviour
             jarOverworld = GameObject.FindGameObjectWithTag("Jar");
             bookOverworld = GameObject.FindGameObjectWithTag("Book");
         }
-
-
+        
+        if (sceneName == "MasterPathways" && HUDobj.GetComponent<InvHide>().InvShow)
+        {
+            InventoryObject.SetActive(true);
+            ItemButton.SetActive(true);
+        }
 
         if (sceneName == "MasterLagoon")
         {
@@ -104,7 +108,7 @@ public class HUD : MonoBehaviour
         {
             Inventory.ListItems();
         }
-
+        
         if (sceneName == "MasterCampsite")
         {
             if (jar.GetComponent<jarPuzzleComplete>().jarDone)

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class InvHide : MonoBehaviour
 {
     public Image img;
@@ -11,9 +12,9 @@ public class InvHide : MonoBehaviour
 
     void Start()
     {
-        Panel.SetActive(true);
+       // Panel.SetActive(true);
         InvShow = true;
-}
+    }
 
     public void InvMenu()
     {
