@@ -36,6 +36,8 @@ public class HUD : MonoBehaviour
     public AudioSource voiceover;
     public GameObject EmptyJarItem;
     public GameObject ItemCam;
+    public GameObject tutArrow;
+    public bool showtutArrow = true;
 
     // Start is called before the first frame update
     void Start()
@@ -68,6 +70,14 @@ public class HUD : MonoBehaviour
         {
             InventoryObject.SetActive(true);
             ItemButton.SetActive(true);
+            
+        }
+
+        if (sceneName == "MasterPathways" && showtutArrow == true)
+        {
+            tutArrow = GameObject.FindGameObjectWithTag("tutArrow");
+            tutArrow.transform.GetChild(0).gameObject.SetActive(true);
+            showtutArrow = false;
         }
 
         if (sceneName == "MasterLagoon")

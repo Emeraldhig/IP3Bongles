@@ -25,6 +25,7 @@ TagManager:
   - Book
   - Jar3D
   - CloudAnim
+  - tutArrow
   layers:
   - Default
   - TransparentFX
