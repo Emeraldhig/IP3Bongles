@@ -38,9 +38,6 @@ public class JigsawWin : MonoBehaviour
         PlayerObject = GameObject.FindGameObjectWithTag("Bubba");
         ThoughtCloud = PlayerObject.transform.GetChild(2).gameObject;
         CraftCam = PlayerObject.transform.GetChild(3).gameObject;
-        NewJar = GameObject.Find("NewJarMaster");
-        Jar3D = NewJar.transform.GetChild(0).gameObject;
-        CloudAnim = NewJar.transform.GetChild(1).gameObject;
         MainCam.SetActive(false);
         PlayerObject.transform.rotation = Quaternion.Euler(0, 180, 0);
         CraftCam.SetActive(true);
@@ -52,8 +49,6 @@ public class JigsawWin : MonoBehaviour
     {
         if (Jar1.GetComponent<pieceMovement>().locked == true && Jar2.GetComponent<pieceMovement>().locked == true && Jar3.GetComponent<pieceMovement>().locked == true && Jar4.GetComponent<pieceMovement>().locked == true && Jar5.GetComponent<pieceMovement>().locked == true && Jar6.GetComponent<pieceMovement>().locked == true)
         {
-            CloudAnim.SetActive(true);
-            Jar3D.SetActive(true);
             JarMaster.SetActive(false);
             MainCam.SetActive(true);
             CraftCam.SetActive(false);

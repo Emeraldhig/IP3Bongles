@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -73,8 +74,19 @@ public class PlayerMovement : MonoBehaviour
         IInventoryItem item = other.GetComponent<IInventoryItem>();
         if (item != null)
         {
-            ActiveItem = transform.Find(item.Name).gameObject;
-            ActiveItem.SetActive(true);
+
+            try
+            {
+                ActiveItem = transform.Find(item.Name).gameObject;
+                ActiveItem.SetActive(true);
+            }
+            catch (Exception)
+            {
+                print("error");
+            }
+
+
+
             itemreveal = true;
             Inventory.AddItem(item);
             MainCamera.SetActive(false);
