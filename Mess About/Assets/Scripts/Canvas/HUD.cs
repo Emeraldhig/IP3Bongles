@@ -266,6 +266,7 @@ public class HUD : MonoBehaviour
     public void PickUpClicked()
     {
         movementScript.movementBlock = false;
+        movementScript.itemreveal = false;
         info.SetActive(false);
         infoTitle.SetActive(false);
         pickUp.SetActive(false);

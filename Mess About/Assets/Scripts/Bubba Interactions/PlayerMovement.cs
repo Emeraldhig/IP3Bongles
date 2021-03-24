@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     NavMeshAgent agent;
     Animator m_Animator;
     public bool moving;
+    public bool itemreveal;
     public GameObject InventoryObj;
     private Inventory Inventory;
     public GameObject walkToPoint;
@@ -24,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
         InventoryObj = GameObject.FindGameObjectWithTag("Inventory");
         Inventory = InventoryObj.GetComponent<Inventory>();
         moving = false;
+        itemreveal = false;
     }
 
 
@@ -40,6 +42,12 @@ public class PlayerMovement : MonoBehaviour
 
         if (moving == true)
             m_Animator.SetBool("moving", true);
+
+        if (itemreveal == false)
+            m_Animator.SetBool("item reveal", false);
+
+        if (itemreveal == true)
+            m_Animator.SetBool("item reveal", true);
 
         if (Input.GetMouseButtonDown(0) && !movementBlock)
         {
@@ -64,6 +72,7 @@ public class PlayerMovement : MonoBehaviour
         IInventoryItem item = other.GetComponent<IInventoryItem>();
         if (item != null)
         {
+            itemreveal = true;
             Inventory.AddItem(item);
             MainCamera.SetActive(false);
             ItemCam.SetActive(true);
