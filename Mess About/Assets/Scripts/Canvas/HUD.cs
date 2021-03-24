@@ -114,7 +114,6 @@ public class HUD : MonoBehaviour
                 InventoryObject.SetActive(true);
                 ItemButton.SetActive(true);
                 movementScript.movementBlock = false;
-                Inventory.Remove("Broken Jar");
                 Inventory.AddItem(EmptyJarItem.GetComponent<IInventoryItem>());
             }
             if (bookOverworld.GetComponent<Book>().trigger)
@@ -290,6 +289,8 @@ public class HUD : MonoBehaviour
             infoTitle.SetActive(false);
             pickUp.SetActive(false);
             infoBox.SetActive(false);
+            Inventory.Remove("Broken Jar");
+            InventoryScript_ItemRemoved();
         }
 
     }
