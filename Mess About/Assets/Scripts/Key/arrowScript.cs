@@ -7,7 +7,7 @@ public class arrowScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 {
     public GameObject key;
 
-    public void OnMouseEnter()
+    public void OnMouseOver()
     {
         key.GetComponent<KeyRotate>().arrowPressed = true;
     }

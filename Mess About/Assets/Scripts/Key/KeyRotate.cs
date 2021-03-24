@@ -32,7 +32,15 @@ public class KeyRotate : MonoBehaviour
             KeyMaster.transform.Rotate(Vector3.forward, rotationSpeed);
         }
     }
-    
+    public void OnMouseOver()
+    {
+        arrowPressed = true;
+    }
+    public void OnMouseExit()
+    {
+        arrowPressed = false;
+    }
+
 }
 
 
