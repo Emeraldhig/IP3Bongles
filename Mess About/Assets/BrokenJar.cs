@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class EmptyJar : MonoBehaviour, IInventoryItem
+public class BrokenJar : MonoBehaviour, IInventoryItem
 {
     public bool jarMinigame = false;
 
@@ -13,7 +13,7 @@ public class EmptyJar : MonoBehaviour, IInventoryItem
     {
         get
         {
-            return "Empty Jar";
+            return "Broken Jar";
         }
     }
 
@@ -43,6 +43,6 @@ public class EmptyJar : MonoBehaviour, IInventoryItem
     }
     public void OnTriggerEnter(Collider other)
     {
-        //jarMinigame = true;
+        jarMinigame = true;
     }
 }

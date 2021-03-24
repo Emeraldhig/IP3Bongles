@@ -5805,7 +5805,7 @@ CapsuleCollider:
   m_Height: 2.8220196
   m_Direction: 1
   m_Center: {x: 0, y: -0.9110098, z: -1.05}
---- !u!114 &1866973876
+--- !u!114 &1866973875
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5814,7 +5814,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1866973873}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07244715c4beee04aa50519d0de4e187, type: 3}
+  m_Script: {fileID: 11500000, guid: db7a1994a9d914a479d5f640f8437769, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   jarMinigame: 0

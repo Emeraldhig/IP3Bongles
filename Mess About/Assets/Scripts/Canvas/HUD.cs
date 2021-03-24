@@ -34,6 +34,7 @@ public class HUD : MonoBehaviour
     public GameObject ItemButton;
     public GameObject CraftButton;
     public AudioSource voiceover;
+    public GameObject EmptyJarItem;
 
     // Start is called before the first frame update
     void Start()
@@ -106,24 +107,15 @@ public class HUD : MonoBehaviour
 
         if (sceneName == "MasterCampsite")
         {
-            if (jarOverworld.GetComponent<EmptyJar>().jarMinigame)
-            {
-                jar.SetActive(true);
-                InventoryObject.SetActive(false);
-                ItemButton.SetActive(false);
-                info.SetActive(false);
-                infoTitle.SetActive(false);
-                pickUp.SetActive(false);
-                infoBox.SetActive(false);
-            }
             if (jar.GetComponent<jarPuzzleComplete>().jarDone)
             {
-                jarOverworld.GetComponent<EmptyJar>().jarMinigame = false;
+                jarOverworld.GetComponent<BrokenJar>().jarMinigame = false;
                 jar.SetActive(false);
                 InventoryObject.SetActive(true);
                 ItemButton.SetActive(true);
                 movementScript.movementBlock = false;
-
+                Inventory.Remove("Broken Jar");
+                Inventory.AddItem(EmptyJarItem.GetComponent<IInventoryItem>());
             }
             if (bookOverworld.GetComponent<Book>().trigger)
             {
@@ -182,7 +174,7 @@ public class HUD : MonoBehaviour
             movementScript.movementBlock = true;
 
             infoTitleText.text = e.Item.Name;
-            
+
             info.SetActive(true);
             infoTitle.SetActive(true);
             pickUp.SetActive(true);
@@ -288,6 +280,18 @@ public class HUD : MonoBehaviour
             }
 
         }
+
+        if (Inventory.Check("Broken Jar"))
+        {
+            jar.SetActive(true);
+            InventoryObject.SetActive(false);
+            ItemButton.SetActive(false);
+            info.SetActive(false);
+            infoTitle.SetActive(false);
+            pickUp.SetActive(false);
+            infoBox.SetActive(false);
+        }
+
     }
 
 
