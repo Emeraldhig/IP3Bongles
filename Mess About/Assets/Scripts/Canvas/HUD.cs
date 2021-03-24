@@ -9,7 +9,6 @@ public class HUD : MonoBehaviour
 {
 
     public Inventory Inventory;
-    public GameObject inventoryPanel;
     public GameObject Craft;
     public GameObject jar;
     public GameObject book;
@@ -110,12 +109,21 @@ public class HUD : MonoBehaviour
             if (jarOverworld.GetComponent<EmptyJar>().jarMinigame)
             {
                 jar.SetActive(true);
-                inventoryPanel.SetActive(false);
+                InventoryObject.SetActive(false);
+                ItemButton.SetActive(false);
+                info.SetActive(false);
+                infoTitle.SetActive(false);
+                pickUp.SetActive(false);
+                infoBox.SetActive(false);
             }
             if (jar.GetComponent<jarPuzzleComplete>().jarDone)
             {
+                jarOverworld.GetComponent<EmptyJar>().jarMinigame = false;
                 jar.SetActive(false);
-                inventoryPanel.SetActive(true);
+                InventoryObject.SetActive(true);
+                ItemButton.SetActive(true);
+                movementScript.movementBlock = false;
+
             }
             if (bookOverworld.GetComponent<Book>().trigger)
             {
@@ -173,6 +181,7 @@ public class HUD : MonoBehaviour
             movementScript.movementBlock = true;
 
             infoTitleText.text = e.Item.Name;
+            
             info.SetActive(true);
             infoTitle.SetActive(true);
             pickUp.SetActive(true);
