@@ -1654,10 +1654,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: wooden sign
       objectReference: {fileID: 0}
-    - target: {fileID: 1170970068873931921, guid: e52d8aa3bb3b4ef4796517bd9dab9c9a, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3ba3d94529d446f4c9129dd4e57ba5b2, type: 2}
     - target: {fileID: 5898855749840620490, guid: e52d8aa3bb3b4ef4796517bd9dab9c9a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.91976
