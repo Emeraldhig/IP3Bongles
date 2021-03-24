@@ -84,13 +84,13 @@ public class HUD : MonoBehaviour
         {
             movementScript.movementBlock = true;
             tutorialMaster.SetActive(true);
-            tutorialText.text = "Tap on the Screen to move\nYou can move into a new area by walking into an Archway";
+            tutorialText.text = "Tap on the Screen to move\nYou can move into a new area by \n walking into an Archway";
         }
         else if (tutorialstage == 1)
         {
             movementScript.movementBlock = true;
             tutorialMaster.SetActive(true);
-            tutorialText.text = "Tap on items to Pick them up\nYou can talk to other characters too";
+            tutorialText.text = "Tap on items to Pick them up\nYou can talk to other characters \n too";
         }
         else
         {
@@ -280,7 +280,7 @@ public class HUD : MonoBehaviour
             {
                 movementScript.movementBlock = true;
                 tutorialMaster.SetActive(true);
-                tutorialText.text = "Use the Craft button to make new items";
+                tutorialText.text = "Use the Craft button \n to make new items";
                 Craft.SetActive(true);
             }
             else
