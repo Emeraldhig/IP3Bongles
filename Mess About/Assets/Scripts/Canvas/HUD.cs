@@ -35,6 +35,7 @@ public class HUD : MonoBehaviour
     public GameObject CraftButton;
     public AudioSource voiceover;
     public GameObject EmptyJarItem;
+    public GameObject ItemCam;
 
     // Start is called before the first frame update
     void Start()
@@ -54,6 +55,7 @@ public class HUD : MonoBehaviour
         PlayerObject = GameObject.FindGameObjectWithTag("Bubba");
         ThoughtCloud = PlayerObject.transform.GetChild(2).gameObject;
         CraftCam = PlayerObject.transform.GetChild(3).gameObject;
+        ItemCam = PlayerObject.transform.GetChild(4).gameObject;
         movementScript = PlayerObject.GetComponent<PlayerMovement>();
 
         if (sceneName == "MasterCampsite")
@@ -166,6 +168,7 @@ public class HUD : MonoBehaviour
 
     private void InventoryScript_ItemAdded(object sender, InventoryEventArgs e)
     {
+        PlayerObject.transform.rotation = Quaternion.Euler(0, 180, 0);
         Transform inventoryPanel = transform.Find("InventoryPanel");
         voiceover.clip = e.Item.Voiceover;
         foreach (Transform slot in inventoryPanel)
@@ -267,6 +270,8 @@ public class HUD : MonoBehaviour
         infoTitle.SetActive(false);
         pickUp.SetActive(false);
         infoBox.SetActive(false);
+        ItemCam.SetActive(false);
+        MainCam.SetActive(true);
 
         if (tutorialstage == 2)
         {

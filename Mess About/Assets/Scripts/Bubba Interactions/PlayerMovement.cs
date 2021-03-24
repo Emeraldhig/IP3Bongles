@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
     public GameObject walkToPoint;
     public Transform playerPosition;
     public bool movementBlock;
+    public GameObject MainCamera;
+    public GameObject ItemCam;
 
     private void Start()
     {
@@ -22,6 +25,13 @@ public class PlayerMovement : MonoBehaviour
         Inventory = InventoryObj.GetComponent<Inventory>();
         moving = false;
     }
+
+
+    void Awake()
+    {
+        MainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+    }
+
 
     private void Update()
     {
@@ -55,6 +65,8 @@ public class PlayerMovement : MonoBehaviour
         if (item != null)
         {
             Inventory.AddItem(item);
+            MainCamera.SetActive(false);
+            ItemCam.SetActive(true);
         }
     }
 }
