@@ -34,7 +34,12 @@ public class HUD : MonoBehaviour
     public GameObject ItemButton;
     public GameObject CraftButton;
     public AudioSource voiceover;
+    public AudioClip tutorial1;
+    public AudioClip tutorial2;
+    public AudioClip tutorial3;
+    public AudioClip tutorial4;
     public GameObject EmptyJarItem;
+    public GameObject BrainyBook;
     public GameObject ItemCam;
     public GameObject tutArrow;
     public bool showtutArrow = true;
@@ -85,6 +90,7 @@ public class HUD : MonoBehaviour
             if (Inventory.Check("Bug Net"))
             {
                 movementScript.movementBlock = true;
+                tutorialMaster.GetComponent<AudioSource>().clip = tutorial4;
                 tutorialMaster.SetActive(true);
                 tutorialText.text = "Press E when near objects to use items on them";
             }
@@ -93,12 +99,14 @@ public class HUD : MonoBehaviour
         if (tutorialstage == 0)
         {
             movementScript.movementBlock = true;
+            tutorialMaster.GetComponent<AudioSource>().clip = tutorial1;
             tutorialMaster.SetActive(true);
             tutorialText.text = "Tap on the Screen to move\nYou can move into a new area by \n walking into an Archway";
         }
         else if (tutorialstage == 1)
         {
             movementScript.movementBlock = true;
+            tutorialMaster.GetComponent<AudioSource>().clip = tutorial2;
             tutorialMaster.SetActive(true);
             tutorialText.text = "Tap on items to Pick them up\nYou can talk to other characters \n too";
         }
@@ -132,13 +140,17 @@ public class HUD : MonoBehaviour
                 movementScript.movementBlock = false;
                 Inventory.AddItem(EmptyJarItem.GetComponent<IInventoryItem>());
             }
-            if (bookOverworld.GetComponent<Book>().trigger)
+            //if (bookOverworld.GetComponent<Book>().trigger)
             {
-                book.SetActive(true);
+                //book.SetActive(true);
             }
             if (book.GetComponent<QuestionChange>().complete)
             {
                 book.SetActive(false);
+                InventoryObject.SetActive(true);
+                ItemButton.SetActive(true);
+                movementScript.movementBlock = false;
+                Inventory.AddItem(BrainyBook.GetComponent<IInventoryItem>());
             }
         }
 
@@ -298,6 +310,7 @@ public class HUD : MonoBehaviour
             if (Inventory.Check("Hoop") && Inventory.Check("Stick") && Inventory.Check("Net"))
             {
                 movementScript.movementBlock = true;
+                tutorialMaster.GetComponent<AudioSource>().clip = tutorial3;
                 tutorialMaster.SetActive(true);
                 tutorialText.text = "Use the Craft button \n to make new items";
                 Craft.SetActive(true);
@@ -322,8 +335,42 @@ public class HUD : MonoBehaviour
             InventoryScript_ItemRemoved();
         }
 
+        if (Inventory.Check("Brainy's Book"))
+        {
+            book.SetActive(true);
+            InventoryObject.SetActive(false);
+            ItemButton.SetActive(false);
+            info.SetActive(false);
+            infoTitle.SetActive(false);
+            pickUp.SetActive(false);
+            infoBox.SetActive(false);
+            movementScript.movementBlock = true;
+            Inventory.Remove("Brainy's Book");
+            InventoryScript_ItemRemoved();
+        }
+
+        if (Inventory.Check("Brainy Book"))
+        {
+            info.SetActive(false);
+            infoTitle.SetActive(false);
+            pickUp.SetActive(false);
+            infoBox.SetActive(false);
+            movementScript.movementBlock = false;
+            Inventory.Remove("Brainy Book");
+            InventoryScript_ItemRemoved();
+        }
+
     }
 
+    public void UseItem()
+    {
+        movementScript.usingitem = true;
+    }
+
+    public void StopUseItem()
+    {
+        movementScript.usingitem = false;
+    }
 
     public void TutorialNext()
     {

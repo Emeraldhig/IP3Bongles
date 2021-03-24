@@ -13,25 +13,29 @@ public class KeyMinigame : MonoBehaviour
     public GameObject camera2;
     public GameObject Key;
     public bool KeyStart;
+    public GameObject PlayerObject;
+    private PlayerMovement movementScript;
 
     // Start is called before the first frame update
     void Start()
     {
+        PlayerObject = GameObject.FindGameObjectWithTag("Bubba");
+        movementScript = PlayerObject.GetComponent<PlayerMovement>();
         KeyStart = false;
-        //InventoryObj = GameObject.FindGameObjectWithTag("Inventory");
-        //Inventory = InventoryObj.GetComponent<Inventory>();
+        InventoryObj = GameObject.FindGameObjectWithTag("Inventory");
+        Inventory = InventoryObj.GetComponent<Inventory>();
     }
 
     private void Update()
     {
-        if (KeyStart /*&& Inventory.Check("Portcullis Key")*/ && Input.GetKeyDown("e"))
+        if (movementScript.usingitem && KeyStart && Inventory.Check("Portcullis Key"))
         {
             camera1.SetActive(false);
             camera2.SetActive(true);
             Key.SetActive(true);
             bubba.SetActive(false);
             walkToPoint.SetActive(false);
-            //Inventory.Remove("Portcullis Key");
+            Inventory.Remove("Portcullis Key");
         }
 
     }

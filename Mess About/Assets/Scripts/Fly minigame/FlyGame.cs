@@ -14,10 +14,14 @@ public class FlyGame : MonoBehaviour
     public GameObject FlyNet;
     public bool FlyStart;
     public bool flyMoving;
+    public GameObject PlayerObject;
+    private PlayerMovement movementScript;
 
     // Start is called before the first frame update
     void Start()
     {
+        PlayerObject = GameObject.FindGameObjectWithTag("Bubba");
+        movementScript = PlayerObject.GetComponent<PlayerMovement>();
         FlyStart = false;
         flyMoving = false;
         InventoryObj = GameObject.FindGameObjectWithTag("Inventory");
@@ -28,7 +32,7 @@ public class FlyGame : MonoBehaviour
 
     private void Update()
     {
-        if (dragCheck.GetComponent<flyMinigameDrag>().flyMinigame && Inventory.Check("Bug Net") && Inventory.Check("Empty Jar"))
+        if (movementScript.usingitem && FlyStart) // && Inventory.Check("Bug Net") && Inventory.Check("Empty Jar"))
         {
             MainCam.SetActive(false);
             FlyCam.SetActive(true);
