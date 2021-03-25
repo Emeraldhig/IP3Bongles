@@ -138,7 +138,7 @@ public class HUD : MonoBehaviour
             {
                 jarOverworld.GetComponent<BrokenJar>().jarMinigame = false;
                 jar.SetActive(false);
-                InventoryObject.SetActive(true);
+                //InventoryObject.SetActive(true);
                 ItemButton.SetActive(true);
                 //movementScript.movementBlock = false;
                 Inventory.AddItem(EmptyJarItem.GetComponent<IInventoryItem>());
@@ -151,7 +151,7 @@ public class HUD : MonoBehaviour
             {
                 destroy[4] = true;
                 book.SetActive(false);
-                InventoryObject.SetActive(true);
+                //InventoryObject.SetActive(true);
                 ItemButton.SetActive(true);
                 //movementScript.movementBlock = false;
                 Inventory.AddItem(BrainyBook.GetComponent<IInventoryItem>());
