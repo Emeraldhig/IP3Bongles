@@ -31,6 +31,11 @@ public class SceneLoader : MonoBehaviour // when using new scene - apply a speci
         {
             SceneManager.LoadScene("SceneTest");
         }
+
+        if (Bubba.CompareTag("EndScene"))
+        {
+            SceneManager.LoadScene("EndScene");
+        }
     }
 }
 
