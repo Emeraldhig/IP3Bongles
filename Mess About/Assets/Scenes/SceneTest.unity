@@ -5132,6 +5132,7 @@ MonoBehaviour:
   showtutArrow: 1
   brainyInteraction: 1
   destroy: 0000000000
+  UseItemButton: {fileID: 1729321430}
 --- !u!114 &1055373056
 MonoBehaviour:
   m_ObjectHideFlags: 0
