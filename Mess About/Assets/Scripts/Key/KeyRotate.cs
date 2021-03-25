@@ -11,6 +11,7 @@ public class KeyRotate : MonoBehaviour
     public GameObject walktoPoint;
     public GameObject KeyTurnCam;
     public GameObject MainCam;
+    public GameObject NextCube;
     public bool arrowPressed;
 
     public void Update()
@@ -19,6 +20,7 @@ public class KeyRotate : MonoBehaviour
         //Debug.Log(transform.eulerAngles.z);
         if (transform.eulerAngles.z >= 300)
         {
+            NextCube.SetActive(true);
             PortcullisMaster.SetActive(false);
             bubba.SetActive(true);
             walktoPoint.SetActive(true);

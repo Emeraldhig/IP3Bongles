@@ -28,7 +28,7 @@ public class KeyMinigame : MonoBehaviour
 
     private void Update()
     {
-        if (movementScript.usingitem && KeyStart && Inventory.Check("Portcullis Key"))
+        if (movementScript.usingitem && KeyStart)// && Inventory.Check("Portcullis Key"))
         {
             camera1.SetActive(false);
             camera2.SetActive(true);
