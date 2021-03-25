@@ -138,7 +138,7 @@ public class HUD : MonoBehaviour
                 jar.SetActive(false);
                 //InventoryObject.SetActive(true);
                 ItemButton.SetActive(true);
-                movementScript.movementBlock = false;
+                //movementScript.movementBlock = false;
                 Inventory.AddItem(EmptyJarItem.GetComponent<IInventoryItem>());
             }
             //if (bookOverworld.GetComponent<Book>().trigger)
@@ -150,7 +150,7 @@ public class HUD : MonoBehaviour
                 book.SetActive(false);
                 //InventoryObject.SetActive(true);
                 ItemButton.SetActive(true);
-                movementScript.movementBlock = false;
+                //movementScript.movementBlock = false;
                 Inventory.AddItem(BrainyBook.GetComponent<IInventoryItem>());
             }
         }

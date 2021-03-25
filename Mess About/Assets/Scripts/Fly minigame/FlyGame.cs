@@ -32,7 +32,7 @@ public class FlyGame : MonoBehaviour
 
     private void Update()
     {
-        if (movementScript.usingitem && FlyStart) // && Inventory.Check("Bug Net") && Inventory.Check("Empty Jar"))
+        if (movementScript.usingitem && FlyStart && Inventory.Check("Bug Net") && Inventory.Check("Empty Jar"))
         {
             MainCam.SetActive(false);
             FlyCam.SetActive(true);

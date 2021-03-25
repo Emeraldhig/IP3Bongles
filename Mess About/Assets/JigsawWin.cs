@@ -25,6 +25,7 @@ public class JigsawWin : MonoBehaviour
     public GameObject CraftCam;
     public GameObject ThoughtCloud;
     public GameObject PlayerObject;
+    private PlayerMovement movementScript;
 
     void Awake()
     {
@@ -36,12 +37,14 @@ public class JigsawWin : MonoBehaviour
         Jar6pos = Jar6.transform.position;
         MainCam = GameObject.FindGameObjectWithTag("MainCamera");
         PlayerObject = GameObject.FindGameObjectWithTag("Bubba");
+        movementScript = PlayerObject.GetComponent<PlayerMovement>();
         ThoughtCloud = PlayerObject.transform.GetChild(2).gameObject;
         CraftCam = PlayerObject.transform.GetChild(3).gameObject;
         MainCam.SetActive(false);
         PlayerObject.transform.rotation = Quaternion.Euler(0, 180, 0);
         CraftCam.SetActive(true);
         ThoughtCloud.SetActive(true);
+        movementScript.movementBlock = true;
     }
             
         // Update is called once per frame
@@ -49,12 +52,12 @@ public class JigsawWin : MonoBehaviour
     {
         if (Jar1.GetComponent<pieceMovement>().locked == true && Jar2.GetComponent<pieceMovement>().locked == true && Jar3.GetComponent<pieceMovement>().locked == true && Jar4.GetComponent<pieceMovement>().locked == true && Jar5.GetComponent<pieceMovement>().locked == true && Jar6.GetComponent<pieceMovement>().locked == true)
         {
+            movementScript.movementBlock = true;
             JarMaster.SetActive(false);
             MainCam.SetActive(true);
             CraftCam.SetActive(false);
             ThoughtCloud.SetActive(false);
         }
-
     }
 
     public void ResetItems()
