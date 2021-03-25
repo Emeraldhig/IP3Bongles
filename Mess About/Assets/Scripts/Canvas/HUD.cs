@@ -45,6 +45,7 @@ public class HUD : MonoBehaviour
     public bool showtutArrow = true;
     public bool brainyInteraction = true;
     public bool[] destroy = new bool[5];
+    public GameObject UseItemButton;
 
     // Start is called before the first frame update
     void Start()
@@ -333,6 +334,7 @@ public class HUD : MonoBehaviour
         {
             jar.SetActive(true);
             InventoryObject.SetActive(false);
+            UseItemButton.SetActive(false);
             ItemButton.SetActive(false);
             info.SetActive(false);
             infoTitle.SetActive(false);
@@ -340,6 +342,11 @@ public class HUD : MonoBehaviour
             infoBox.SetActive(false);
             Inventory.Remove("Broken Jar");
             InventoryScript_ItemRemoved();
+        }
+
+        if (Inventory.Check("Empty Jar"))
+        {
+            UseItemButton.SetActive(true);
         }
 
         if (Inventory.Check("Brainy's Book"))
