@@ -103,14 +103,14 @@ public class HUD : MonoBehaviour
             movementScript.movementBlock = true;
             tutorialMaster.GetComponent<AudioSource>().clip = tutorial1;
             tutorialMaster.SetActive(true);
-            tutorialText.text = "Tap on the Screen to move\nYou can move into a new area by \n walking through an Archway";
+            tutorialText.text = "Tap on the Screen to move\nYou can move into a new area\nby walking through an Archway";
         }
         else if (tutorialstage == 1)
         {
             movementScript.movementBlock = true;
             tutorialMaster.GetComponent<AudioSource>().clip = tutorial2;
             tutorialMaster.SetActive(true);
-            tutorialText.text = "Tap on items to Pick them up\nYou can talk to other characters \n too";
+            tutorialText.text = "Tap on items to Pick them up\nYou can talk to other characters\ntoo";
         }
         else
         {
@@ -139,7 +139,7 @@ public class HUD : MonoBehaviour
                 jar.SetActive(false);
                 InventoryObject.SetActive(true);
                 ItemButton.SetActive(true);
-                movementScript.movementBlock = false;
+                //movementScript.movementBlock = false;
                 Inventory.AddItem(EmptyJarItem.GetComponent<IInventoryItem>());
             }
             //if (bookOverworld.GetComponent<Book>().trigger)
@@ -152,7 +152,7 @@ public class HUD : MonoBehaviour
                 book.SetActive(false);
                 InventoryObject.SetActive(true);
                 ItemButton.SetActive(true);
-                movementScript.movementBlock = false;
+                //movementScript.movementBlock = false;
                 Inventory.AddItem(BrainyBook.GetComponent<IInventoryItem>());
             }
         }
@@ -371,11 +371,13 @@ public class HUD : MonoBehaviour
 
     public void UseItem()
     {
+        movementScript.movementBlock = true;
         movementScript.usingitem = true;
     }
 
     public void StopUseItem()
     {
+        movementScript.movementBlock = false;
         movementScript.usingitem = false;
     }
 
@@ -396,9 +398,10 @@ public class HUD : MonoBehaviour
         infoTitle.SetActive(true);
         pickUp.SetActive(true);
         infoBox.SetActive(true);
-
+        voiceover.Pause();
+        movementScript.movementBlock = true;
         infoTitleText.text = "Brainy:";
-        infoText.text = "Help I'm stuck up a tree Bubba! \n Go find my book to find out what \n type of plants these are!";
+        infoText.text = "Help I'm stuck up a tree Bubba!\nGo find my book to find out what \ntype of plants these are!";
 
         brainyInteraction = false;
 
