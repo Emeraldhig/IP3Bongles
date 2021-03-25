@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: af5e635ab202dd242b5aa291d2ba9813, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 7ae4341b6a7c9914ca0b5a751570013e, type: 2}
 --- !u!1 &2610035
 GameObject:
   m_ObjectHideFlags: 0
@@ -5541,6 +5541,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
   m_PrefabInstance: {fileID: 632385064}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &901495378 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8c96eef51ff275d4a8429f6b636befb8, type: 3}
+  m_PrefabInstance: {fileID: 2065235587}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &901495379
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901495378}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &903554668
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6116,6 +6135,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 49efcc363291d254d9027b52fca518c7, type: 3}
       propertyPath: m_Name
       value: waterfall
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 49efcc363291d254d9027b52fca518c7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 49efcc363291d254d9027b52fca518c7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49efcc363291d254d9027b52fca518c7, type: 3}
@@ -12490,6 +12517,7 @@ MonoBehaviour:
   MainCamera: {fileID: 0}
   ItemCam: {fileID: 618716860}
   ActiveItem: {fileID: 0}
+  usingitem: 0
 --- !u!95 &1237361742
 Animator:
   serializedVersion: 3
@@ -13451,6 +13479,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.1041
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 38d538ff7d1f9e04ca13604db158c898, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 02579bf887fbc94458db4bc7f6146a7b, type: 2}
     - target: {fileID: 919132149155446097, guid: 38d538ff7d1f9e04ca13604db158c898, type: 3}
       propertyPath: m_Name
       value: Lagoon Arch
@@ -14544,6 +14576,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
   m_PrefabInstance: {fileID: 32659562}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1673790660 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5c12867da669b8d4ab6dc61564921d32, type: 3}
+  m_PrefabInstance: {fileID: 2033419484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1673790661
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673790660}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1674481245
 GameObject:
   m_ObjectHideFlags: 0
@@ -14793,6 +14844,7 @@ MonoBehaviour:
   FlyNet: {fileID: 510435681}
   FlyStart: 0
   flyMoving: 0
+  PlayerObject: {fileID: 0}
 --- !u!1001 &1709245581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15003,7 +15055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17f6dd6d82825f1478d36bac99c3654f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Image: {fileID: 21300000, guid: 7ff7f4a43601f4e4abc3f96592410aa9, type: 3}
+  _Image: {fileID: 21300000, guid: dc15c1be68034fe40accca649b933dbc, type: 3}
   _Voicover: {fileID: 8300000, guid: 4a4e9b1fdd55ef34cb46898cce3bcea6, type: 3}
 --- !u!136 &1739507837
 CapsuleCollider:
@@ -15869,6 +15921,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
   m_PrefabInstance: {fileID: 474326485}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1848387586 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1aecec96d07c5794394f574305ee1d12, type: 3}
+  m_PrefabInstance: {fileID: 446669286}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1848387587
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848387586}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!4 &1853268635 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}

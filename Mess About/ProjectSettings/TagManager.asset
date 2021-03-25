@@ -29,6 +29,7 @@ TagManager:
   - Net
   - Stick
   - Hoop
+  - EndScene
   layers:
   - Default
   - TransparentFX

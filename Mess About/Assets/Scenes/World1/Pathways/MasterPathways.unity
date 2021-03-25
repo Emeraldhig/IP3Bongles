@@ -578,6 +578,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.1041
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 38d538ff7d1f9e04ca13604db158c898, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 02579bf887fbc94458db4bc7f6146a7b, type: 2}
     - target: {fileID: 919132149155446097, guid: 38d538ff7d1f9e04ca13604db158c898, type: 3}
       propertyPath: m_Name
       value: Campsite Arch
@@ -3936,6 +3940,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.1041
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 38d538ff7d1f9e04ca13604db158c898, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 02579bf887fbc94458db4bc7f6146a7b, type: 2}
     - target: {fileID: 919132149155446097, guid: 38d538ff7d1f9e04ca13604db158c898, type: 3}
       propertyPath: m_Name
       value: Lagoon Arch
@@ -4013,6 +4021,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.1041
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 38d538ff7d1f9e04ca13604db158c898, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 02579bf887fbc94458db4bc7f6146a7b, type: 2}
     - target: {fileID: 919132149155446097, guid: 38d538ff7d1f9e04ca13604db158c898, type: 3}
       propertyPath: m_Name
       value: FlyTrap Path Arch
@@ -8061,7 +8073,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hud: {fileID: 0}
+  invObj: {fileID: 0}
   inventory: {fileID: 0}
+  destroy: 0000000000
 --- !u!1 &1872247215 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 38d538ff7d1f9e04ca13604db158c898, type: 3}
