@@ -44,6 +44,7 @@ public class HUD : MonoBehaviour
     public GameObject tutArrow;
     public bool showtutArrow = true;
     public bool brainyInteraction = true;
+    public bool[] destroy = new bool[5];
 
     // Start is called before the first frame update
     void Start()
@@ -132,11 +133,11 @@ public class HUD : MonoBehaviour
         
         if (sceneName == "MasterCampsite")
         {
-            if (jar.GetComponent<jarPuzzleComplete>().jarDone)
+            if (jar.GetComponent<jarPuzzleComplete>().jarDone && !destroy[3])
             {
                 jarOverworld.GetComponent<BrokenJar>().jarMinigame = false;
                 jar.SetActive(false);
-                //InventoryObject.SetActive(true);
+                InventoryObject.SetActive(true);
                 ItemButton.SetActive(true);
                 movementScript.movementBlock = false;
                 Inventory.AddItem(EmptyJarItem.GetComponent<IInventoryItem>());
@@ -147,8 +148,9 @@ public class HUD : MonoBehaviour
             }
             if (book.GetComponent<QuestionChange>().complete)
             {
+                destroy[4] = true;
                 book.SetActive(false);
-                //InventoryObject.SetActive(true);
+                InventoryObject.SetActive(true);
                 ItemButton.SetActive(true);
                 movementScript.movementBlock = false;
                 Inventory.AddItem(BrainyBook.GetComponent<IInventoryItem>());
@@ -400,6 +402,21 @@ public class HUD : MonoBehaviour
 
         brainyInteraction = false;
 
+    }
+    public void itemCheck()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+        
+        if(sceneName == "MasterCampsite")
+        {
+            
+            if(Inventory.Check("Empty Jar") || Inventory.Check("Jar of Flies"))
+            {
+                destroy[3] = true;
+            }
+            
+        }
     }
 
 }

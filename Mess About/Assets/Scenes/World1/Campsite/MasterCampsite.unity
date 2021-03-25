@@ -203,13 +203,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 92149122}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1b20c6a4ffabb543a69212c1fa65f54, type: 3}
+  m_Script: {fileID: 11500000, guid: f600024bac92f4b4d9ff5199bacaff46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stickCollected: 0
-  hoopCollected: 0
-  netCollected: 0
-  bookCollected: 0
+  hud: {fileID: 0}
+  invObj: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!114 &92149125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1799,6 +1798,22 @@ MonoBehaviour:
   hoopCollected: 0
   netCollected: 0
   bookCollected: 0
+--- !u!114 &652138111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652138106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bc16e057798b51429e4044ef394810d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hud: {fileID: 0}
+  invObj: {fileID: 0}
+  inventory: {fileID: 0}
+  destroy: 0000000000
 --- !u!1001 &676380000
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3329,6 +3344,7 @@ MonoBehaviour:
   MainCamera: {fileID: 0}
   ItemCam: {fileID: 179272209}
   ActiveItem: {fileID: 0}
+  usingitem: 0
 --- !u!195 &905342993
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6083,6 +6099,21 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3696e04a4923d644491e31fa5fbf266e, type: 3}
   m_PrefabInstance: {fileID: 1776510283}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1866973877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866973873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60e5c083c8b11fc44881217547a79971, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hud: {fileID: 0}
+  invObj: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!1001 &1875069106
 PrefabInstance:
   m_ObjectHideFlags: 0
