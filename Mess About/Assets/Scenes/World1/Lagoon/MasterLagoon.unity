@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 7ae4341b6a7c9914ca0b5a751570013e, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: ea38af2bbb3755046801a5e7fd1bc800, type: 2}
 --- !u!1 &2610035
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,7 +190,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b0aaf65d38731b4eb2e23884ab17102, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b0aaf65d38731b4eb2e23884ab17102, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -352,6 +352,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.2569783
       objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
       propertyPath: m_Name
       value: PlantTypeTwo
@@ -421,6 +437,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.2569783
       objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
       propertyPath: m_Name
       value: PlantTypeTwo (13)
@@ -489,6 +521,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.35987243
+      objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
       propertyPath: m_Name
@@ -1105,6 +1153,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.19253929
+      objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
       propertyPath: m_Name
@@ -1933,6 +1997,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.3285836
       objectReference: {fileID: 0}
+    - target: {fileID: -5884820156866057774, guid: c2b3250e6b8dd494ebfb1e4f3a51d731, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -5884820156866057774, guid: c2b3250e6b8dd494ebfb1e4f3a51d731, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5760341780969896859, guid: c2b3250e6b8dd494ebfb1e4f3a51d731, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -5760341780969896859, guid: c2b3250e6b8dd494ebfb1e4f3a51d731, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c2b3250e6b8dd494ebfb1e4f3a51d731, type: 3}
       propertyPath: m_Name
       value: PalmTreeTypeTwo
@@ -2001,6 +2081,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.41558638
+      objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
       propertyPath: m_Name
@@ -2071,6 +2167,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.2569783
       objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
       propertyPath: m_Name
       value: PlantTypeTwo (2)
@@ -2114,7 +2226,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b0aaf65d38731b4eb2e23884ab17102, type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b0aaf65d38731b4eb2e23884ab17102, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2367,6 +2479,101 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c567cdcaa1c85a84eb5088058d6626ff, type: 3}
   m_PrefabInstance: {fileID: 305557825}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &309170698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 309170702}
+  - component: {fileID: 309170701}
+  - component: {fileID: 309170700}
+  - component: {fileID: 309170699}
+  m_Layer: 0
+  m_Name: Blocker For NavMesh (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
+  m_IsActive: 1
+--- !u!65 &309170699
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309170698}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &309170700
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309170698}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &309170701
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309170698}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &309170702
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309170698}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -22, y: 0.3, z: -16.7}
+  m_LocalScale: {x: 33.13125, y: 55.882404, z: 25.881367}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 36
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &356881553
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2547,7 +2754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b0aaf65d38731b4eb2e23884ab17102, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b0aaf65d38731b4eb2e23884ab17102, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2665,6 +2872,14 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: 71171e219941aac4ebc3e2fb010848b9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 71171e219941aac4ebc3e2fb010848b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 71171e219941aac4ebc3e2fb010848b9, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71171e219941aac4ebc3e2fb010848b9, type: 3}
@@ -2984,6 +3199,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.35987243
       objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
       propertyPath: m_Name
       value: PlantTypeTwo (10)
@@ -3065,6 +3296,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1aecec96d07c5794394f574305ee1d12, type: 3}
       propertyPath: m_Name
       value: lagoon pond 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 1aecec96d07c5794394f574305ee1d12, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 1aecec96d07c5794394f574305ee1d12, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1aecec96d07c5794394f574305ee1d12, type: 3}
@@ -3235,6 +3474,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.44125682
       objectReference: {fileID: 0}
+    - target: {fileID: -2873008360776336869, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -2873008360776336869, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 767734407460165363, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 767734407460165363, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
       propertyPath: m_Name
       value: PlantTypeOne (9)
@@ -3308,6 +3563,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.842602
+      objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
       propertyPath: m_Name
@@ -3450,6 +3721,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5651468
       objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
       propertyPath: m_Name
       value: PlantTypeTwo (6)
@@ -3518,6 +3805,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.60610586
+      objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
       propertyPath: m_Name
@@ -3593,6 +3896,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.3285836
       objectReference: {fileID: 0}
+    - target: {fileID: -5884820156866057774, guid: c2b3250e6b8dd494ebfb1e4f3a51d731, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -5884820156866057774, guid: c2b3250e6b8dd494ebfb1e4f3a51d731, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5760341780969896859, guid: c2b3250e6b8dd494ebfb1e4f3a51d731, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -5760341780969896859, guid: c2b3250e6b8dd494ebfb1e4f3a51d731, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c2b3250e6b8dd494ebfb1e4f3a51d731, type: 3}
       propertyPath: m_Name
       value: PalmTreeTypeTwo (1)
@@ -3665,6 +3984,22 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 930893944b8555540a097c96969a66fd, type: 3}
       propertyPath: m_Name
       value: PalmTreeTypeSix (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5604243492420900399, guid: 930893944b8555540a097c96969a66fd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5604243492420900399, guid: 930893944b8555540a097c96969a66fd, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7054934740943638013, guid: 930893944b8555540a097c96969a66fd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7054934740943638013, guid: 930893944b8555540a097c96969a66fd, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 930893944b8555540a097c96969a66fd, type: 3}
@@ -4017,7 +4352,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b0aaf65d38731b4eb2e23884ab17102, type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b0aaf65d38731b4eb2e23884ab17102, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4406,6 +4741,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.2569783
       objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
       propertyPath: m_Name
       value: PlantTypeTwo (11)
@@ -4590,9 +4941,29 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.96612334
       objectReference: {fileID: 0}
+    - target: {fileID: -5884820156866057774, guid: c2b3250e6b8dd494ebfb1e4f3a51d731, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -5884820156866057774, guid: c2b3250e6b8dd494ebfb1e4f3a51d731, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5760341780969896859, guid: c2b3250e6b8dd494ebfb1e4f3a51d731, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -5760341780969896859, guid: c2b3250e6b8dd494ebfb1e4f3a51d731, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c2b3250e6b8dd494ebfb1e4f3a51d731, type: 3}
       propertyPath: m_Name
       value: PalmTreeTypeTwo
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c2b3250e6b8dd494ebfb1e4f3a51d731, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2b3250e6b8dd494ebfb1e4f3a51d731, type: 3}
@@ -5458,6 +5829,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.6069934
       objectReference: {fileID: 0}
+    - target: {fileID: -2873008360776336869, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -2873008360776336869, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 767734407460165363, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 767734407460165363, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
       propertyPath: m_Name
       value: PlantTypeOne (2)
@@ -5623,9 +6010,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.0235738
       objectReference: {fileID: 0}
+    - target: {fileID: -2156413806229940732, guid: 03bd29d78ede2bb4894cf105e778751c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -2156413806229940732, guid: 03bd29d78ede2bb4894cf105e778751c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03bd29d78ede2bb4894cf105e778751c, type: 3}
       propertyPath: m_Name
       value: PalmTreeTypeFour
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108967955910737765, guid: 03bd29d78ede2bb4894cf105e778751c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108967955910737765, guid: 03bd29d78ede2bb4894cf105e778751c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03bd29d78ede2bb4894cf105e778751c, type: 3}
@@ -5735,6 +6138,101 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ef02783c4c713547845d1e964bb01c2, type: 3}
+--- !u!1 &921661018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 921661022}
+  - component: {fileID: 921661021}
+  - component: {fileID: 921661020}
+  - component: {fileID: 921661019}
+  m_Layer: 0
+  m_Name: Blocker For NavMesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
+  m_IsActive: 1
+--- !u!65 &921661019
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921661018}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &921661020
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921661018}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &921661021
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921661018}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &921661022
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921661018}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -20.9, y: 0.3, z: -0.2}
+  m_LocalScale: {x: 21.375, y: 20.0475, z: 25.881367}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &927859773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5772,7 +6270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b0aaf65d38731b4eb2e23884ab17102, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b0aaf65d38731b4eb2e23884ab17102, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5841,7 +6339,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b0aaf65d38731b4eb2e23884ab17102, type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b0aaf65d38731b4eb2e23884ab17102, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6062,6 +6560,14 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: 8e4fe9cd795c07948ae293a59d5fe187, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 8e4fe9cd795c07948ae293a59d5fe187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 8e4fe9cd795c07948ae293a59d5fe187, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e4fe9cd795c07948ae293a59d5fe187, type: 3}
@@ -11527,8 +12033,8 @@ GameObject:
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!136 &1073893727
 CapsuleCollider:
@@ -11670,6 +12176,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.2851647
       objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
       propertyPath: m_Name
       value: PlantTypeTwo (8)
@@ -11768,6 +12290,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5491151
+      objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
       propertyPath: m_Name
@@ -12041,7 +12579,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91514832d6ad418408bf8d032ce6b175, type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91514832d6ad418408bf8d032ce6b175, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -12169,6 +12707,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.2569783
+      objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
       propertyPath: m_Name
@@ -12433,6 +12987,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.4535742
+      objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
       propertyPath: m_Name
@@ -12701,6 +13271,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -2873008360776336869, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -2873008360776336869, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 767734407460165363, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 767734407460165363, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
       propertyPath: m_Name
       value: PlantTypeOne (1)
@@ -12807,7 +13393,7 @@ Transform:
   m_LocalScale: {x: 0.8181, y: 0.8181, z: 0.8181}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 15.098, z: 0}
 --- !u!1001 &1292659022
 PrefabInstance:
@@ -12846,7 +13432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b0aaf65d38731b4eb2e23884ab17102, type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b0aaf65d38731b4eb2e23884ab17102, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -12941,6 +13527,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5491149
       objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
       propertyPath: m_Name
       value: PlantTypeTwo (5)
@@ -13009,6 +13611,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.11869571
+      objectReference: {fileID: 0}
+    - target: {fileID: -2873008360776336869, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -2873008360776336869, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 767734407460165363, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 767734407460165363, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
       propertyPath: m_Name
@@ -13188,6 +13806,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5651467
       objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
       propertyPath: m_Name
       value: PlantTypeTwo (2)
@@ -13262,6 +13896,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.60699326
       objectReference: {fileID: 0}
+    - target: {fileID: -2873008360776336869, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -2873008360776336869, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 767734407460165363, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 767734407460165363, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
       propertyPath: m_Name
       value: PlantTypeOne
@@ -13331,9 +13981,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -2156413806229940732, guid: 03bd29d78ede2bb4894cf105e778751c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -2156413806229940732, guid: 03bd29d78ede2bb4894cf105e778751c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03bd29d78ede2bb4894cf105e778751c, type: 3}
       propertyPath: m_Name
       value: PalmTreeTypeFour (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108967955910737765, guid: 03bd29d78ede2bb4894cf105e778751c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108967955910737765, guid: 03bd29d78ede2bb4894cf105e778751c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03bd29d78ede2bb4894cf105e778751c, type: 3}
@@ -13560,9 +14226,29 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.34821403
       objectReference: {fileID: 0}
+    - target: {fileID: -2873008360776336869, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -2873008360776336869, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 767734407460165363, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 767734407460165363, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
       propertyPath: m_Name
       value: PlantTypeOne (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
@@ -13753,6 +14439,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.2569783
+      objectReference: {fileID: 0}
+    - target: {fileID: -2873008360776336869, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -2873008360776336869, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 767734407460165363, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 767734407460165363, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
       propertyPath: m_Name
@@ -13999,9 +14701,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.0751681
       objectReference: {fileID: 0}
+    - target: {fileID: -2156413806229940732, guid: 03bd29d78ede2bb4894cf105e778751c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -2156413806229940732, guid: 03bd29d78ede2bb4894cf105e778751c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03bd29d78ede2bb4894cf105e778751c, type: 3}
       propertyPath: m_Name
       value: PalmTreeTypeFour
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108967955910737765, guid: 03bd29d78ede2bb4894cf105e778751c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108967955910737765, guid: 03bd29d78ede2bb4894cf105e778751c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03bd29d78ede2bb4894cf105e778751c, type: 3}
@@ -14353,6 +15071,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: PalmTreeTypeThree
       objectReference: {fileID: 0}
+    - target: {fileID: 3106548548401985390, guid: 4e41fb1ae1f7c6c4da6519310d6367fe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3106548548401985390, guid: 4e41fb1ae1f7c6c4da6519310d6367fe, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3851816694603090516, guid: 4e41fb1ae1f7c6c4da6519310d6367fe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3851816694603090516, guid: 4e41fb1ae1f7c6c4da6519310d6367fe, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e41fb1ae1f7c6c4da6519310d6367fe, type: 3}
 --- !u!1001 &1603608670
@@ -14417,6 +15151,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.13551751
+      objectReference: {fileID: 0}
+    - target: {fileID: -2873008360776336869, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -2873008360776336869, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 767734407460165363, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 767734407460165363, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
       propertyPath: m_Name
@@ -14486,6 +15236,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.6069933
+      objectReference: {fileID: 0}
+    - target: {fileID: -2873008360776336869, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -2873008360776336869, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 767734407460165363, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 767734407460165363, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
       propertyPath: m_Name
@@ -14764,6 +15530,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.6327297
       objectReference: {fileID: 0}
+    - target: {fileID: -2873008360776336869, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -2873008360776336869, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 767734407460165363, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 767734407460165363, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
       propertyPath: m_Name
       value: PlantTypeOne (3)
@@ -14882,7 +15664,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91514832d6ad418408bf8d032ce6b175, type: 3}
       propertyPath: m_RootOrder
-      value: 31
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91514832d6ad418408bf8d032ce6b175, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -15133,6 +15915,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.60699344
+      objectReference: {fileID: 0}
+    - target: {fileID: -2873008360776336869, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -2873008360776336869, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 767734407460165363, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 767734407460165363, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
       propertyPath: m_Name
@@ -15545,7 +16343,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &1812289567
 PrefabInstance:
@@ -15584,7 +16382,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91514832d6ad418408bf8d032ce6b175, type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91514832d6ad418408bf8d032ce6b175, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -15884,7 +16682,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b0aaf65d38731b4eb2e23884ab17102, type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b0aaf65d38731b4eb2e23884ab17102, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -16022,6 +16820,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.6069934
+      objectReference: {fileID: 0}
+    - target: {fileID: -2873008360776336869, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -2873008360776336869, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 767734407460165363, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 767734407460165363, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
       propertyPath: m_Name
@@ -16373,6 +17187,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.35987243
       objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
       propertyPath: m_Name
       value: PlantTypeTwo (14)
@@ -16441,6 +17271,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.2569783
+      objectReference: {fileID: 0}
+    - target: {fileID: -2873008360776336869, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -2873008360776336869, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 767734407460165363, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 767734407460165363, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 92b65df8a761ba34eba7f705bfac6ab5, type: 3}
       propertyPath: m_Name
@@ -16524,6 +17370,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: lagoon pond 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 5c12867da669b8d4ab6dc61564921d32, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 5c12867da669b8d4ab6dc61564921d32, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c12867da669b8d4ab6dc61564921d32, type: 3}
 --- !u!4 &2033419485 stripped
@@ -16594,6 +17448,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.96612334
       objectReference: {fileID: 0}
+    - target: {fileID: -5884820156866057774, guid: c2b3250e6b8dd494ebfb1e4f3a51d731, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -5884820156866057774, guid: c2b3250e6b8dd494ebfb1e4f3a51d731, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5760341780969896859, guid: c2b3250e6b8dd494ebfb1e4f3a51d731, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -5760341780969896859, guid: c2b3250e6b8dd494ebfb1e4f3a51d731, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c2b3250e6b8dd494ebfb1e4f3a51d731, type: 3}
       propertyPath: m_Name
       value: PalmTreeTypeTwo (2)
@@ -16637,7 +17507,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8c96eef51ff275d4a8429f6b636befb8, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8c96eef51ff275d4a8429f6b636befb8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -16977,6 +17847,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.35987243
       objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8522759924055465304, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972720991354984485, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2b1f92572dea0ed4d93092bb7c92a9b8, type: 3}
       propertyPath: m_Name
       value: PlantTypeTwo (3)
@@ -17020,7 +17906,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b0aaf65d38731b4eb2e23884ab17102, type: 3}
       propertyPath: m_RootOrder
-      value: 34
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b0aaf65d38731b4eb2e23884ab17102, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -17115,9 +18001,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.5006374
       objectReference: {fileID: 0}
+    - target: {fileID: -553002639403806578, guid: ad1f5308f1898754ca5468b17cf1efe9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -553002639403806578, guid: ad1f5308f1898754ca5468b17cf1efe9, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ad1f5308f1898754ca5468b17cf1efe9, type: 3}
       propertyPath: m_Name
       value: PalmTreeTypeFive
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521028940990078710, guid: ad1f5308f1898754ca5468b17cf1efe9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521028940990078710, guid: ad1f5308f1898754ca5468b17cf1efe9, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad1f5308f1898754ca5468b17cf1efe9, type: 3}
