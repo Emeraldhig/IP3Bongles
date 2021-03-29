@@ -3656,6 +3656,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: rock 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5ed01e9ab32f24e42b8afb31140a7d1e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 5ed01e9ab32f24e42b8afb31140a7d1e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 5ed01e9ab32f24e42b8afb31140a7d1e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ed01e9ab32f24e42b8afb31140a7d1e, type: 3}
 --- !u!1001 &474215755
@@ -14917,6 +14929,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 650fa635e9ed8364a908d4efe4b22071, type: 3}
       propertyPath: m_Name
       value: rock 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 650fa635e9ed8364a908d4efe4b22071, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 650fa635e9ed8364a908d4efe4b22071, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 650fa635e9ed8364a908d4efe4b22071, type: 3}
