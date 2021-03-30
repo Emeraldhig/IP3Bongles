@@ -54,11 +54,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && !movementBlock)
         {
-            moving = true;
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit, Mathf.Infinity))
             {
+                moving = true;
                 walkToPoint.transform.position = hit.point;
                 agent.SetDestination(hit.point);
             }
