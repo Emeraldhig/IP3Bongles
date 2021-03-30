@@ -15,55 +15,40 @@ public class CollectedDetector : MonoBehaviour
         if (Bubba.CompareTag("Stick"))
         {
             // stick pick up code 
-
-            Debug.Log("stick picked up");
             stickCollected += 1;
-            GameObject.Find("Stick").SetActive(false);
 
             if(stickCollected == 1)
             {
-                Debug.Log("stick incremented");
             }
         }
 
         if (Bubba.CompareTag("Hoop"))
         {
             // hoop pick up code
-            Debug.Log("hoop picked up");
             hoopCollected += 1;
-            GameObject.Find("Hoop").SetActive(false);
 
             if (hoopCollected == 1)
             {
-                Debug.Log("hoop incremented");
             }
         }
 
         if (Bubba.CompareTag("Net"))
         {
             // net pick up code
-            Debug.Log("Net picked up");
             netCollected += 1;
-            GameObject.Find("Net").SetActive(false);
 
             if(netCollected == 1)
             {
-                Debug.Log("net incremented");
-
             }
         }
 
         if (Bubba.CompareTag("Book"))
         {
             // book pick up code
-
-            Debug.Log("Book picked up");
             bookCollected += 1;
-            GameObject.Find("Book").SetActive(false);
 
             if (bookCollected == 1)
             {
-                Debug.Log("book incremented");
             }
         }
     }
@@ -71,19 +56,19 @@ public class CollectedDetector : MonoBehaviour
     {
        if(netCollected == 1)
         {
-            GameObject.Find("Net").SetActive(false);
+            GameObject.FindGameObjectWithTag("Net").SetActive(false);
         }
         if (hoopCollected == 1)
         {
-            GameObject.Find("Hoop").SetActive(false);
+            GameObject.FindGameObjectWithTag("Hoop").SetActive(false);
         }
         if (stickCollected == 1)
         {
-            GameObject.Find("Stick").SetActive(false);
+            GameObject.FindGameObjectWithTag("Stick").SetActive(false);
         }
         if (bookCollected == 1)
         {
-            GameObject.Find("Book").SetActive(false);
+            GameObject.FindGameObjectWithTag("Book").SetActive(false);
         }
     }
 }

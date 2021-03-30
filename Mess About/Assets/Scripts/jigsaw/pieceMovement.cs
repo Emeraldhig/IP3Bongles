@@ -13,7 +13,6 @@ public class pieceMovement : MonoBehaviour, IPointerDownHandler, IBeginDragHandl
     public int rotation = 0;
     public bool[] highlighted = new bool[6];
 
-    //public Camera cameraObject;
     private RectTransform rectTransform;
     public bool jarGame = true;
     public bool clicked = false;
@@ -39,7 +38,6 @@ public class pieceMovement : MonoBehaviour, IPointerDownHandler, IBeginDragHandl
     {
         if (!locked)
         {
-            //float distance_to_screen = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
             rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
         }
     }
@@ -52,12 +50,7 @@ public class pieceMovement : MonoBehaviour, IPointerDownHandler, IBeginDragHandl
     {
         if(jarGame)
         {
-
             clicked = true;
-
-            /*rotation += 90;
-            pieceNumber.transform.rotation = Quaternion.Euler(0, 0, rotation);*/
-
         }
        
         Debug.Log("OnPointerDown");

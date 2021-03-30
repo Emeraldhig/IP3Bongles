@@ -26,9 +26,11 @@ public class JigsawWin : MonoBehaviour
     public GameObject ThoughtCloud;
     public GameObject PlayerObject;
     private PlayerMovement movementScript;
+    public GameObject hud;
 
     void Awake()
     {
+        hud = GameObject.FindGameObjectWithTag("HUD");
         Jar1pos = Jar1.transform.position;
         Jar2pos = Jar2.transform.position;
         Jar3pos = Jar3.transform.position;
@@ -50,13 +52,14 @@ public class JigsawWin : MonoBehaviour
         // Update is called once per frame
         void Update()
     {
-        if (Jar1.GetComponent<pieceMovement>().locked == true && Jar2.GetComponent<pieceMovement>().locked == true && Jar3.GetComponent<pieceMovement>().locked == true && Jar4.GetComponent<pieceMovement>().locked == true && Jar5.GetComponent<pieceMovement>().locked == true && Jar6.GetComponent<pieceMovement>().locked == true)
+        if (Jar1.GetComponent<pieceMovement>().locked && Jar2.GetComponent<pieceMovement>().locked && Jar3.GetComponent<pieceMovement>().locked && Jar4.GetComponent<pieceMovement>().locked && Jar5.GetComponent<pieceMovement>().locked && Jar6.GetComponent<pieceMovement>().locked)
         {
             movementScript.movementBlock = true;
             JarMaster.SetActive(false);
             MainCam.SetActive(true);
             CraftCam.SetActive(false);
             ThoughtCloud.SetActive(false);
+            hud.GetComponent<HUD>().CraftJar();
         }
     }
 

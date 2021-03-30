@@ -72,13 +72,20 @@ public class HUD : MonoBehaviour
         {
             jarOverworld = GameObject.FindGameObjectWithTag("Jar");
             bookOverworld = GameObject.FindGameObjectWithTag("Book");
+
+
+            if (bookOverworld.GetComponent<Book>().trigger)
+            {
+                book.SetActive(true);
+            }
+
         }
-        
+
         if (sceneName == "MasterPathways" && HUDobj.GetComponent<InvHide>().InvShow)
         {
             InventoryObject.SetActive(true);
             ItemButton.SetActive(true);
-            
+
         }
 
         if (sceneName == "MasterPathways" && showtutArrow == true)
@@ -131,35 +138,29 @@ public class HUD : MonoBehaviour
         {
             Inventory.ListItems();
         }
-        
-        if (sceneName == "MasterCampsite")
-        {
-            if (jar.GetComponent<jarPuzzleComplete>().jarDone && !destroy[3])
-            {
-                jarOverworld.GetComponent<BrokenJar>().jarMinigame = false;
-                jar.SetActive(false);
-                //InventoryObject.SetActive(true);
-                ItemButton.SetActive(true);
-                //movementScript.movementBlock = false;
-                Inventory.AddItem(EmptyJarItem.GetComponent<IInventoryItem>());
-            }
-            //if (bookOverworld.GetComponent<Book>().trigger)
-            {
-                //book.SetActive(true);
-            }
-            if (book.GetComponent<QuestionChange>().complete)
-            {
-                destroy[4] = true;
-                book.SetActive(false);
-                //InventoryObject.SetActive(true);
-                ItemButton.SetActive(true);
-                //movementScript.movementBlock = false;
-                Inventory.AddItem(BrainyBook.GetComponent<IInventoryItem>());
-            }
-        }
 
     }
 
+    public void CraftJar()
+    {
+        jarOverworld.GetComponent<BrokenJar>().jarMinigame = false;
+        jar.SetActive(false);
+        InventoryObject.SetActive(true);
+        ItemButton.SetActive(true);
+        movementScript.movementBlock = false;
+        Inventory.AddItem(EmptyJarItem.GetComponent<IInventoryItem>());
+    }
+
+    public void BookGame()
+    {
+        destroy[4] = true;
+        book.SetActive(false);
+        InventoryObject.SetActive(true);
+        ItemButton.SetActive(true);
+        movementScript.movementBlock = false;
+        Inventory.AddItem(BrainyBook.GetComponent<IInventoryItem>());
+    }
+    
     public void CraftNet()
     {
         if (crafting.GetComponent<CraftingFinish>().craftDone)
@@ -305,7 +306,7 @@ public class HUD : MonoBehaviour
         {
             print("error");
         }
-        
+
         info.SetActive(false);
         infoTitle.SetActive(false);
         pickUp.SetActive(false);
@@ -417,15 +418,15 @@ public class HUD : MonoBehaviour
     {
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
-        
-        if(sceneName == "MasterCampsite")
+
+        if (sceneName == "MasterCampsite")
         {
-            
-            if(Inventory.Check("Empty Jar") || Inventory.Check("Jar of Flies"))
+
+            if (Inventory.Check("Empty Jar") || Inventory.Check("Jar of Flies"))
             {
                 destroy[3] = true;
             }
-            
+
         }
     }
 

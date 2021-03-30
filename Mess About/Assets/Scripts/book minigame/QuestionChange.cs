@@ -17,10 +17,13 @@ public class QuestionChange : MonoBehaviour
     public GameObject button2;
     public int counter = 0;
     public bool complete;
+    public GameObject hud;
 
     private void Awake()
     {
-        
+        hud = GameObject.FindGameObjectWithTag("HUD");
+
+
         questions = new string[questionAmount];
         answers = new string[questionAmount];
         potentialAnswers = new string[answerAmount];
@@ -74,7 +77,7 @@ public class QuestionChange : MonoBehaviour
 
         if(counter == 3)
         {
-            complete = true;
+            hud.GetComponent<HUD>().BookGame();
         }
         
     }
