@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class FlyGame : MonoBehaviour
 {
     public Inventory Inventory;
-    public GameObject bubba;
     public GameObject InventoryObj;
     public GameObject dragCheck;
     public GameObject MainCam;
@@ -15,7 +14,7 @@ public class FlyGame : MonoBehaviour
     public bool FlyStart;
     public bool flyMoving;
     public GameObject PlayerObject;
-    private PlayerMovement movementScript;
+    public PlayerMovement movementScript;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +25,6 @@ public class FlyGame : MonoBehaviour
         flyMoving = false;
         InventoryObj = GameObject.FindGameObjectWithTag("Inventory");
         dragCheck = GameObject.FindGameObjectWithTag("flyCheck");
-        bubba = GameObject.FindGameObjectWithTag("Bubba");
         Inventory = InventoryObj.GetComponent<Inventory>();
     }
 
@@ -34,10 +32,10 @@ public class FlyGame : MonoBehaviour
     {
         if (movementScript.usingitem && FlyStart && Inventory.Check("Bug Net") && Inventory.Check("Empty Jar"))
         {
+            movementScript.movementBlock = true;
             MainCam.SetActive(false);
             FlyCam.SetActive(true);
             FlyNet.SetActive(true);
-            bubba.GetComponent<PlayerMovement>().movementBlock = true;
             flyMoving = true;
         }
     }
