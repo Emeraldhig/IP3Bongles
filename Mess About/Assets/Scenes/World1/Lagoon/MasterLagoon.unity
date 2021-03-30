@@ -2614,7 +2614,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 309170698}
   m_LocalRotation: {x: -0, y: -0.70538425, z: -0, w: 0.7088252}
-  m_LocalPosition: {x: -18.7, y: 0.3, z: -25}
+  m_LocalPosition: {x: -12.5, y: 0.3, z: -25}
   m_LocalScale: {x: 72.19058, y: 50.673634, z: 16.44264}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4117,11 +4117,12 @@ MonoBehaviour:
   MainCam: {fileID: 963194225}
   FlyCam: {fileID: 1674481245}
   FliesMaster: {fileID: 1702323989}
-  bubba: {fileID: 0}
   fliesCaught: 0
   moveSpeed: 1
   netInHand: 0
   Flies: {fileID: 1739507834}
+  PlayerObject: {fileID: 0}
+  movementScript: {fileID: 0}
 --- !u!136 &510435684
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -15760,7 +15761,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Inventory: {fileID: 0}
-  bubba: {fileID: 0}
   InventoryObj: {fileID: 0}
   dragCheck: {fileID: 0}
   MainCam: {fileID: 963194225}
@@ -15769,6 +15769,7 @@ MonoBehaviour:
   FlyStart: 0
   flyMoving: 0
   PlayerObject: {fileID: 0}
+  movementScript: {fileID: 0}
 --- !u!1001 &1709245581
 PrefabInstance:
   m_ObjectHideFlags: 0
