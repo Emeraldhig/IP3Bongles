@@ -5,42 +5,36 @@ using UnityEngine;
 public class KeyVFT : MonoBehaviour
 {
     public Animator anim;
-    public GameObject FVTtrigger;
+    public GameObject VFTMaster;
     public GameObject particles;
     public GameObject keylessVFT;
     public GameObject keyVFT;
     public bool idle;
     public bool spit;
-    public int counter = 2400;
 
     void Start()
     {
         anim = gameObject.GetComponent<Animator>();
-        idle = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        spit = FVTtrigger.GetComponent<FlyTrap>().spit;
+        spit = VFTMaster.GetComponent<FlyTrap>().spit;
 
-        if(idle)
+        if (spit)
         {
-            anim.SetBool("idle", true);
-        }
-        if(spit)
-        {
-            counter--;
             anim.SetBool("spit", true);
-            if(counter <= 0)
-            {
-                spit = false;
-                keylessVFT.transform.position = keyVFT.transform.position;
-                Destroy(keyVFT);
-                particles.SetActive(false);
-            }
         }
-        else if(!spit)
+
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("spittingdone"))
+        {
+            VFTMaster.GetComponent<FlyTrap>().FlyDeathAnim();
+            gameObject.SetActive(false);
+        }
+
+
+        else if (!spit)
         {
             anim.SetBool("spit", false);
 

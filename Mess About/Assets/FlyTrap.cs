@@ -13,6 +13,12 @@ public class FlyTrap : MonoBehaviour
     public bool spit;
     public GameObject PlayerObject;
     private PlayerMovement movementScript;
+    public GameObject VFT1;
+    public GameObject VFT2;
+    public GameObject VFT3;
+    public Animator VFT1Anim;
+    public Animator VFT2Anim;
+    public Animator VFT3Anim;
 
     // Start is called before the first frame update
     void Start()
@@ -22,20 +28,40 @@ public class FlyTrap : MonoBehaviour
         FlyTrapStart = false;
         InventoryObj = GameObject.FindGameObjectWithTag("Inventory");
         Inventory = InventoryObj.GetComponent<Inventory>();
+        VFT1 = transform.GetChild(1).gameObject;
+        VFT2 = transform.GetChild(2).gameObject;
+        VFT3 = transform.GetChild(3).gameObject;
+        VFT1Anim = VFT1.GetComponent<Animator>();
+        VFT2Anim = VFT2.GetComponent<Animator>();
+        VFT3Anim = VFT3.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (FlyTrapStart && movementScript.usingitem && Inventory.Check("Jar Of Flies"))
+        if (FlyTrapStart && movementScript.usingitem)// && Inventory.Check("Jar Of Flies"))
         {
             spit = true;
-            Inventory.Remove("Jar of Flies");
-            Inventory.AddItem(EmptyJar.GetComponent<IInventoryItem>());
-            Inventory.AddItem(Key.GetComponent<IInventoryItem>());
         }
     }
 
+    public void FlyDeathAnim()
+    {
+        VFT1.GetComponent<BoxCollider>().enabled = false;
+        VFT2.GetComponent<BoxCollider>().enabled = false;
+        VFT3.GetComponent<BoxCollider>().enabled = false;
+        VFT1Anim.Play("SpinDeath");
+        VFT2Anim.Play("SpinDeath");
+        VFT3Anim.Play("SpinDeath");
+    }
+
+    public void FlyDeathItem()
+    {
+        Inventory.Remove("Jar of Flies");
+        Inventory.AddItem(EmptyJar.GetComponent<IInventoryItem>());
+        Inventory.AddItem(Key.GetComponent<IInventoryItem>());
+        gameObject.SetActive(false);
+    }
 
     private void OnTriggerEnter(Collider other)
     {
