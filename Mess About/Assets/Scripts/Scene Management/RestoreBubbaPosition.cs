@@ -15,6 +15,6 @@ public class RestoreBubbaPosition : MonoBehaviour
     void OnDestroy() // Saving bubbas position before he leaves the scene.
     {
         int sceneGuide = SceneManager.GetActiveScene().buildIndex;
-        PositionSaveGuide.positionSaver[sceneGuide] = transform.position;
+        PositionSaveGuide.positionSaver[sceneGuide] = transform.position - new Vector3(0, 0, 3f);
     }
 }
