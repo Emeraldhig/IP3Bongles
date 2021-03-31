@@ -66,10 +66,12 @@ public class FlyTrap : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         FlyTrapStart = true;
+        other.GetComponent<PlayerMovement>().canuseitem = true;
     }
 
     private void OnTriggerExit(Collider other)
     {
         FlyTrapStart = false;
+        other.GetComponent<PlayerMovement>().canuseitem = false;
     }
 }

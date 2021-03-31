@@ -129,10 +129,16 @@ public class HUD : MonoBehaviour
 
     private void Update()
     {
-        Scene currentScene = SceneManager.GetActiveScene();
-        string sceneName = currentScene.name;
         InventoryScript_ItemRemoved();
 
+        if (movementScript.canuseitem == true)
+        {
+            UseItemButton.SetActive(true);
+        }
+        else
+        {
+            UseItemButton.SetActive(false);
+        }
 
         if (Input.GetKeyDown("g"))
         {
@@ -160,7 +166,7 @@ public class HUD : MonoBehaviour
         movementScript.movementBlock = false;
         Inventory.AddItem(BrainyBook.GetComponent<IInventoryItem>());
     }
-    
+
     public void CraftNet()
     {
         if (crafting.GetComponent<CraftingFinish>().craftDone)

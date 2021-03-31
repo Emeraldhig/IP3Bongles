@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject ItemCam;
     public GameObject ActiveItem;
     public bool usingitem = false;
+    public bool canuseitem = false;
 
     private void Start()
     {
@@ -30,7 +31,6 @@ public class PlayerMovement : MonoBehaviour
         moving = false;
         itemreveal = false;
     }
-
 
     void Awake()
     {
