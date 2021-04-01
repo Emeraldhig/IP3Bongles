@@ -2676,6 +2676,22 @@ MonoBehaviour:
   keyVFT: {fileID: 668114025}
   idle: 0
   spit: 0
+--- !u!114 &668114029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668114025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bc16e057798b51429e4044ef394810d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hud: {fileID: 0}
+  invObj: {fileID: 0}
+  inventory: {fileID: 0}
+  destroy: 0000000000
 --- !u!1001 &696261469
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3885,6 +3901,9 @@ MonoBehaviour:
   FlyTrapStart: 0
   spit: 0
   PlayerObject: {fileID: 0}
+  VFT1: {fileID: 0}
+  VFT2: {fileID: 0}
+  VFT3: {fileID: 0}
   VFT1Anim: {fileID: 0}
   VFT2Anim: {fileID: 0}
   VFT3Anim: {fileID: 0}
@@ -4191,7 +4210,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aef1e0043e466c84cb8b340cc29ed7cc, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3
+      value: 4.9049997
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: aef1e0043e466c84cb8b340cc29ed7cc, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -5328,6 +5347,7 @@ MonoBehaviour:
   ItemCam: {fileID: 331365947}
   ActiveItem: {fileID: 0}
   usingitem: 0
+  canuseitem: 0
 --- !u!195 &1291253218
 NavMeshAgent:
   m_ObjectHideFlags: 0
