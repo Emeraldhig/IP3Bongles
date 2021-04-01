@@ -7444,6 +7444,7 @@ MonoBehaviour:
   ItemCam: {fileID: 538479899}
   ActiveItem: {fileID: 0}
   usingitem: 0
+  canuseitem: 0
 --- !u!195 &1812646567
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7530,6 +7531,18 @@ MonoBehaviour:
   hoopCollected: 0
   netCollected: 0
   bookCollected: 0
+--- !u!114 &1812646572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812646563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e438f9a38fad1684b8840abde1a35bde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1815963748
 GameObject:
   m_ObjectHideFlags: 0

@@ -39,7 +39,7 @@ public class FlyTrap : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (FlyTrapStart && movementScript.usingitem)// && Inventory.Check("Jar Of Flies"))
+        if (FlyTrapStart && movementScript.usingitem && Inventory.Check("Jar Of Flies"))
         {
             spit = true;
         }

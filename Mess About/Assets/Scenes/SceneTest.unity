@@ -812,7 +812,7 @@ RectTransform:
   m_GameObject: {fileID: 162566694}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children:
   - {fileID: 643174575}
   - {fileID: 222191901}
@@ -1157,7 +1157,6 @@ GameObject:
   - component: {fileID: 221651519}
   - component: {fileID: 221651521}
   - component: {fileID: 221651520}
-  - component: {fileID: 221651522}
   - component: {fileID: 221651523}
   m_Layer: 5
   m_Name: ItemImage
@@ -1223,22 +1222,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 221651518}
   m_CullTransparentMesh: 0
---- !u!114 &221651522
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 221651518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40223574de3fe97469358558079fac49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 1055373059}
-  inventory: {fileID: 3613639}
-  flyMinigame: 0
-  originalPosition: {x: 0, y: 0}
 --- !u!65 &221651523
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1340,7 +1323,6 @@ GameObject:
   - component: {fileID: 263609803}
   - component: {fileID: 263609805}
   - component: {fileID: 263609804}
-  - component: {fileID: 263609806}
   - component: {fileID: 263609807}
   m_Layer: 5
   m_Name: ItemImage
@@ -1406,22 +1388,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 263609802}
   m_CullTransparentMesh: 0
---- !u!114 &263609806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 263609802}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40223574de3fe97469358558079fac49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 1055373059}
-  inventory: {fileID: 3613639}
-  flyMinigame: 0
-  originalPosition: {x: 0, y: 0}
 --- !u!65 &263609807
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2194,6 +2160,7 @@ MonoBehaviour:
   CraftCam: {fileID: 0}
   ThoughtCloud: {fileID: 0}
   PlayerObject: {fileID: 0}
+  hud: {fileID: 0}
 --- !u!114 &345528335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3051,7 +3018,6 @@ GameObject:
   - component: {fileID: 540739342}
   - component: {fileID: 540739344}
   - component: {fileID: 540739343}
-  - component: {fileID: 540739345}
   - component: {fileID: 540739346}
   m_Layer: 5
   m_Name: ItemImage
@@ -3117,22 +3083,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 540739341}
   m_CullTransparentMesh: 0
---- !u!114 &540739345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 540739341}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40223574de3fe97469358558079fac49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 1055373059}
-  inventory: {fileID: 3613639}
-  flyMinigame: 0
-  originalPosition: {x: 0, y: 0}
 --- !u!65 &540739346
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3214,6 +3164,7 @@ MonoBehaviour:
   button2: {fileID: 517052746}
   counter: 0
   complete: 0
+  hud: {fileID: 0}
 --- !u!1 &560851959
 GameObject:
   m_ObjectHideFlags: 0
@@ -4553,7 +4504,6 @@ GameObject:
   - component: {fileID: 972411337}
   - component: {fileID: 972411339}
   - component: {fileID: 972411338}
-  - component: {fileID: 972411340}
   - component: {fileID: 972411341}
   m_Layer: 5
   m_Name: ItemImage
@@ -4619,22 +4569,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 972411336}
   m_CullTransparentMesh: 0
---- !u!114 &972411340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 972411336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40223574de3fe97469358558079fac49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 1055373059}
-  inventory: {fileID: 3613639}
-  flyMinigame: 0
-  originalPosition: {x: 0, y: 0}
 --- !u!65 &972411341
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4858,7 +4792,6 @@ GameObject:
   - component: {fileID: 1033587716}
   - component: {fileID: 1033587718}
   - component: {fileID: 1033587717}
-  - component: {fileID: 1033587719}
   - component: {fileID: 1033587720}
   m_Layer: 5
   m_Name: ItemImage
@@ -4924,22 +4857,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1033587715}
   m_CullTransparentMesh: 0
---- !u!114 &1033587719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1033587715}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40223574de3fe97469358558079fac49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 1055373059}
-  inventory: {fileID: 3613639}
-  flyMinigame: 0
-  originalPosition: {x: 0, y: 0}
 --- !u!65 &1033587720
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6399,7 +6316,6 @@ GameObject:
   - component: {fileID: 1381793891}
   - component: {fileID: 1381793893}
   - component: {fileID: 1381793892}
-  - component: {fileID: 1381793894}
   - component: {fileID: 1381793895}
   m_Layer: 5
   m_Name: ItemImage
@@ -6465,22 +6381,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1381793890}
   m_CullTransparentMesh: 0
---- !u!114 &1381793894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1381793890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40223574de3fe97469358558079fac49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 1055373059}
-  inventory: {fileID: 3613639}
-  flyMinigame: 0
-  originalPosition: {x: 0, y: 0}
 --- !u!65 &1381793895
 BoxCollider:
   m_ObjectHideFlags: 0

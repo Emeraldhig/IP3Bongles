@@ -2676,22 +2676,6 @@ MonoBehaviour:
   keyVFT: {fileID: 668114025}
   idle: 0
   spit: 0
---- !u!114 &668114029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 668114025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bc16e057798b51429e4044ef394810d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hud: {fileID: 0}
-  invObj: {fileID: 0}
-  inventory: {fileID: 0}
-  destroy: 0000000000
 --- !u!1001 &696261469
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6754,7 +6738,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e0e430b82d807954baa2e80db1b61395, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.42
+      value: 0.44
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e0e430b82d807954baa2e80db1b61395, type: 3}
       propertyPath: m_LocalPosition.z
