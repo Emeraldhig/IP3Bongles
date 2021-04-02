@@ -54,6 +54,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && !movementBlock)
         {
+            walkToPoint.SetActive(true);
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit, Mathf.Infinity))
@@ -67,6 +68,7 @@ public class PlayerMovement : MonoBehaviour
         if ((int)playerPosition.position.x == (int)walkToPoint.transform.position.x)
         {
             moving = false;
+            walkToPoint.SetActive(false);
         }
     }
 
