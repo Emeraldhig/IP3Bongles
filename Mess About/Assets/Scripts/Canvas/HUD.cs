@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class HUD : MonoBehaviour
 {
+    public GameObject playButton;
+    public GameObject settingsButton;
     public GameObject HUDobj;
     public Inventory Inventory;
     public GameObject Craft;
@@ -24,6 +26,7 @@ public class HUD : MonoBehaviour
     public GameObject MainCam;
     public GameObject CraftCam;
     public GameObject ThoughtCloud;
+    public GameObject settings;
     Text infoTitleText;
     Text infoText;
     public GameObject tutorialMaster;
@@ -401,7 +404,38 @@ public class HUD : MonoBehaviour
         tutorialMaster.SetActive(false);
         tutorialstage++;
     }
+    public void SettingsTab()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+        if (sceneName == "SceneTest") { playButton.SetActive(false); }
+        if (sceneName != "SceneTest") 
+        { 
+            InventoryObject.SetActive(false);
+            ItemButton.SetActive(false);
+        }
+        settings.SetActive(true);
+        settingsButton.SetActive(false);
+        UseItemButton.SetActive(false);
+        movementScript.movementBlock = true;
 
+    }
+    public void SettingsExit()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+
+        if(sceneName == "SceneTest") { playButton.SetActive(true); }
+        if (sceneName != "SceneTest") 
+        { 
+            InventoryObject.SetActive(true);
+            ItemButton.SetActive(true);
+        }
+        settings.SetActive(false);
+        settingsButton.SetActive(true);
+        UseItemButton.SetActive(true);
+        movementScript.movementBlock = false;
+    }
     public void QuitGame()
     {
         Application.Quit();
