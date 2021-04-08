@@ -3,32 +3,42 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BrainyDialogue : MonoBehaviour
+public class BrainyDialogue : MonoBehaviour, IInventoryItem
 {
-    public GameObject hud;
-    public bool interaction;
-    void Start()
+    public bool bookMinigame = false;
+    public bool trigger = false;
+
+
+    public string Name
     {
-        hud = GameObject.FindGameObjectWithTag("HUD");
-        interaction = hud.GetComponent<HUD>().brainyInteraction;
+        get
+        {
+            return "Brainy";
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public Sprite _Image = null;
+
+    public Sprite Image
     {
-        
-    }
-    public void OnTriggerEnter(Collider other)
-    {
-        interaction = hud.GetComponent<HUD>().brainyInteraction;
-    
-        if(other.gameObject.tag == "Bubba")
+        get
         {
-            if (interaction)
-            {
-                hud.GetComponent<HUD>().BrainyDialogue();
-            }
-            
+            return _Image;
         }
+    }
+
+    public AudioClip _Voicover = null;
+
+    public AudioClip Voiceover
+    {
+        get
+        {
+            return _Voicover;
+        }
+    }
+
+    public void OnPickup()
+    {
+
     }
 }

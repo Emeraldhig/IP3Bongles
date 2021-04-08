@@ -262,6 +262,10 @@ public class HUD : MonoBehaviour
             {
                 infoText.text = "Careful! it's sharp,\nYou must take care,\nBut there might be something here,\nYou can repair.";
             }
+            if (infoTitleText.text == "Brainy")
+            {
+                infoText.text = "Help Bubba!\nI'm stuck up here because of\nthese hungry plants.\nOne of my books should tell you\nhow to distract them\nif you can find it.\nHurry, quickly!";
+            }
 
             if (!image.enabled)
             {
@@ -381,6 +385,17 @@ public class HUD : MonoBehaviour
             infoBox.SetActive(false);
             movementScript.movementBlock = false;
             Inventory.Remove("Plant Identified");
+            InventoryScript_ItemRemoved();
+        }
+
+        if (Inventory.Check("Brainy"))
+        {
+            info.SetActive(false);
+            infoTitle.SetActive(false);
+            pickUp.SetActive(false);
+            infoBox.SetActive(false);
+            movementScript.movementBlock = false;
+            Inventory.Remove("Brainy");
             InventoryScript_ItemRemoved();
         }
 
