@@ -54,7 +54,7 @@ public class KeylessVFT : MonoBehaviour
     }
     public void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Bubba")
+        if(other.gameObject.tag == "Bubba" && !PlayerObject.GetComponent<PlayerMovement>().movementBlock)
         {
             attack = true;
             BubbaNavMesh.SetDestination(BubbaSafe);
