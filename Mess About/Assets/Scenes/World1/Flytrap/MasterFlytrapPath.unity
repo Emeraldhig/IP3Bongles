@@ -3261,6 +3261,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brainy No Glasses v0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1a66bb0ff2ef9a54bbfaf96dfdc685fb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4493047778989007131, guid: 1a66bb0ff2ef9a54bbfaf96dfdc685fb, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0.60945153
