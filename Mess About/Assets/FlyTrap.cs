@@ -16,6 +16,7 @@ public class FlyTrap : MonoBehaviour
     public GameObject VFT1;
     public GameObject VFT2;
     public GameObject VFT3;
+
     public Animator VFT1Anim;
     public Animator VFT2Anim;
     public Animator VFT3Anim;
@@ -36,6 +37,7 @@ public class FlyTrap : MonoBehaviour
         VFT1Anim = VFT1.GetComponent<Animator>();
         VFT2Anim = VFT2.GetComponent<Animator>();
         VFT3Anim = VFT3.GetComponent<Animator>();
+        
 
     }
 
@@ -69,6 +71,7 @@ public class FlyTrap : MonoBehaviour
         VFT1Anim.Play("SpinDeath");
         VFT2Anim.Play("SpinDeath");
         VFT3Anim.Play("SpinDeath");
+       
     }
 
     public void FlyDeathItem()

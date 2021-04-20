@@ -51,6 +51,7 @@ public class HUD : MonoBehaviour
     public GameObject UseItemButton;
     public GameObject MasterDialogue;
     public GameObject NoItemMessage;
+    public GameObject jarofFlies;
 
     // Start is called before the first frame update
     void Start()
@@ -148,6 +149,7 @@ public class HUD : MonoBehaviour
         if (Input.GetKeyDown("g"))
         {
             Inventory.ListItems();
+            Inventory.AddItem(jarofFlies.GetComponent<IInventoryItem>());
         }
 
     }
