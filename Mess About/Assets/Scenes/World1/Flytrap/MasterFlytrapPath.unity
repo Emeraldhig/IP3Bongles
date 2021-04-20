@@ -1413,7 +1413,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4843801906006333258, guid: d1267c05555788345a019adab3b790e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -2.5339518
+      value: -2.533945
       objectReference: {fileID: 0}
     - target: {fileID: -4843801906006333258, guid: d1267c05555788345a019adab3b790e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1421,7 +1421,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4843801906006333258, guid: d1267c05555788345a019adab3b790e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -92.86918
+      value: 89.96998
       objectReference: {fileID: 0}
     - target: {fileID: -585169117141056383, guid: d1267c05555788345a019adab3b790e7, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1487,9 +1487,16 @@ MonoBehaviour:
   KeyCam: {fileID: 2034149645}
   Bubba: {fileID: 1291253215}
   NextCube: {fileID: 1893361960}
+  Particles: {fileID: 2025752899}
+  Gate: {fileID: 301761866}
 --- !u!4 &301761865 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6312977205053227407, guid: d1267c05555788345a019adab3b790e7, type: 3}
+  m_PrefabInstance: {fileID: 301761862}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &301761866 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7631519033783230797, guid: d1267c05555788345a019adab3b790e7, type: 3}
   m_PrefabInstance: {fileID: 301761862}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &312380236
@@ -5991,6 +5998,7 @@ MonoBehaviour:
   PlayerObject: {fileID: 0}
   NoSparkles: {fileID: 2025752899}
   YesSparkles: {fileID: 1885733853}
+  started: 0
 --- !u!1001 &1701008246
 PrefabInstance:
   m_ObjectHideFlags: 0
