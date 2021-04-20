@@ -1411,10 +1411,26 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: -4843801906006333258, guid: d1267c05555788345a019adab3b790e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -2.5339518
+      objectReference: {fileID: 0}
+    - target: {fileID: -4843801906006333258, guid: d1267c05555788345a019adab3b790e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90.67891
+      objectReference: {fileID: 0}
+    - target: {fileID: -4843801906006333258, guid: d1267c05555788345a019adab3b790e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -92.86918
+      objectReference: {fileID: 0}
     - target: {fileID: -585169117141056383, guid: d1267c05555788345a019adab3b790e7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 0603301eff946054b96d33b136f5a40c, type: 2}
+    - target: {fileID: 379906659862445761, guid: d1267c05555788345a019adab3b790e7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d1267c05555788345a019adab3b790e7, type: 3}
       propertyPath: m_Name
       value: Portcullis_Animation
@@ -3861,7 +3877,7 @@ CapsuleCollider:
   m_Radius: 2.7936401
   m_Height: 18.404549
   m_Direction: 1
-  m_Center: {x: 0.38960266, y: 1.3899994, z: 7.1582165}
+  m_Center: {x: -1.82, y: 1.28, z: 7.1582165}
 --- !u!1 &897782268 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1a66bb0ff2ef9a54bbfaf96dfdc685fb, type: 3}
@@ -7373,15 +7389,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2402103915438902392, guid: cdece2aa4b25aff4384b48129ff6d79e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.15
+      value: -0.00007
       objectReference: {fileID: 0}
     - target: {fileID: 2402103915438902392, guid: cdece2aa4b25aff4384b48129ff6d79e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.91
+      value: 0.01794
       objectReference: {fileID: 0}
     - target: {fileID: 2402103915438902392, guid: cdece2aa4b25aff4384b48129ff6d79e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -33.19
+      value: -0.00001
       objectReference: {fileID: 0}
     - target: {fileID: 2402103915438902392, guid: cdece2aa4b25aff4384b48129ff6d79e, type: 3}
       propertyPath: m_LocalRotation.x
