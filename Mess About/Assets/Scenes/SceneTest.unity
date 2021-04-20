@@ -2698,7 +2698,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -1140706009221257677, guid: 1c0b52e5f776798468074270c1fa83e1, type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 354a46dbbbb86bc41b4991e1c0249f72, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2831,7 +2831,7 @@ RectTransform:
   m_GameObject: {fileID: 478952869}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.6650192, y: 2.4975288, z: 0.66600764}
+  m_LocalScale: {x: 1.6650192, y: 3.1, z: 0.66600764}
   m_Children:
   - {fileID: 671443110}
   - {fileID: 1382154973}
@@ -4433,8 +4433,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 83, y: 63.3}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 62.2, y: -10}
+  m_SizeDelta: {x: 582.35, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &671443111
 MonoBehaviour:
@@ -4463,13 +4463,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: You need an item to use this!
+  m_Text: Look around for any items you could use!
 --- !u!222 &671443112
 CanvasRenderer:
   m_ObjectHideFlags: 0
