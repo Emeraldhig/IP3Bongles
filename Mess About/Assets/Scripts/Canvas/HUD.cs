@@ -49,6 +49,8 @@ public class HUD : MonoBehaviour
     public bool brainyInteraction = true;
     public bool[] destroy = new bool[5];
     public GameObject UseItemButton;
+    public GameObject MasterDialogue;
+    public GameObject NoItemMessage;
 
     // Start is called before the first frame update
     void Start()
@@ -150,6 +152,23 @@ public class HUD : MonoBehaviour
 
     }
 
+    public void CraftNetFinish()
+    {
+        Inventory.Remove("Hoop");
+        Inventory.Remove("Stick");
+        Inventory.Remove("Net");
+        Inventory.AddItem(BugNet.GetComponent<IInventoryItem>());
+        InventoryScript_ItemRemoved();
+        crafting.SetActive(false);
+        Craft.SetActive(false);
+        InventoryObject.SetActive(true);
+        ItemButton.SetActive(true);
+        MainCam.SetActive(true);
+        CraftCam.SetActive(false);
+        ThoughtCloud.SetActive(false);
+        PlayerObject.GetComponent<PlayerMovement>().movementBlock = false;
+    }
+
     public void CraftJar()
     {
         jarOverworld.GetComponent<BrokenJar>().jarMinigame = false;
@@ -172,33 +191,15 @@ public class HUD : MonoBehaviour
 
     public void CraftNet()
     {
-        if (crafting.GetComponent<CraftingFinish>().craftDone)
-        {
-            Inventory.Remove("Hoop");
-            Inventory.Remove("Stick");
-            Inventory.Remove("Net");
-            Inventory.AddItem(BugNet.GetComponent<IInventoryItem>());
-            InventoryScript_ItemRemoved();
-            crafting.SetActive(false);
-            Craft.SetActive(false);
-            InventoryObject.SetActive(true);
-            ItemButton.SetActive(true);
-            MainCam.SetActive(true);
-            CraftCam.SetActive(false);
-            ThoughtCloud.SetActive(false);
-            PlayerObject.GetComponent<PlayerMovement>().movementBlock = false;
-        }
-        else
-        {
-            crafting.SetActive(true);
-            InventoryObject.SetActive(false);
-            ItemButton.SetActive(false);
-            MainCam.SetActive(false);
-            PlayerObject.transform.rotation = Quaternion.Euler(0, 180, 0);
-            CraftCam.SetActive(true);
-            ThoughtCloud.SetActive(true);
-            PlayerObject.GetComponent<PlayerMovement>().movementBlock = true;
-        }
+        crafting.SetActive(true);
+        InventoryObject.SetActive(false);
+        ItemButton.SetActive(false);
+        MainCam.SetActive(false);
+        PlayerObject.transform.rotation = Quaternion.Euler(0, 180, 0);
+        CraftCam.SetActive(true);
+        ThoughtCloud.SetActive(true);
+        PlayerObject.GetComponent<PlayerMovement>().movementBlock = true;
+        CraftButton.SetActive(false);
     }
 
 
@@ -405,11 +406,17 @@ public class HUD : MonoBehaviour
     {
         movementScript.movementBlock = true;
         movementScript.usingitem = true;
+
+        if (movementScript.minigameStarted == false)
+        {
+            movementScript.movementBlock = true;
+            NoItemMessage.SetActive(true);
+        }
     }
 
     public void StopUseItem()
     {
-        movementScript.movementBlock = false;
+        //movementScript.movementBlock = false;
         movementScript.usingitem = false;
     }
 
@@ -418,14 +425,36 @@ public class HUD : MonoBehaviour
         movementScript.movementBlock = false;
         tutorialMaster.SetActive(false);
         tutorialstage++;
+
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+
+        if (sceneName == "MasterFlytrapPath")
+        {
+            movementScript.movementBlock = true;
+            MasterDialogue.SetActive(true);
+        }
     }
+
+    public void DialogueButton()
+    {
+        movementScript.movementBlock = false;
+        MasterDialogue.SetActive(false);
+    }
+
+    public void NoItemButton()
+    {
+        movementScript.movementBlock = false;
+        NoItemMessage.SetActive(false);
+    }
+
     public void SettingsTab()
     {
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
         if (sceneName == "SceneTest") { playButton.SetActive(false); }
-        if (sceneName != "SceneTest") 
-        { 
+        if (sceneName != "SceneTest")
+        {
             InventoryObject.SetActive(false);
             ItemButton.SetActive(false);
         }
@@ -440,9 +469,9 @@ public class HUD : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
-        if(sceneName == "SceneTest") { playButton.SetActive(true); }
-        if (sceneName != "SceneTest") 
-        { 
+        if (sceneName == "SceneTest") { playButton.SetActive(true); }
+        if (sceneName != "SceneTest")
+        {
             InventoryObject.SetActive(true);
             ItemButton.SetActive(true);
         }
@@ -455,20 +484,7 @@ public class HUD : MonoBehaviour
     {
         Application.Quit();
     }
-    public void BrainyDialogue()
-    {
-        info.SetActive(true);
-        infoTitle.SetActive(true);
-        pickUp.SetActive(true);
-        infoBox.SetActive(true);
-        voiceover.Pause();
-        movementScript.movementBlock = true;
-        infoTitleText.text = "Brainy:";
-        infoText.text = "Help I'm stuck up a tree Bubba!\nGo find my book to find out what \ntype of plants these are!";
 
-        brainyInteraction = false;
-
-    }
     public void itemCheck()
     {
         Scene currentScene = SceneManager.GetActiveScene();

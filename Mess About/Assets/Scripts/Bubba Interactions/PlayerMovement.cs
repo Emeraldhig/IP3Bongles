@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject ActiveItem;
     public bool usingitem = false;
     public bool canuseitem = false;
+    public bool minigameStarted = false;
 
     private void Start()
     {
@@ -54,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && !movementBlock)
         {
+            minigameStarted = false;
             walkToPoint.SetActive(true);
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
