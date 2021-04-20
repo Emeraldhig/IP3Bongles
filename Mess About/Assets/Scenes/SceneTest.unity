@@ -4391,7 +4391,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: You need an item to blah blah
+  m_Text: You need an item to use this!
 --- !u!222 &671443112
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5339,10 +5339,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: f976aec1d1541d748a9d69dddc7d4b75, type: 3}
-    m_FontSize: 40
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 4
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0

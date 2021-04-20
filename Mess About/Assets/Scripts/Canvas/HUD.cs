@@ -404,10 +404,13 @@ public class HUD : MonoBehaviour
 
     public void UseItem()
     {
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+
         movementScript.movementBlock = true;
         movementScript.usingitem = true;
 
-        if (movementScript.minigameStarted == false)
+        if ((sceneName == "MasterLagoon" && !Inventory.Check("Bug Net")) || (sceneName == "MasterFlytrapPath" && !Inventory.Check("Portcullis Key")))
         {
             movementScript.movementBlock = true;
             NoItemMessage.SetActive(true);
