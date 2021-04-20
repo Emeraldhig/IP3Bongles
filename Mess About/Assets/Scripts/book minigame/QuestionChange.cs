@@ -19,6 +19,10 @@ public class QuestionChange : MonoBehaviour
     public int counter = 0;
     public bool complete;
     public GameObject hud;
+    public GameObject gameMaster;
+
+    public AudioClip correctAnswer;
+    public AudioClip wrongAnswer;
 
     private void Awake()
     {
@@ -93,18 +97,39 @@ public class QuestionChange : MonoBehaviour
                 if(button1.GetComponent<Text>().text == answers[counter])
                 {
                     counter += 1;
+                    gameMaster.GetComponent<AudioSource>().clip = correctAnswer;
+                    gameMaster.GetComponent<AudioSource>().Play();
+                }
+                else
+                {
+                    gameMaster.GetComponent<AudioSource>().clip = wrongAnswer;
+                    gameMaster.GetComponent<AudioSource>().Play();
                 }
                 break;
             case 1:
                 if (button1.GetComponent<Text>().text == answers[counter])
                 {
                     counter += 1;
+                    gameMaster.GetComponent<AudioSource>().clip = correctAnswer;
+                    gameMaster.GetComponent<AudioSource>().Play();
+                }
+                else
+                {
+                    gameMaster.GetComponent<AudioSource>().clip = wrongAnswer;
+                    gameMaster.GetComponent<AudioSource>().Play();
                 }
                 break;
             case 2:
                 if (button1.GetComponent<Text>().text == answers[counter])
                 {
                     counter += 1;
+                    gameMaster.GetComponent<AudioSource>().clip = correctAnswer;
+                    gameMaster.GetComponent<AudioSource>().Play();
+                }
+                else
+                {
+                    gameMaster.GetComponent<AudioSource>().clip = wrongAnswer;
+                    gameMaster.GetComponent<AudioSource>().Play();
                 }
                 break;
 
@@ -119,18 +144,39 @@ public class QuestionChange : MonoBehaviour
                 if (button2.GetComponent<Text>().text == answers[counter])
                 {
                     counter += 1;
+                    gameMaster.GetComponent<AudioSource>().clip = correctAnswer;
+                    gameMaster.GetComponent<AudioSource>().Play();
+                }
+                else
+                {
+                    gameMaster.GetComponent<AudioSource>().clip = wrongAnswer;
+                    gameMaster.GetComponent<AudioSource>().Play();
                 }
                 break;
             case 1:
                 if (button2.GetComponent<Text>().text == answers[counter])
                 {
                     counter += 1;
+                    gameMaster.GetComponent<AudioSource>().clip = correctAnswer;
+                    gameMaster.GetComponent<AudioSource>().Play();
+                }
+                else
+                {
+                    gameMaster.GetComponent<AudioSource>().clip = wrongAnswer;
+                    gameMaster.GetComponent<AudioSource>().Play();
                 }
                 break;
             case 2:
                 if (button2.GetComponent<Text>().text == answers[counter])
                 {
                     counter += 1;
+                    gameMaster.GetComponent<AudioSource>().clip = correctAnswer;
+                    gameMaster.GetComponent<AudioSource>().Play();
+                }
+                else
+                {
+                    gameMaster.GetComponent<AudioSource>().clip = wrongAnswer;
+                    gameMaster.GetComponent<AudioSource>().Play();
                 }
                 break;
 
