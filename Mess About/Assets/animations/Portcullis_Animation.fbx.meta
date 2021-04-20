@@ -6,6 +6,18 @@ ModelImporter:
   - first:
       74: 1827226128182048838
     second: Take 001
+  - first:
+      74: -8525162827059793819
+    second: key_Basic_1:pTorus3|gate|Take 001|BaseLayer
+  - first:
+      74: -1815730840800822235
+    second: key_Basic_1:pTorus3|key_Basic_1:pTorus3|Take 001|BaseLayer
+  - first:
+      74: -5950860256094931971
+    second: gate|gate|Take 001|BaseLayer
+  - first:
+      74: 6216044381066210325
+    second: gate|key_Basic_1:pTorus3|Take 001|BaseLayer
   externalObjects: {}
   materials:
     materialImportMode: 1
