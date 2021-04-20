@@ -9,12 +9,15 @@ public class KeyAnim : MonoBehaviour
     public GameObject KeyCam;
     public GameObject Bubba;
     public GameObject NextCube;
+    public GameObject Particles;
+    public GameObject Gate;
 
     // Start is called before the first frame update
     void Awake()
     {
         anim = GetComponentInParent<Animator>();
         anim.SetBool("Open", true);
+        Particles.SetActive(false);
     }
 
     // Update is called once per frame
@@ -26,6 +29,7 @@ public class KeyAnim : MonoBehaviour
             Bubba.SetActive(true);
             KeyCam.SetActive(false);
             NextCube.SetActive(true);
+            Gate.SetActive(false);
             gameObject.SetActive(false);
         }
 
