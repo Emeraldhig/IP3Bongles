@@ -41,6 +41,7 @@ public class FlyGame : MonoBehaviour
             {
                 movementScript.minigameStarted = true;
                 movementScript.movementBlock = true;
+                movementScript.canuseitem = false;
                 MainCam.SetActive(false);
                 FlyCam.SetActive(true);
                 FlyNet.SetActive(true);

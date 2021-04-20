@@ -40,6 +40,7 @@ public class FlyNetMovement : MonoBehaviour
             FlyCam.SetActive(false);
             MainCam.SetActive(true);
             movementScript.movementBlock = false;
+            movementScript.canuseitem = false;
             Inventory.Remove("Empty Jar");
             Inventory.AddItem(Flies.GetComponent<IInventoryItem>());
         }

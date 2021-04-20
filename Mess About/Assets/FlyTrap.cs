@@ -50,6 +50,7 @@ public class FlyTrap : MonoBehaviour
             if (FlyTrapStart && movementScript.usingitem)
             {
                 movementScript.minigameStarted = true;
+                movementScript.canuseitem = false;
                 spit = true;
             }
         }
