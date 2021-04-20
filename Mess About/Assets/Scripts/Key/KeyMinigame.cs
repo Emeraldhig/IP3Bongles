@@ -15,6 +15,8 @@ public class KeyMinigame : MonoBehaviour
     public bool KeyStart;
     public GameObject PlayerObject;
     private PlayerMovement movementScript;
+    public GameObject NoSparkles;
+    public GameObject YesSparkles;
 
     // Start is called before the first frame update
     void Start()
@@ -28,16 +30,26 @@ public class KeyMinigame : MonoBehaviour
 
     private void Update()
     {
-        if (movementScript.usingitem && KeyStart && Inventory.Check("Portcullis Key"))
+        if (Inventory.Check("Portcullis Key"))
         {
-            camera1.SetActive(false);
-            camera2.SetActive(true);
-            Key.SetActive(true);
-            bubba.SetActive(false);
-            walkToPoint.SetActive(false);
-            Inventory.Remove("Portcullis Key");
-        }
+            NoSparkles.SetActive(false);
+            YesSparkles.SetActive(true);
 
+            if (movementScript.usingitem && KeyStart)
+            {
+                movementScript.minigameStarted = true;
+                camera1.SetActive(false);
+                camera2.SetActive(true);
+                Key.SetActive(true);
+                bubba.SetActive(false);
+                Inventory.Remove("Portcullis Key");
+            }
+        }
+        else
+        {
+            NoSparkles.SetActive(true);
+            YesSparkles.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter(Collider other)

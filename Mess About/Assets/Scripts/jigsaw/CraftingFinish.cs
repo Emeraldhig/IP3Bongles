@@ -12,9 +12,11 @@ public class CraftingFinish : MonoBehaviour
     public Vector3 Stickpos;
     public GameObject Net;
     public Vector3 Netpos;
+    public GameObject hud;
 
     void Awake()
     {
+        hud = GameObject.FindGameObjectWithTag("HUD");
         Hooppos = Hoop.transform.position;
         Stickpos = Stick.transform.position;
         Netpos = Net.transform.position;
@@ -24,7 +26,7 @@ public class CraftingFinish : MonoBehaviour
     {
         if (pieces[0].GetComponent<pieceMovement>().locked && pieces[1].GetComponent<pieceMovement>().locked && pieces[2].GetComponent<pieceMovement>().locked)
         {
-            craftDone = true;
+            hud.GetComponent<HUD>().CraftNetFinish();
         }
     }
 
