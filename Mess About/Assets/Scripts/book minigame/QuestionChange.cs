@@ -11,7 +11,8 @@ public class QuestionChange : MonoBehaviour
     public string[] questions;
     public string[] answers;
     public string[] potentialAnswers;
-    public GameObject image;
+    public GameObject image1;
+    public GameObject image2;
     public Text questionText;
     public GameObject button1;
     public GameObject button2;
@@ -58,19 +59,22 @@ public class QuestionChange : MonoBehaviour
                 questionText.text = questions[0];
                 button1.GetComponent<Text>().text = potentialAnswers[0];
                 button2.GetComponent<Text>().text = potentialAnswers[1];
-                image.GetComponent<RawImage>().texture = texture[0];
+                image1.GetComponent<RawImage>().texture = texture[0];
+                image2.GetComponent<RawImage>().texture = texture[1];
                 break;
             case 1:
                 questionText.text = questions[1];
                 button1.GetComponent<Text>().text = potentialAnswers[2];
                 button2.GetComponent<Text>().text = potentialAnswers[3];
-                image.GetComponent<RawImage>().texture = texture[1];
+                image1.GetComponent<RawImage>().texture = texture[2];
+                image2.GetComponent<RawImage>().texture = texture[3];
                 break;
             case 2:
                 questionText.text = questions[2];
                 button1.GetComponent<Text>().text = potentialAnswers[4];
                 button2.GetComponent<Text>().text = potentialAnswers[5];
-                image.GetComponent<RawImage>().texture = texture[2];
+                image1.GetComponent<RawImage>().texture = texture[4];
+                image2.GetComponent<RawImage>().texture = texture[5];
                 break;
               
         }
