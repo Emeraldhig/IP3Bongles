@@ -513,7 +513,6 @@ public class HUD : MonoBehaviour
         }
         settings.SetActive(false);
         settingsButton.SetActive(true);
-        UseItemButton.SetActive(true);
         movementScript.movementBlock = false;
     }
     public void QuitGame()
