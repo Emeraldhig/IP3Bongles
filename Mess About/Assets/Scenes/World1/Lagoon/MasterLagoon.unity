@@ -4265,10 +4265,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 1.56
-  m_Height: 3.7053614
+  m_Radius: 1.7454593
+  m_Height: 3.6763895
   m_Direction: 1
-  m_Center: {x: 0.0000027799044, y: -1.3526722, z: -3.7399647}
+  m_Center: {x: 0.0000030690462, y: -0.07082552, z: -2.0820353}
 --- !u!54 &510435685
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4296,8 +4296,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 2.85}
-  m_Center: {x: 0, y: 0.04, z: -0.57}
+  m_Size: {x: 0.99999976, y: 0.7173735, z: 3.8047945}
+  m_Center: {x: -0.000000039081858, y: 1.5980809, z: 1.0638386}
 --- !u!1001 &535954948
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13327,6 +13327,7 @@ MonoBehaviour:
   usingitem: 0
   canuseitem: 0
   minigameStarted: 0
+  flytrapComplete: 0
 --- !u!95 &1237361742
 Animator:
   serializedVersion: 3
@@ -16130,6 +16131,7 @@ MonoBehaviour:
   movementScript: {fileID: 0}
   NoSparkles: {fileID: 207787553}
   YesSparkles: {fileID: 1160643702}
+  started: 0
 --- !u!1001 &1709245581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17096,19 +17098,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aef1e0043e466c84cb8b340cc29ed7cc, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071069
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aef1e0043e466c84cb8b340cc29ed7cc, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aef1e0043e466c84cb8b340cc29ed7cc, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aef1e0043e466c84cb8b340cc29ed7cc, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.70710677
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aef1e0043e466c84cb8b340cc29ed7cc, type: 3}
       propertyPath: m_RootOrder
@@ -17128,15 +17130,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aef1e0043e466c84cb8b340cc29ed7cc, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aef1e0043e466c84cb8b340cc29ed7cc, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aef1e0043e466c84cb8b340cc29ed7cc, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: aef1e0043e466c84cb8b340cc29ed7cc, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -17146,6 +17148,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WalkToPoint
       objectReference: {fileID: 0}
+    - target: {fileID: 4489026775033669615, guid: aef1e0043e466c84cb8b340cc29ed7cc, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1cf7f53dc3baafc4f86850a19c31c85e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef1e0043e466c84cb8b340cc29ed7cc, type: 3}
 --- !u!1001 &1835521691
