@@ -35,20 +35,20 @@ public class QuestionChange : MonoBehaviour
 
         
         questions[0] = "Does the plant have colourful petals?";
-        questions[1] = "Do the leaves look spiky or smooth?";
-        questions[2] = "What colour are the spots on the plant?";
+        questions[1] = "Does the plant have sharp teeth or spiky leaves?";
+        questions[2] = "Does the plant have spots?";
 
-        answers[0] = "Yes";
-        answers[1] = "Spiky";
-        answers[2] = "Red";
+        answers[0] = "No";
+        answers[1] = "Sharp teeth";
+        answers[2] = "Yes";
 
 
         potentialAnswers[0] = "Yes";
         potentialAnswers[1] = "No";
-        potentialAnswers[2] = "Smooth";
-        potentialAnswers[3] = "Spiky";
-        potentialAnswers[4] = "Red";
-        potentialAnswers[5] = "Blue";
+        potentialAnswers[2] = "Spiky leaves";
+        potentialAnswers[3] = "Sharp teeth";
+        potentialAnswers[4] = "Yes";
+        potentialAnswers[5] = "No";
 
 
 
