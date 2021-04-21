@@ -10,9 +10,14 @@ public class timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         time += Time.deltaTime;
 
         if(time > waitTime)
+        {
+            SceneManager.LoadScene("MasterPathways");
+        }
+        if (Input.GetKeyDown("g")) 
         {
             SceneManager.LoadScene("MasterPathways");
         }
