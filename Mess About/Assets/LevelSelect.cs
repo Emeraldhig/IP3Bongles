@@ -8,8 +8,8 @@ public class LevelSelect : MonoBehaviour
 {
    public void PlayScene()
     {
-       /* Debug.Log(EventSystem.current.currentSelectedGameObject.name);
-        string Scene = EventSystem.current.currentSelectedGameObject.name;*/
+        Debug.Log(EventSystem.current.currentSelectedGameObject.name);
+        string Scene = EventSystem.current.currentSelectedGameObject.name;
         SceneManager.LoadScene("Intro Animation");
     }
 }

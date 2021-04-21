@@ -69,72 +69,76 @@ public class HUD : MonoBehaviour
     {
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
-        MainCam = GameObject.FindGameObjectWithTag("MainCamera");
-        PlayerObject = GameObject.FindGameObjectWithTag("Bubba");
-        ThoughtCloud = PlayerObject.transform.GetChild(2).gameObject;
-        CraftCam = PlayerObject.transform.GetChild(3).gameObject;
-        ItemCam = PlayerObject.transform.GetChild(4).gameObject;
-        movementScript = PlayerObject.GetComponent<PlayerMovement>();
-        
-        
 
-        
-
-        if (sceneName == "MasterCampsite")
+        if (sceneName != "Intro Animation")
         {
-            jarOverworld = GameObject.FindGameObjectWithTag("Jar");
-            bookOverworld = GameObject.FindGameObjectWithTag("Book");
+            MainCam = GameObject.FindGameObjectWithTag("MainCamera");
+            PlayerObject = GameObject.FindGameObjectWithTag("Bubba");
+            ThoughtCloud = PlayerObject.transform.GetChild(2).gameObject;
+            CraftCam = PlayerObject.transform.GetChild(3).gameObject;
+            ItemCam = PlayerObject.transform.GetChild(4).gameObject;
+            movementScript = PlayerObject.GetComponent<PlayerMovement>();
 
 
-            if (bookOverworld.GetComponent<Book>().trigger)
+
+
+
+            if (sceneName == "MasterCampsite")
             {
-                book.SetActive(true);
+                jarOverworld = GameObject.FindGameObjectWithTag("Jar");
+                bookOverworld = GameObject.FindGameObjectWithTag("Book");
+
+
+                if (bookOverworld.GetComponent<Book>().trigger)
+                {
+                    book.SetActive(true);
+                }
+
             }
 
-        }
+            if (sceneName == "MasterPathways" && HUDobj.GetComponent<InvHide>().InvShow)
+            {
+                InventoryObject.SetActive(true);
+                ItemButton.SetActive(true);
 
-        if (sceneName == "MasterPathways" && HUDobj.GetComponent<InvHide>().InvShow)
-        {
-            InventoryObject.SetActive(true);
-            ItemButton.SetActive(true);
+            }
 
-        }
+            if (sceneName == "MasterPathways" && showtutArrow == true)
+            {
+                tutArrow = GameObject.FindGameObjectWithTag("tutArrow");
+                tutArrow.transform.GetChild(0).gameObject.SetActive(true);
+                showtutArrow = false;
+            }
 
-        if (sceneName == "MasterPathways" && showtutArrow == true)
-        {
-            tutArrow = GameObject.FindGameObjectWithTag("tutArrow");
-            tutArrow.transform.GetChild(0).gameObject.SetActive(true);
-            showtutArrow = false;
-        }
+            if (sceneName == "MasterLagoon")
+            {
+                if (Inventory.Check("Bug Net"))
+                {
+                    movementScript.movementBlock = true;
+                    tutorialMaster.GetComponent<AudioSource>().clip = tutorial4;
+                    tutorialMaster.SetActive(true);
+                    tutorialText.text = "Press Use Items near objects\nto interact with them";
+                }
+            }
 
-        if (sceneName == "MasterLagoon")
-        {
-            if (Inventory.Check("Bug Net"))
+            if (tutorialstage == 0)
             {
                 movementScript.movementBlock = true;
-                tutorialMaster.GetComponent<AudioSource>().clip = tutorial4;
+                tutorialMaster.GetComponent<AudioSource>().clip = tutorial1;
                 tutorialMaster.SetActive(true);
-                tutorialText.text = "Press Use Items near objects\nto interact with them";
+                tutorialText.text = "Tap on the Screen to move\nYou can move into a new area\nby walking through an Archway";
             }
-        }
-
-        if (tutorialstage == 0)
-        {
-            movementScript.movementBlock = true;
-            tutorialMaster.GetComponent<AudioSource>().clip = tutorial1;
-            tutorialMaster.SetActive(true);
-            tutorialText.text = "Tap on the Screen to move\nYou can move into a new area\nby walking through an Archway";
-        }
-        else if (tutorialstage == 1)
-        {
-            movementScript.movementBlock = true;
-            tutorialMaster.GetComponent<AudioSource>().clip = tutorial2;
-            tutorialMaster.SetActive(true);
-            tutorialText.text = "Tap on items to Pick them up\nYou can talk to other characters\ntoo";
-        }
-        else
-        {
-            movementScript.movementBlock = false;
+            else if (tutorialstage == 1)
+            {
+                movementScript.movementBlock = true;
+                tutorialMaster.GetComponent<AudioSource>().clip = tutorial2;
+                tutorialMaster.SetActive(true);
+                tutorialText.text = "Tap on items to Pick them up\nYou can talk to other characters\ntoo";
+            }
+            else
+            {
+                movementScript.movementBlock = false;
+            }
         }
 
     }
