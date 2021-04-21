@@ -15,6 +15,9 @@ public class FlyGame : MonoBehaviour
     public bool flyMoving;
     public GameObject PlayerObject;
     public PlayerMovement movementScript;
+    public GameObject NoSparkles;
+    public GameObject YesSparkles;
+    public bool started = false;
 
     // Start is called before the first frame update
     void Start()
@@ -30,14 +33,37 @@ public class FlyGame : MonoBehaviour
 
     private void Update()
     {
-        if (movementScript.usingitem && FlyStart && Inventory.Check("Bug Net") && Inventory.Check("Empty Jar"))
+        if (started == false)
         {
-            movementScript.movementBlock = true;
-            MainCam.SetActive(false);
-            FlyCam.SetActive(true);
-            FlyNet.SetActive(true);
-            flyMoving = true;
+            if (Inventory.Check("Bug Net") && Inventory.Check("Empty Jar"))
+            {
+                NoSparkles.SetActive(false);
+                YesSparkles.SetActive(true);
+
+                if (movementScript.usingitem && FlyStart)
+                {
+                    movementScript.minigameStarted = true;
+                    movementScript.movementBlock = true;
+                    movementScript.canuseitem = false;
+                    MainCam.SetActive(false);
+                    FlyCam.SetActive(true);
+                    FlyNet.SetActive(true);
+                    started = true;
+                    flyMoving = true;
+                }
+            }
+            else
+            {
+                NoSparkles.SetActive(true);
+                YesSparkles.SetActive(false);
+            }
         }
+        else
+        {
+            NoSparkles.SetActive(false);
+            YesSparkles.SetActive(false);
+        }
+
     }
 
     private void OnTriggerEnter(Collider other)

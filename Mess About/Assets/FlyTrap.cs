@@ -16,9 +16,12 @@ public class FlyTrap : MonoBehaviour
     public GameObject VFT1;
     public GameObject VFT2;
     public GameObject VFT3;
+
     public Animator VFT1Anim;
     public Animator VFT2Anim;
     public Animator VFT3Anim;
+    public GameObject NoSparkles;
+    public GameObject YesSparkles;
 
     // Start is called before the first frame update
     void Start()
@@ -34,14 +37,31 @@ public class FlyTrap : MonoBehaviour
         VFT1Anim = VFT1.GetComponent<Animator>();
         VFT2Anim = VFT2.GetComponent<Animator>();
         VFT3Anim = VFT3.GetComponent<Animator>();
+        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (FlyTrapStart && movementScript.usingitem && Inventory.Check("Jar Of Flies"))
+        if (Inventory.Check("Jar Of Flies"))
         {
-            spit = true;
+            NoSparkles.SetActive(false);
+            YesSparkles.SetActive(true);
+
+            if (FlyTrapStart && movementScript.usingitem)
+            {
+                movementScript.minigameStarted = true;
+                movementScript.canuseitem = false;
+                movementScript.usingitem = false;
+                movementScript.flytrapComplete = true;
+                spit = true;
+            }
+        }
+        else
+        {
+            NoSparkles.SetActive(true);
+            YesSparkles.SetActive(false);
         }
     }
 
@@ -53,6 +73,7 @@ public class FlyTrap : MonoBehaviour
         VFT1Anim.Play("SpinDeath");
         VFT2Anim.Play("SpinDeath");
         VFT3Anim.Play("SpinDeath");
+       
     }
 
     public void FlyDeathItem()

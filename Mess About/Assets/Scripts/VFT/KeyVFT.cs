@@ -11,10 +11,14 @@ public class KeyVFT : MonoBehaviour
     public GameObject keyVFT;
     public bool idle;
     public bool spit;
+    public GameObject brainy;
+    public Animation brainyAnim;
 
     void Start()
     {
         anim = gameObject.GetComponent<Animator>();
+        brainyAnim = brainy.GetComponent<Animation>();
+
     }
 
     // Update is called once per frame
@@ -30,6 +34,7 @@ public class KeyVFT : MonoBehaviour
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("spittingdone"))
         {
             VFTMaster.GetComponent<FlyTrap>().FlyDeathAnim();
+            brainyAnim.Play("Brainy Exit Tree");
             gameObject.SetActive(false);
         }
 

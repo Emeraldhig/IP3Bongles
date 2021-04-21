@@ -30,6 +30,7 @@ TagManager:
   - Stick
   - Hoop
   - EndScene
+  - flytrap
   layers:
   - Default
   - TransparentFX
