@@ -1987,6 +1987,7 @@ MonoBehaviour:
   ThoughtCloud: {fileID: 0}
   PlayerObject: {fileID: 0}
   hud: {fileID: 0}
+  settingsMenu: {fileID: 2059595126}
 --- !u!114 &345528335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6122,6 +6123,7 @@ MonoBehaviour:
   NoItemMessage: {fileID: 478952869}
   jarofFlies: {fileID: 973505430}
   backgroundMusic: {fileID: 1055373054}
+  settingsMenu: {fileID: 2059595126}
 --- !u!114 &1055373056
 MonoBehaviour:
   m_ObjectHideFlags: 0

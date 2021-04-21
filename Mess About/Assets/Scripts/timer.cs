@@ -17,7 +17,7 @@ public class timer : MonoBehaviour
         {
             SceneManager.LoadScene("MasterPathways");
         }
-        if (Input.GetKeyDown("g")) 
+        if (Input.GetKeyDown("h")) 
         {
             SceneManager.LoadScene("MasterPathways");
         }

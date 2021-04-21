@@ -27,6 +27,7 @@ public class JigsawWin : MonoBehaviour
     public GameObject PlayerObject;
     private PlayerMovement movementScript;
     public GameObject hud;
+    public GameObject settingsMenu;
 
     void Awake()
     {
@@ -59,6 +60,7 @@ public class JigsawWin : MonoBehaviour
             MainCam.SetActive(true);
             CraftCam.SetActive(false);
             ThoughtCloud.SetActive(false);
+            settingsMenu.SetActive(true);
             hud.GetComponent<HUD>().CraftJar();
         }
     }

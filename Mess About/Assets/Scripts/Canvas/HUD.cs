@@ -53,6 +53,7 @@ public class HUD : MonoBehaviour
     public GameObject NoItemMessage;
     public GameObject jarofFlies;
     public AudioSource backgroundMusic;
+    public GameObject settingsMenu;
 
     // Start is called before the first frame update
     void Start()
@@ -374,6 +375,7 @@ public class HUD : MonoBehaviour
         if (Inventory.Check("Broken Jar"))
         {
             jar.SetActive(true);
+            settingsMenu.SetActive(false);
             InventoryObject.SetActive(false);
             UseItemButton.SetActive(false);
             ItemButton.SetActive(false);
