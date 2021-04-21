@@ -81,7 +81,10 @@ public class HUD : MonoBehaviour
             movementScript = PlayerObject.GetComponent<PlayerMovement>();
 
 
-
+            if (!GetComponent<AudioSource>().isPlaying)
+            {
+                GetComponent<AudioSource>().Play();
+            }
 
 
             if (sceneName == "MasterCampsite")
@@ -141,6 +144,10 @@ public class HUD : MonoBehaviour
                 movementScript.movementBlock = false;
             }
         }
+        else
+        {
+            GetComponent<AudioSource>().Pause();
+        }
 
     }
 
@@ -149,14 +156,7 @@ public class HUD : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
-        if (sceneName == "Intro Animation")
-        {
-            backgroundMusic.mute = true;
-        }
-        else
-        {
-            backgroundMusic.mute = false;
-        }
+
         InventoryScript_ItemRemoved();
 
         if (sceneName != "SceneTest" && sceneName != "Intro Animation")
