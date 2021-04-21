@@ -52,6 +52,7 @@ public class HUD : MonoBehaviour
     public GameObject MasterDialogue;
     public GameObject NoItemMessage;
     public GameObject jarofFlies;
+    public AudioSource backgroundMusic;
 
     // Start is called before the first frame update
     void Start()
@@ -61,6 +62,7 @@ public class HUD : MonoBehaviour
         infoText = info.GetComponent<Text>();
         infoTitleText = infoTitle.GetComponent<Text>();
         SceneManager.sceneLoaded += OnSceneLoaded;
+        backgroundMusic.GetComponent<AudioSource>();
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -73,6 +75,10 @@ public class HUD : MonoBehaviour
         CraftCam = PlayerObject.transform.GetChild(3).gameObject;
         ItemCam = PlayerObject.transform.GetChild(4).gameObject;
         movementScript = PlayerObject.GetComponent<PlayerMovement>();
+        
+        
+
+        
 
         if (sceneName == "MasterCampsite")
         {
@@ -135,15 +141,29 @@ public class HUD : MonoBehaviour
 
     private void Update()
     {
-        InventoryScript_ItemRemoved();
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
 
-        if (movementScript.canuseitem == true)
+        if (sceneName == "Intro Animation")
         {
-            UseItemButton.SetActive(true);
+            backgroundMusic.mute = true;
         }
         else
         {
-            UseItemButton.SetActive(false);
+            backgroundMusic.mute = false;
+        }
+        InventoryScript_ItemRemoved();
+
+        if (sceneName != "SceneTest" && sceneName != "Intro Animation")
+        {
+            if (movementScript.canuseitem == true)
+            {
+                UseItemButton.SetActive(true);
+            }
+            else
+            {
+                UseItemButton.SetActive(false);
+            }
         }
 
         if (Input.GetKeyDown("g"))

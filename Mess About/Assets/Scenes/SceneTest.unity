@@ -6121,6 +6121,7 @@ MonoBehaviour:
   MasterDialogue: {fileID: 1949074817}
   NoItemMessage: {fileID: 478952869}
   jarofFlies: {fileID: 973505430}
+  backgroundMusic: {fileID: 1055373054}
 --- !u!114 &1055373056
 MonoBehaviour:
   m_ObjectHideFlags: 0
