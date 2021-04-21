@@ -17,6 +17,8 @@ public class FlyNetMovement : MonoBehaviour
     public GameObject Flies;
     public GameObject PlayerObject;
     public PlayerMovement movementScript;
+    public GameObject gameMaster;
+    public AudioClip collect;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +28,8 @@ public class FlyNetMovement : MonoBehaviour
         PlayerObject = GameObject.FindGameObjectWithTag("Bubba");
         movementScript = PlayerObject.GetComponent<PlayerMovement>();
         Inventory = InventoryObj.GetComponent<Inventory>();
+        gameMaster.GetComponent<AudioSource>().clip = collect;
+
     }
 
     // Update is called once per frame
@@ -63,6 +67,7 @@ public class FlyNetMovement : MonoBehaviour
         {
             Destroy(other.gameObject);
             fliesCaught++;
+            gameMaster.GetComponent<AudioSource>().Play();
             print(fliesCaught);
         }
 
