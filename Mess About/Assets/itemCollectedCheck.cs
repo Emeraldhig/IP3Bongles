@@ -25,6 +25,13 @@ public class itemCollectedCheck : MonoBehaviour
         hud.GetComponent<HUD>().itemCheck();
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
+        if(sceneName =="MasterLagoon")
+        { 
+            if(inventory.Check("Jar Of Flies"))
+            {
+                Destroy(gameObject);
+            }
+        }
         if (sceneName == "MasterPathways")
         {
             if (inventory.Check("Net") || inventory.Check("Bug Net"))
@@ -38,6 +45,7 @@ public class itemCollectedCheck : MonoBehaviour
             {
                 Destroy(gameObject);
             }
+           
         }
         if (sceneName == "MasterCampsite")
         {
@@ -45,6 +53,7 @@ public class itemCollectedCheck : MonoBehaviour
             {
                 Destroy(gameObject);
             }
+           
             
         }
     }
