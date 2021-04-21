@@ -3,7 +3,27 @@ guid: f450d604d9115d54ea45d0d277669cdd
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bug Net
+    second: {fileID: 2100000, guid: 07b2038e276b0ad4d8759e3b4910b1f8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hoop
+    second: {fileID: -4883458505314413010, guid: aef1e0043e466c84cb8b340cc29ed7cc, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Net
+    second: {fileID: 2100000, guid: e52fee2d11feba84ba1e9a3fb217ee0d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Outline
+    second: {fileID: 2100000, guid: 91e4e24004119a24fad1659f0000e538, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

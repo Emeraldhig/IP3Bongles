@@ -2960,6 +2960,8 @@ MonoBehaviour:
   keyVFT: {fileID: 668114025}
   idle: 0
   spit: 0
+  brainy: {fileID: 0}
+  brainyAnim: {fileID: 0}
 --- !u!1001 &703870485
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4018,6 +4020,8 @@ MonoBehaviour:
   VFT1Anim: {fileID: 0}
   VFT2Anim: {fileID: 0}
   VFT3Anim: {fileID: 0}
+  NoSparkles: {fileID: 0}
+  YesSparkles: {fileID: 0}
 --- !u!136 &884889874
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5405,6 +5409,8 @@ MonoBehaviour:
   ActiveItem: {fileID: 0}
   usingitem: 0
   canuseitem: 0
+  minigameStarted: 0
+  flytrapComplete: 0
 --- !u!195 &1291253218
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6313,6 +6319,9 @@ MonoBehaviour:
   Key: {fileID: 398572113}
   KeyStart: 0
   PlayerObject: {fileID: 0}
+  NoSparkles: {fileID: 0}
+  YesSparkles: {fileID: 0}
+  started: 0
 --- !u!1001 &1701008246
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7417,6 +7426,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyVFT
       objectReference: {fileID: 0}
+    - target: {fileID: 4096814437559753766, guid: ed64da793b31fd4409b44eae4eb81a2a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 424813bc05e27af488c766dffd015316, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed64da793b31fd4409b44eae4eb81a2a, type: 3}
 --- !u!4 &1878769988 stripped
