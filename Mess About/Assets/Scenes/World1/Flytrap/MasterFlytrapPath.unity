@@ -1425,15 +1425,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4843801906006333258, guid: d1267c05555788345a019adab3b790e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -2.3137765
+      value: -2.2834022
       objectReference: {fileID: 0}
     - target: {fileID: -4843801906006333258, guid: d1267c05555788345a019adab3b790e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 90.982445
+      value: 90.88647
       objectReference: {fileID: 0}
     - target: {fileID: -4843801906006333258, guid: d1267c05555788345a019adab3b790e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 127.00894
+      value: 99.208176
       objectReference: {fileID: 0}
     - target: {fileID: -585169117141056383, guid: d1267c05555788345a019adab3b790e7, type: 3}
       propertyPath: m_Materials.Array.data[0]
