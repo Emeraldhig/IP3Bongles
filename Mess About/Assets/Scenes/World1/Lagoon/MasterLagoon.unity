@@ -16068,6 +16068,7 @@ GameObject:
   - component: {fileID: 1702323990}
   - component: {fileID: 1702323992}
   - component: {fileID: 1702323993}
+  - component: {fileID: 1702323994}
   m_Layer: 0
   m_Name: Flies
   m_TagString: Untagged
@@ -16231,6 +16232,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1702323994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702323989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bc16e057798b51429e4044ef394810d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hud: {fileID: 0}
+  invObj: {fileID: 0}
+  inventory: {fileID: 0}
+  destroy: 0000000000
 --- !u!1001 &1709245581
 PrefabInstance:
   m_ObjectHideFlags: 0
