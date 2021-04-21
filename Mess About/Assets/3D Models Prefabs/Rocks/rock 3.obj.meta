@@ -9,6 +9,16 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: defaultMat
     second: {fileID: 2100000, guid: fa8c9a6739b63d94b901ca713a20afdd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: initialShadingGroup_Rock_3_Base_Rock_3Mat
+    second: {fileID: 2100000, guid: fa8c9a6739b63d94b901ca713a20afdd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: initialShadingGroup_Rock_3_Rock_3_OutlineMat
+    second: {fileID: 2100000, guid: 91e4e24004119a24fad1659f0000e538, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

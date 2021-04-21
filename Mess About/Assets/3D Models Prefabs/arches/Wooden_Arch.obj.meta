@@ -3,7 +3,17 @@ guid: 38d538ff7d1f9e04ca13604db158c898
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: initialShadingGroup_Arch_Base_Wooden_ArchMat
+    second: {fileID: 2100000, guid: 02579bf887fbc94458db4bc7f6146a7b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: initialShadingGroup_Wooden_Arch_Arch_OutlineMat
+    second: {fileID: 2100000, guid: 91e4e24004119a24fad1659f0000e538, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

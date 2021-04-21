@@ -3,7 +3,17 @@ guid: e52d8aa3bb3b4ef4796517bd9dab9c9a
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sign_OutlineMat
+    second: {fileID: 2100000, guid: 91e4e24004119a24fad1659f0000e538, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: initialShadingGroup_pCube3Mat
+    second: {fileID: 2100000, guid: 1aa19c57c2e05e6439d2bb926d9db8e2, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

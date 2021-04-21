@@ -3,7 +3,12 @@ guid: 3d32915e816911e498bf154125f36145
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: initialShadingGroup_Key_Outline_KeyMat
+    second: {fileID: 2100000, guid: 91e4e24004119a24fad1659f0000e538, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
