@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 20df1980505b7c14b819056abf0fbf96, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: aaacde0064780b24b93c362a161418a2, type: 2}
 --- !u!1001 &104094
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1411,6 +1411,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: -7631519033783230797, guid: d1267c05555788345a019adab3b790e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7631519033783230797, guid: d1267c05555788345a019adab3b790e7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4843801906006333258, guid: d1267c05555788345a019adab3b790e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -2.533945
@@ -1439,6 +1447,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 0ed3873f85107df4c8c8150d20cf9732, type: 2}
+    - target: {fileID: 3444646225846353825, guid: d1267c05555788345a019adab3b790e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3444646225846353825, guid: d1267c05555788345a019adab3b790e7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4096814437559753766, guid: d1267c05555788345a019adab3b790e7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -5088,6 +5104,7 @@ MonoBehaviour:
   usingitem: 0
   canuseitem: 0
   minigameStarted: 0
+  flytrapComplete: 0
 --- !u!195 &1291253218
 NavMeshAgent:
   m_ObjectHideFlags: 0
