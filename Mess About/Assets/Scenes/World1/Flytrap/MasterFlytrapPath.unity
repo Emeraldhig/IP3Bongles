@@ -3820,7 +3820,7 @@ GameObject:
   - component: {fileID: 884889874}
   m_Layer: 0
   m_Name: FlyTraps
-  m_TagString: Untagged
+  m_TagString: flytrap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7102,6 +7102,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ed64da793b31fd4409b44eae4eb81a2a, type: 3}
       propertyPath: m_Name
       value: KeyVFT
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ed64da793b31fd4409b44eae4eb81a2a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed64da793b31fd4409b44eae4eb81a2a, type: 3}

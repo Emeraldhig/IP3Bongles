@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     public bool usingitem = false;
     public bool canuseitem = false;
     public bool minigameStarted = false;
+    public bool flytrapComplete = false;
 
     private void Start()
     {

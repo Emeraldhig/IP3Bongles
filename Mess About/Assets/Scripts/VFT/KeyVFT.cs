@@ -11,7 +11,6 @@ public class KeyVFT : MonoBehaviour
     public GameObject keyVFT;
     public bool idle;
     public bool spit;
-
     public GameObject brainy;
     public Animation brainyAnim;
 
@@ -19,6 +18,7 @@ public class KeyVFT : MonoBehaviour
     {
         anim = gameObject.GetComponent<Animator>();
         brainyAnim = brainy.GetComponent<Animation>();
+
     }
 
     // Update is called once per frame

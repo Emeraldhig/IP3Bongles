@@ -27,6 +27,7 @@ public class KeyAnim : MonoBehaviour
         {
             MainCam.SetActive(true);
             Bubba.SetActive(true);
+            Bubba.GetComponent<PlayerMovement>().movementBlock = false;
             KeyCam.SetActive(false);
             NextCube.SetActive(true);
             Gate.SetActive(false);

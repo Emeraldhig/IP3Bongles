@@ -53,6 +53,8 @@ public class FlyTrap : MonoBehaviour
             {
                 movementScript.minigameStarted = true;
                 movementScript.canuseitem = false;
+                movementScript.usingitem = false;
+                movementScript.flytrapComplete = true;
                 spit = true;
             }
         }
