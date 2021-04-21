@@ -4445,17 +4445,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 668294418}
-  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.33333325, y: 0.49999985, z: 1.25}
+  m_LocalScale: {x: 0.12985663, y: 0.19478494, z: 0.4869625}
   m_Children: []
   m_Father: {fileID: 1949074818}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 83, y: 63.3}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -2.7, y: 21}
+  m_SizeDelta: {x: 687.5, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &668294420
 MonoBehaviour:
@@ -4479,18 +4479,19 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: f976aec1d1541d748a9d69dddc7d4b75, type: 3}
-    m_FontSize: 40
+    m_FontSize: 37
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 4
-    m_MaxSize: 40
+    m_MinSize: 2
+    m_MaxSize: 69
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: DIALOGUE
+  m_Text: Help Bubba! I'm stuck up here because of these hungry plants. One of my
+    books should tell you how to distract them if you can find it. Hurry, quickly!
 --- !u!222 &668294421
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6836,9 +6837,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269247188}
-  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.28022, y: 0.28022, z: 0.28022}
   m_Children:
   - {fileID: 1909338664}
   m_Father: {fileID: 1949074818}
@@ -6846,8 +6847,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120, y: 0}
-  m_SizeDelta: {x: 100, y: 150}
+  m_AnchoredPosition: {x: 43.7, y: -26.7}
+  m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1269247190
 MonoBehaviour:
@@ -10408,15 +10409,15 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1949074817}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.6650192, y: 2.4975288, z: 0.66600764}
+  m_LocalScale: {x: 5.5386, y: 5.5386, z: 5.5386}
   m_Children:
   - {fileID: 668294419}
   - {fileID: 1269247189}
   m_Father: {fileID: 1055373060}
   m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 17, y: -118}
@@ -10538,7 +10539,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 16a3da974114ac74db697813234dba10, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fc28e739e8458184bb47498766a662bb, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
