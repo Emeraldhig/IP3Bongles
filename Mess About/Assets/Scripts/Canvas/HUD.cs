@@ -71,7 +71,13 @@ public class HUD : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
-        if (sceneName != "Intro Animation")
+        if (sceneName == "EndScene")
+        {
+            Debug.Log("yes");
+            gameObject.SetActive(false);
+        }
+
+        if (sceneName != "Intro Animation" && sceneName != "EndScene")
         {
             MainCam = GameObject.FindGameObjectWithTag("MainCamera");
             PlayerObject = GameObject.FindGameObjectWithTag("Bubba");

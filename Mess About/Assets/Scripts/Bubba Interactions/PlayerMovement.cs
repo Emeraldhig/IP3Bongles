@@ -57,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && !movementBlock)
         {
             minigameStarted = false;
+            canuseitem = false;
             walkToPoint.SetActive(true);
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);

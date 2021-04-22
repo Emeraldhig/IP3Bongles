@@ -66,15 +66,10 @@ public class FlyGame : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         FlyStart = true;
         other.GetComponent<PlayerMovement>().canuseitem = true;
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        FlyStart = false;
-        other.GetComponent<PlayerMovement>().canuseitem = false;
-    }
 }
